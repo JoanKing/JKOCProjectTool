@@ -54,6 +54,7 @@
 		E26706982197DFFC00B41CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26706A82197E13100B41CA8 /* UIView+JKUiviewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKUiviewExtension.h"; sourceTree = "<group>"; };
 		E26706A92197E13100B41CA8 /* UIView+JKUiviewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKUiviewExtension.m"; sourceTree = "<group>"; };
+		E26706AB2197E1FA00B41CA8 /* JKOCProjectTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKOCProjectTool.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				E26706A72197E13100B41CA8 /* JKUiviewExtension */,
+				E26706AB2197E1FA00B41CA8 /* JKOCProjectTool.h */,
 			);
 			path = JKOCProjectTool;
 			sourceTree = SOURCE_ROOT;
