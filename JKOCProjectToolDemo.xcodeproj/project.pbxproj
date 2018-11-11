@@ -15,6 +15,7 @@
 		E26706822197DFFC00B41CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E26706812197DFFC00B41CA8 /* main.m */; };
 		E267068C2197DFFC00B41CA8 /* JKOCProjectToolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E267068B2197DFFC00B41CA8 /* JKOCProjectToolDemoTests.m */; };
 		E26706972197DFFC00B41CA8 /* JKOCProjectToolDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26706962197DFFC00B41CA8 /* JKOCProjectToolDemoUITests.m */; };
+		E26706AA2197E13100B41CA8 /* UIView+JKUiviewExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E26706A92197E13100B41CA8 /* UIView+JKUiviewExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E26706922197DFFC00B41CA8 /* JKOCProjectToolDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JKOCProjectToolDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26706962197DFFC00B41CA8 /* JKOCProjectToolDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKOCProjectToolDemoUITests.m; sourceTree = "<group>"; };
 		E26706982197DFFC00B41CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E26706A82197E13100B41CA8 /* UIView+JKUiviewExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+JKUiviewExtension.h"; sourceTree = "<group>"; };
+		E26706A92197E13100B41CA8 /* UIView+JKUiviewExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKUiviewExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		E26706712197DFFB00B41CA8 /* JKOCProjectToolDemo */ = {
 			isa = PBXGroup;
 			children = (
+				E26706A62197E13100B41CA8 /* JKOCProjectTool */,
 				E26706722197DFFC00B41CA8 /* AppDelegate.h */,
 				E26706732197DFFC00B41CA8 /* AppDelegate.m */,
 				E26706752197DFFC00B41CA8 /* ViewController.h */,
@@ -130,6 +134,23 @@
 				E26706982197DFFC00B41CA8 /* Info.plist */,
 			);
 			path = JKOCProjectToolDemoUITests;
+			sourceTree = "<group>";
+		};
+		E26706A62197E13100B41CA8 /* JKOCProjectTool */ = {
+			isa = PBXGroup;
+			children = (
+				E26706A72197E13100B41CA8 /* JKUiviewExtension */,
+			);
+			path = JKOCProjectTool;
+			sourceTree = SOURCE_ROOT;
+		};
+		E26706A72197E13100B41CA8 /* JKUiviewExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E26706A82197E13100B41CA8 /* UIView+JKUiviewExtension.h */,
+				E26706A92197E13100B41CA8 /* UIView+JKUiviewExtension.m */,
+			);
+			path = JKUiviewExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E26706AA2197E13100B41CA8 /* UIView+JKUiviewExtension.m in Sources */,
 				E26706772197DFFC00B41CA8 /* ViewController.m in Sources */,
 				E26706822197DFFC00B41CA8 /* main.m in Sources */,
 				E26706742197DFFC00B41CA8 /* AppDelegate.m in Sources */,
