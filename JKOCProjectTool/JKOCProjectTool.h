@@ -9,6 +9,6 @@
 #ifndef JKOCProjectTool_h
 #define JKOCProjectTool_h
 
-#import "UIView+JKUiviewExtension.h"
+#import "UIView+JKCategory.h"
 
 #endif /* JKOCProjectTool_h */
