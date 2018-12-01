@@ -186,7 +186,7 @@
  */
 -(void)jkCutRoundRectCorner:(UIRectCorner)corners withCornerRadius:(CGFloat)value{
     
-    UIBezierPath* rounded = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerTopLeft | UIRectCornerTopRight cornerRadii:CGSizeMake(value, value)];
+    UIBezierPath* rounded = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(value, value)];
     CAShapeLayer* shape = [[CAShapeLayer alloc] init];
     [shape setPath:rounded.CGPath];
     self.layer.mask = shape;
