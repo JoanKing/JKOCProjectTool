@@ -62,19 +62,6 @@
     return self.frame.size.height;
 }
 
-#pragma mark size
-- (void)setSize:(CGSize)size
-{
-    CGRect frame = self.frame;
-    frame.size = size;
-    self.frame = frame;
-}
-
-- (CGSize)size
-{
-    return self.frame.size;
-}
-
 #pragma mark centerX
 - (void)setCenterX:(CGFloat)centerX
 {
@@ -101,6 +88,7 @@
     return self.center.y;
 }
 
+
 #pragma mark origin
 - (CGPoint)origin {
     return self.frame.origin;
@@ -110,6 +98,19 @@
     CGRect frame = self.frame;
     frame.origin = origin;
     self.frame = frame;
+}
+
+#pragma mark size
+- (void)setSize:(CGSize)size
+{
+    CGRect frame = self.frame;
+    frame.size = size;
+    self.frame = frame;
+}
+
+- (CGSize)size
+{
+    return self.frame.size;
 }
 
 #pragma mark 上

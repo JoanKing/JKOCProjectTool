@@ -15,6 +15,7 @@
 		E26706822197DFFC00B41CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E26706812197DFFC00B41CA8 /* main.m */; };
 		E267068C2197DFFC00B41CA8 /* JKOCProjectToolDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E267068B2197DFFC00B41CA8 /* JKOCProjectToolDemoTests.m */; };
 		E26706972197DFFC00B41CA8 /* JKOCProjectToolDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26706962197DFFC00B41CA8 /* JKOCProjectToolDemoUITests.m */; };
+		E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */; };
 		E2EBD18B21B23640002AEF19 /* UIView+JKCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EBD18A21B23640002AEF19 /* UIView+JKCategory.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +54,8 @@
 		E26706962197DFFC00B41CA8 /* JKOCProjectToolDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKOCProjectToolDemoUITests.m; sourceTree = "<group>"; };
 		E26706982197DFFC00B41CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E26706AB2197E1FA00B41CA8 /* JKOCProjectTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKOCProjectTool.h; sourceTree = "<group>"; };
+		E2D0452721B5697900DD55CC /* NSMutableArray+JKMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JKMutableArray.h"; sourceTree = "<group>"; };
+		E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JKMutableArray.m"; sourceTree = "<group>"; };
 		E2EBD18921B23640002AEF19 /* UIView+JKCategory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JKCategory.h"; sourceTree = "<group>"; };
 		E2EBD18A21B23640002AEF19 /* UIView+JKCategory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKCategory.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,6 +154,8 @@
 			children = (
 				E2EBD18921B23640002AEF19 /* UIView+JKCategory.h */,
 				E2EBD18A21B23640002AEF19 /* UIView+JKCategory.m */,
+				E2D0452721B5697900DD55CC /* NSMutableArray+JKMutableArray.h */,
+				E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */,
 			);
 			path = JKCategory;
 			sourceTree = "<group>";
@@ -288,6 +293,7 @@
 				E26706772197DFFC00B41CA8 /* ViewController.m in Sources */,
 				E26706822197DFFC00B41CA8 /* main.m in Sources */,
 				E26706742197DFFC00B41CA8 /* AppDelegate.m in Sources */,
+				E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */,
 				E2EBD18B21B23640002AEF19 /* UIView+JKCategory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
