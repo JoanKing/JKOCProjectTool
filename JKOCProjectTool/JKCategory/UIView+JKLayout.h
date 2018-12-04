@@ -1,8 +1,8 @@
 //
-//  UIView+JKCategory.h
+//  UIView+JKLayout.h
 //  JKOCProjectToolDemo
 //
-//  Created by 王冲 on 2018/12/1.
+//  Created by 王冲 on 2018/12/4.
 //  Copyright © 2018年 JK科技有限公司. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIView (JKCategory)
+@interface UIView (JKLayout)
 
 @property (nonatomic, assign) CGFloat x;
 @property (nonatomic, assign) CGFloat y;
@@ -27,18 +27,19 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGFloat right;
 
 
-#pragma mark 判断一个view是否在window上面
+#pragma mark 1、判断一个view是否在window上面
 -(BOOL)isShowingOnWindow;
 
-#pragma mark 给继承于UIView类增加切圆角
+#pragma mark 2、给继承于UIView类增加切圆角
 /**
  给继承于UIView类增加切圆角
-
+ 
  @param corners 添加圆角的位置
  @param value 圆角的大小
  */
 -(void)jkCutRoundRectCorner:(UIRectCorner)corners withCornerRadius:(CGFloat)value;
 
 @end
+
 
 NS_ASSUME_NONNULL_END

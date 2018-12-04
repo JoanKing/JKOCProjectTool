@@ -1,14 +1,14 @@
 //
-//  UIView+JKCategory.m
+//  UIView+JKLayout.m
 //  JKOCProjectToolDemo
 //
-//  Created by 王冲 on 2018/12/1.
+//  Created by 王冲 on 2018/12/4.
 //  Copyright © 2018年 JK科技有限公司. All rights reserved.
 //
 
-#import "UIView+JKCategory.h"
+#import "UIView+JKLayout.h"
 
-@implementation UIView (JKCategory)
+@implementation UIView (JKLayout)
 
 #pragma mark x
 - (void)setX:(CGFloat)x
