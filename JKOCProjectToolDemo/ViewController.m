@@ -16,6 +16,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(10, 100, 100, 200)];
+    label.backgroundColor = [UIColor yellowColor];
+    label.text = [JKTextExtension jkRemoveStringHeadAndFootSpace:@" I Love You "];
+    NSLog(@"length=%ld",label.text.length);
+    
+    [self.view addSubview:label];
+    
     
    
 }

@@ -22,6 +22,7 @@
 		E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */; };
 		E2E6215521B76195004838E4 /* UIImage+JKUIImageRedraw.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215421B76195004838E4 /* UIImage+JKUIImageRedraw.m */; };
 		E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */; };
+		E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215C21B76B10004838E4 /* JKTextExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		E2E6215621B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JKBarbuttonItem.h"; sourceTree = "<group>"; };
 		E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JKBarbuttonItem.m"; sourceTree = "<group>"; };
 		E2E6215921B763AD004838E4 /* JKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKPrefixHeader.pch; sourceTree = "<group>"; };
+		E2E6215B21B76B10004838E4 /* JKTextExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKTextExtension.h; sourceTree = "<group>"; };
+		E2E6215C21B76B10004838E4 /* JKTextExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKTextExtension.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +107,7 @@
 		E263D07221B66A3600D5CE90 /* JKComponent */ = {
 			isa = PBXGroup;
 			children = (
-				E2E6214921B75B92004838E4 /* JKColor */,
+				E2E6215A21B76AF1004838E4 /* JKTextExtension */,
 				E263D07A21B6729900D5CE90 /* JKGCDTimer */,
 				E263D07621B66ACC00D5CE90 /* JKDate */,
 			);
@@ -195,11 +198,13 @@
 			path = JKOCProjectTool;
 			sourceTree = SOURCE_ROOT;
 		};
-		E2E6214921B75B92004838E4 /* JKColor */ = {
+		E2E6215A21B76AF1004838E4 /* JKTextExtension */ = {
 			isa = PBXGroup;
 			children = (
+				E2E6215B21B76B10004838E4 /* JKTextExtension.h */,
+				E2E6215C21B76B10004838E4 /* JKTextExtension.m */,
 			);
-			path = JKColor;
+			path = JKTextExtension;
 			sourceTree = "<group>";
 		};
 		E2EBD18821B23420002AEF19 /* JKCategory */ = {
@@ -357,6 +362,7 @@
 				E263D07921B66AE300D5CE90 /* JKDate.m in Sources */,
 				E26706742197DFFC00B41CA8 /* AppDelegate.m in Sources */,
 				E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */,
+				E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */,
 				E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */,
 				E263D07121B6669300D5CE90 /* UIView+JKLayout.m in Sources */,
 			);
