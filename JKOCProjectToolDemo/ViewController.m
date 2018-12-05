@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "JKOCProjectTool.h"
 @interface ViewController ()
 
 @end
@@ -17,9 +16,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSString *str = [JKDate convertTimestamp:@"1543913866" withDateType:@"2" withJudgeYear:YES];
     
-    NSLog(@"转化后的时间=%@",str);
+   
 }
 
 
