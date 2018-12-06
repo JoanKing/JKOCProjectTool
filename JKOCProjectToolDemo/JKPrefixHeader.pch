@@ -9,6 +9,10 @@
 #ifndef JKPrefixHeader_pch
 #define JKPrefixHeader_pch
 
+#ifdef __OBJC__
+
 #import "JKOCProjectTool.h"
+
+#endif
 
 #endif /* JKPrefixHeader_pch */
