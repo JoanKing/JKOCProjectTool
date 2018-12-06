@@ -233,6 +233,7 @@
 
 - (void)jk_setGradientBackgroundWithColors:(NSArray<UIColor *> *)colors locations:(NSArray<NSNumber *> *)locations startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
     NSMutableArray *colorsM = [NSMutableArray array];
+    
     for (UIColor *color in colors) {
         [colorsM addObject:(__bridge id)color.CGColor];
     }
