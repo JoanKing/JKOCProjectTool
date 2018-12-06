@@ -174,6 +174,7 @@
     
     BOOL intersects =  CGRectIntersectsRect(newFrame, windowBouns);
     
+    
     //判断一个控件是否真正显示在窗口范围内
     
     return !self.isHidden && self.alpha > 0.01 && intersects && self.window == keywindow;
