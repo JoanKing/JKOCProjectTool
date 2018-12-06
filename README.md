@@ -1,5 +1,5 @@
 # JKOCProjectTool
-oc项目的一个工具包
+OC 项目的一个工具包
 
 里面分为2部分：JKComponent 与 JKCategory
 
