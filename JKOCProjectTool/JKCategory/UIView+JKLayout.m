@@ -7,7 +7,7 @@
 //
 
 #import "UIView+JKLayout.h"
-
+#import <objc/runtime.h>
 @implementation UIView (JKLayout)
 
 #pragma mark x
@@ -157,7 +157,8 @@
     self.frame = frame;
 }
 
-#pragma mark 判断一个view是否在主窗口上
+/**-----------**/
+
 -(BOOL)isShowingOnWindow{
     
     UIWindow *keywindow = [UIApplication sharedApplication].keyWindow;
@@ -179,12 +180,8 @@
     
 }
 
-/**
- 给继承于UIView类增加切圆角
- 
- @param corners 添加圆角的位置
- @param value 圆角的大小
- */
+/**-----------**/
+
 -(void)jkCutRoundRectCorner:(UIRectCorner)corners withCornerRadius:(CGFloat)value{
     
     UIBezierPath* rounded = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(value, value)];
@@ -192,5 +189,103 @@
     [shape setPath:rounded.CGPath];
     self.layer.mask = shape;
 }
+
+/**-----------**/
+
+- (void)jk_addShadowToViewShadowRadius:(CGFloat)shadowRadius withColor:(UIColor *)theColor withShadowOffset:(CGSize)size withShadowOpacity:(float)opacity{
+    
+    // 阴影颜色
+    self.layer.shadowColor = theColor.CGColor;
+    // 阴影的偏移 CGSizeMake(X[正的右偏移,负的左偏移], Y[正的下偏移,负的上偏移]);
+    self.layer.shadowOffset = size;
+    // 阴影透明度，默认0,不透明度(不透明度只要大于1就说明是有阴影的)
+    self.layer.shadowOpacity = opacity;
+    // 阴影半径，默认3
+    self.layer.shadowRadius = shadowRadius;
+}
+
+/**-----------**/
+
+- (void)jk_addShadowSingleToViewShadowRadius:(CGFloat)shadowRadius withColor:(UIColor *)theColor withShadowOffset:(CGSize)size withShadowOpacity:(float)opacity{
+
+    self.layer.shadowColor = theColor.CGColor;
+    self.layer.shadowOffset = size;
+    self.layer.shadowOpacity = opacity;
+    self.layer.shadowRadius = shadowRadius;
+    // 单边阴影 顶边
+    float shadowPathWidth = self.layer.shadowRadius;
+    CGRect shadowRect = CGRectMake(0, 0-shadowPathWidth/2.0, self.bounds.size.width, shadowPathWidth);
+    UIBezierPath *path = [UIBezierPath bezierPathWithRect:shadowRect];
+    self.layer.shadowPath = path.CGPath;
+}
+
+/**-----------**/
+
++ (Class)layerClass {
+    return [CAGradientLayer class];
+}
+
++ (UIView *)jk_gradientViewWithColors:(NSArray<UIColor *> *)colors locations:(NSArray<NSNumber *> *)locations startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
+    UIView *view = [[self alloc] init];
+    [view jk_setGradientBackgroundWithColors:colors locations:locations startPoint:startPoint endPoint:endPoint];
+    return view;
+}
+
+- (void)jk_setGradientBackgroundWithColors:(NSArray<UIColor *> *)colors locations:(NSArray<NSNumber *> *)locations startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint {
+    NSMutableArray *colorsM = [NSMutableArray array];
+    for (UIColor *color in colors) {
+        [colorsM addObject:(__bridge id)color.CGColor];
+    }
+    self.az_colors = [colorsM copy];
+    self.az_locations = locations;
+    self.az_startPoint = startPoint;
+    self.az_endPoint = endPoint;
+}
+
+- (NSArray *)az_colors {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setAz_colors:(NSArray *)colors {
+    objc_setAssociatedObject(self, @selector(az_colors), colors, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    if ([self.layer isKindOfClass:[CAGradientLayer class]]) {
+        [((CAGradientLayer *)self.layer) setColors:self.az_colors];
+    }
+}
+
+- (NSArray<NSNumber *> *)az_locations {
+    return objc_getAssociatedObject(self, _cmd);
+}
+
+- (void)setAz_locations:(NSArray<NSNumber *> *)locations {
+    objc_setAssociatedObject(self, @selector(az_locations), locations, OBJC_ASSOCIATION_COPY_NONATOMIC);
+    if ([self.layer isKindOfClass:[CAGradientLayer class]]) {
+        [((CAGradientLayer *)self.layer) setLocations:self.az_locations];
+    }
+}
+
+- (CGPoint)az_startPoint {
+    return [objc_getAssociatedObject(self, _cmd) CGPointValue];
+}
+
+- (void)setAz_startPoint:(CGPoint)startPoint {
+    objc_setAssociatedObject(self, @selector(az_startPoint), [NSValue valueWithCGPoint:startPoint], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    if ([self.layer isKindOfClass:[CAGradientLayer class]]) {
+        [((CAGradientLayer *)self.layer) setStartPoint:self.az_startPoint];
+    }
+}
+
+- (CGPoint)az_endPoint {
+    return [objc_getAssociatedObject(self, _cmd) CGPointValue];
+}
+
+- (void)setAz_endPoint:(CGPoint)endPoint {
+    objc_setAssociatedObject(self, @selector(az_endPoint), [NSValue valueWithCGPoint:endPoint], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    if ([self.layer isKindOfClass:[CAGradientLayer class]]) {
+        [((CAGradientLayer *)self.layer) setEndPoint:self.az_endPoint];
+    }
+}
+
+/**-----------**/
 
 @end
