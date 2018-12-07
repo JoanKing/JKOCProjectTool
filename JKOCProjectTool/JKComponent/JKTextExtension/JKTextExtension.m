@@ -67,7 +67,7 @@
     tempLabel.numberOfLines = 0;
     [tempLabel sizeToFit];
     CGSize size = tempLabel.frame.size;
-    size = CGSizeMake(tempLabel.frame.size.width, tempLabel.frame.size.height);
+    size = CGSizeMake(tempLabel.width, tempLabel.height);
     return size;
 }
 
