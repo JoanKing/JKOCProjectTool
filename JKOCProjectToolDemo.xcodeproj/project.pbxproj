@@ -75,6 +75,9 @@
 		E276B27521B90C66007B374B /* NSString+JKString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKString.m"; sourceTree = "<group>"; };
 		E27E279021BA58C500FF4594 /* UIImageView+JKImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKImageView.h"; sourceTree = "<group>"; };
 		E27E279121BA58C500FF4594 /* UIImageView+JKImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKImageView.m"; sourceTree = "<group>"; };
+		E27E279321BA5EEE00FF4594 /* JKSingle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSingle.h; sourceTree = "<group>"; };
+		E27E279421BA5F5100FF4594 /* JKMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKMacro.h; sourceTree = "<group>"; };
+		E27E279521BA685F00FF4594 /* JKScreenSize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKScreenSize.h; sourceTree = "<group>"; };
 		E2D0452721B5697900DD55CC /* NSMutableArray+JKMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JKMutableArray.h"; sourceTree = "<group>"; };
 		E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JKMutableArray.m"; sourceTree = "<group>"; };
 		E2E6215021B75C4F004838E4 /* UIColor+JKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKColor.h"; sourceTree = "<group>"; };
@@ -113,7 +116,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E263D07221B66A3600D5CE90 /* JKComponent */ = {
+		E263D07221B66A3600D5CE90 /* JKOCKit */ = {
 			isa = PBXGroup;
 			children = (
 				E276B26A21B8B058007B374B /* JKSandboxPath */,
@@ -121,7 +124,7 @@
 				E263D07A21B6729900D5CE90 /* JKGCDTimer */,
 				E263D07621B66ACC00D5CE90 /* JKDate */,
 			);
-			path = JKComponent;
+			path = JKOCKit;
 			sourceTree = "<group>";
 		};
 		E263D07621B66ACC00D5CE90 /* JKDate */ = {
@@ -201,7 +204,7 @@
 		E26706A62197E13100B41CA8 /* JKOCProjectTool */ = {
 			isa = PBXGroup;
 			children = (
-				E263D07221B66A3600D5CE90 /* JKComponent */,
+				E263D07221B66A3600D5CE90 /* JKOCKit */,
 				E2EBD18821B23420002AEF19 /* JKCategory */,
 				E26706AB2197E1FA00B41CA8 /* JKOCProjectTool.h */,
 			);
@@ -229,6 +232,9 @@
 		E2EBD18821B23420002AEF19 /* JKCategory */ = {
 			isa = PBXGroup;
 			children = (
+				E27E279321BA5EEE00FF4594 /* JKSingle.h */,
+				E27E279421BA5F5100FF4594 /* JKMacro.h */,
+				E27E279521BA685F00FF4594 /* JKScreenSize.h */,
 				E263D06F21B6669300D5CE90 /* UIView+JKLayout.h */,
 				E263D07021B6669300D5CE90 /* UIView+JKLayout.m */,
 				E2D0452721B5697900DD55CC /* NSMutableArray+JKMutableArray.h */,

@@ -15,14 +15,4 @@
 
 #endif
 
-#define JK_SCREEN_WIDTH  [UIScreen mainScreen].bounds.size.width
-#define JK_SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
-
-//开发模式
-#ifdef DEBUG
-#define JKLogDebug(...) NSLog(__VA_ARGS__)
-#else
-#define JKLogDebug(...) //发布模式
-#endif
-
 #endif /* JKPrefixHeader_pch */

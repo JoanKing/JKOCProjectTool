@@ -26,10 +26,10 @@
 #import "UIImage+JKUIImageRedraw.h"
 #import "UIImageView+JKImageView.h"
 #import "UIBarButtonItem+JKBarbuttonItem.h"
-
+#import "JKSingle.h"
+#import "JKMacro.h"
+#import "JKScreenSize.h"
 
 /**以上是：分类的头文件**/
-
-#define JKRGBCOLOR(r,g,b,p) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:p]
 
 #endif /* JKOCProjectTool_h */
