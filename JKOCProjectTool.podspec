@@ -18,7 +18,6 @@ Pod::Spec.new do |s|
    s.subspec 'JKCategory' do |ss|
      ss.source_files = 'JKOCProjectTool/JKCategory/**/*'
    end
-
    s.subspec 'JKComponent' do |ss|
      ss.source_files = 'JKOCProjectTool/JKComponent/**/*'
    end
