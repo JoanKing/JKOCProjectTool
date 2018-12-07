@@ -65,8 +65,7 @@
     tempLabel.attributedText = attributedText;
     tempLabel.numberOfLines = 0;
     [tempLabel sizeToFit];
-    CGSize size = tempLabel.frame.size;
-    return size;
+    return tempLabel.size;
 }
 
 +(NSString *)jkRemoveStringHeadAndFootSpace:(NSString *)string{
