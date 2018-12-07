@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
    s.author             = { "JoanKingWC" => "2318151015@qq.com" }
    s.ios.deployment_target = "8.0"
    s.source       = { :git => "https://github.com/JoanKing/JKOCProjectTool.git", :tag => "#{s.version}" }
-   s.public_header_files = 'JKOCProjectTool/JKOCProjectTool.h'
+   #s.public_header_files = 'JKOCProjectTool/JKOCProjectTool.h'
    s.source_files = 'JKOCProjectTool/JKOCProjectTool.h'
    s.social_media_url = "https://www.jianshu.com/u/8fed18ed70c9"
    s.requires_arc = true
@@ -20,8 +20,9 @@ Pod::Spec.new do |s|
    end
 
    s.subspec 'JKComponent' do |ss|
+     ss.dependency 'JKOCProjectTool/JKCategory'
      ss.source_files = 'JKOCProjectTool/JKComponent/**/*'
-     ss.public_header_files = 'JKOCProjectTool/JKOCProjectTool.h'
+     #ss.public_header_files = 'JKOCProjectTool/JKOCProjectTool.h'
    end
 
 end

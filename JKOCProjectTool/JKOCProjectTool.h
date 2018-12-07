@@ -24,7 +24,9 @@
 #import "NSMutableArray+JKMutableArray.h"
 #import "UIColor+JKColor.h"
 #import "UIImage+JKUIImageRedraw.h"
+#import "UIImageView+JKImageView.h"
 #import "UIBarButtonItem+JKBarbuttonItem.h"
+
 
 /**以上是：分类的头文件**/
 

@@ -20,6 +20,7 @@
 		E26706972197DFFC00B41CA8 /* JKOCProjectToolDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E26706962197DFFC00B41CA8 /* JKOCProjectToolDemoUITests.m */; };
 		E276B26D21B8B08E007B374B /* JKSandboxPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E276B26C21B8B08E007B374B /* JKSandboxPath.m */; };
 		E276B27621B90C66007B374B /* NSString+JKString.m in Sources */ = {isa = PBXBuildFile; fileRef = E276B27521B90C66007B374B /* NSString+JKString.m */; };
+		E27E279221BA58C500FF4594 /* UIImageView+JKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E279121BA58C500FF4594 /* UIImageView+JKImageView.m */; };
 		E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */; };
 		E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */; };
 		E2E6215521B76195004838E4 /* UIImage+JKUIImageRedraw.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215421B76195004838E4 /* UIImage+JKUIImageRedraw.m */; };
@@ -72,6 +73,8 @@
 		E276B26C21B8B08E007B374B /* JKSandboxPath.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKSandboxPath.m; sourceTree = "<group>"; };
 		E276B27421B90C66007B374B /* NSString+JKString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JKString.h"; sourceTree = "<group>"; };
 		E276B27521B90C66007B374B /* NSString+JKString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKString.m"; sourceTree = "<group>"; };
+		E27E279021BA58C500FF4594 /* UIImageView+JKImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKImageView.h"; sourceTree = "<group>"; };
+		E27E279121BA58C500FF4594 /* UIImageView+JKImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKImageView.m"; sourceTree = "<group>"; };
 		E2D0452721B5697900DD55CC /* NSMutableArray+JKMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JKMutableArray.h"; sourceTree = "<group>"; };
 		E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JKMutableArray.m"; sourceTree = "<group>"; };
 		E2E6215021B75C4F004838E4 /* UIColor+JKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKColor.h"; sourceTree = "<group>"; };
@@ -234,6 +237,8 @@
 				E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */,
 				E2E6215321B76195004838E4 /* UIImage+JKUIImageRedraw.h */,
 				E2E6215421B76195004838E4 /* UIImage+JKUIImageRedraw.m */,
+				E27E279021BA58C500FF4594 /* UIImageView+JKImageView.h */,
+				E27E279121BA58C500FF4594 /* UIImageView+JKImageView.m */,
 				E2E6215621B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.h */,
 				E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */,
 				E276B27421B90C66007B374B /* NSString+JKString.h */,
@@ -384,6 +389,7 @@
 				E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */,
 				E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */,
 				E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */,
+				E27E279221BA58C500FF4594 /* UIImageView+JKImageView.m in Sources */,
 				E263D07121B6669300D5CE90 /* UIView+JKLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

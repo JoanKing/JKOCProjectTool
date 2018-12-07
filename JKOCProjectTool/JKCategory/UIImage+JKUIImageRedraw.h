@@ -42,7 +42,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size text:(NSAttributedString *)attributeString;
 
-
 /**
  裁剪圆形图片
  
@@ -63,6 +62,7 @@ NS_ASSUME_NONNULL_BEGIN
  @return 裁剪后的图片
  */
 + (UIImage *)ellipseImage: (UIImage *) image withInset:(CGFloat)inset withBorderWidth:(CGFloat)width withBorderColor:(UIColor*)color;
+
 
 @end
 
