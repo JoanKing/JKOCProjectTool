@@ -9,6 +9,8 @@
 #ifndef JKOCProjectTool_h
 #define JKOCProjectTool_h
 
+#import <UIKit/UIKit.h>
+
 /**以下是：自己写的类的头文件**/
 #import "JKGCDTimer.h"
 #import "JKDate.h"
