@@ -88,7 +88,6 @@
     return self.center.y;
 }
 
-
 #pragma mark origin
 - (CGPoint)origin {
     return self.frame.origin;
@@ -238,53 +237,55 @@
     for (UIColor *color in colors) {
         [colorsM addObject:(__bridge id)color.CGColor];
     }
-    self.az_colors = [colorsM copy];
-    self.az_locations = locations;
-    self.az_startPoint = startPoint;
-    self.az_endPoint = endPoint;
+    self.jk_colors = [colorsM copy];
+    self.jk_locations = locations;
+    self.jk_startPoint = startPoint;
+    self.jk_endPoint = endPoint;
 }
 
-- (NSArray *)az_colors {
+- (NSArray *)jk_colors {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setAz_colors:(NSArray *)colors {
-    objc_setAssociatedObject(self, @selector(az_colors), colors, OBJC_ASSOCIATION_COPY_NONATOMIC);
+- (void)setJk_colors:(NSArray *)colors {
+    objc_setAssociatedObject(self, @selector(jk_colors), colors, OBJC_ASSOCIATION_COPY_NONATOMIC);
     if ([self.layer isKindOfClass:[CAGradientLayer class]]) {
-        [((CAGradientLayer *)self.layer) setColors:self.az_colors];
+        [((CAGradientLayer *)self.layer) setColors:self.jk_colors];
     }
 }
 
-- (NSArray<NSNumber *> *)az_locations {
+- (NSArray<NSNumber *> *)jk_locations {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setAz_locations:(NSArray<NSNumber *> *)locations {
-    objc_setAssociatedObject(self, @selector(az_locations), locations, OBJC_ASSOCIATION_COPY_NONATOMIC);
+- (void)setJk_locations:(NSArray<NSNumber *> *)locations {
+    objc_setAssociatedObject(self, @selector(jk_locations), locations, OBJC_ASSOCIATION_COPY_NONATOMIC);
     if ([self.layer isKindOfClass:[CAGradientLayer class]]) {
-        [((CAGradientLayer *)self.layer) setLocations:self.az_locations];
+        [((CAGradientLayer *)self.layer) setLocations:self.jk_locations];
     }
 }
 
-- (CGPoint)az_startPoint {
+- (CGPoint)jk_startPoint {
     return [objc_getAssociatedObject(self, _cmd) CGPointValue];
 }
 
-- (void)setAz_startPoint:(CGPoint)startPoint {
-    objc_setAssociatedObject(self, @selector(az_startPoint), [NSValue valueWithCGPoint:startPoint], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+-(void)setJk_startPoint:(CGPoint)startPoint{
+    
+    objc_setAssociatedObject(self, @selector(jk_startPoint), [NSValue valueWithCGPoint:startPoint], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     if ([self.layer isKindOfClass:[CAGradientLayer class]]) {
-        [((CAGradientLayer *)self.layer) setStartPoint:self.az_startPoint];
+        [((CAGradientLayer *)self.layer) setStartPoint:self.jk_startPoint];
     }
 }
 
-- (CGPoint)az_endPoint {
+
+- (CGPoint)jk_endPoint {
     return [objc_getAssociatedObject(self, _cmd) CGPointValue];
 }
 
-- (void)setAz_endPoint:(CGPoint)endPoint {
-    objc_setAssociatedObject(self, @selector(az_endPoint), [NSValue valueWithCGPoint:endPoint], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setJk_endPoint:(CGPoint)endPoint {
+    objc_setAssociatedObject(self, @selector(jk_endPoint), [NSValue valueWithCGPoint:endPoint], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     if ([self.layer isKindOfClass:[CAGradientLayer class]]) {
-        [((CAGradientLayer *)self.layer) setEndPoint:self.az_endPoint];
+        [((CAGradientLayer *)self.layer) setEndPoint:self.jk_endPoint];
     }
 }
 

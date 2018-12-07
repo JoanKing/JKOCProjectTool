@@ -12,10 +12,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (JKLayout)
 
-@property CGPoint az_startPoint;
-@property CGPoint az_endPoint;
-@property(nullable, copy) NSArray *az_colors;
-@property(nullable, copy) NSArray<NSNumber *> *az_locations;
+@property CGPoint jk_startPoint;
+@property CGPoint jk_endPoint;
+@property(nullable, copy) NSArray *jk_colors;
+@property(nullable, copy) NSArray<NSNumber *> *jk_locations;
 
 
 @property (nonatomic, assign) CGFloat x;
