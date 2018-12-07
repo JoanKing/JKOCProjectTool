@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
    s.name         = "JKOCProjectTool"
-   s.version      = "0.1.3"
+   s.version      = "0.1.5"
    s.summary      = "OCTool."
    s.description  = "这是一个很好用的OC的工具类，我会不断的更新的"
 
@@ -19,9 +19,9 @@ Pod::Spec.new do |s|
      ss.source_files = 'JKOCProjectTool/JKCategory/**/*'
    end
 
-   s.subspec 'JKComponent' do |ss|
+   s.subspec 'JKKit' do |ss|
      ss.dependency 'JKOCProjectTool/JKCategory'
-     ss.source_files = 'JKOCProjectTool/JKComponent/**/*'
+     ss.source_files = 'JKOCProjectTool/JKKit/**/*'
      #ss.public_header_files = 'JKOCProjectTool/JKOCProjectTool.h'
    end
 
