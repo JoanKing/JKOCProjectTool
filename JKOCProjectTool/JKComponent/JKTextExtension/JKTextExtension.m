@@ -7,7 +7,6 @@
 //
 
 #import "JKTextExtension.h"
-
 @implementation JKTextExtension
 
 /***以下是通用模块***/

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "UIView+JKLayout.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface JKTextExtension : NSObject
