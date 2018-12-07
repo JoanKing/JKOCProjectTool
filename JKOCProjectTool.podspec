@@ -14,10 +14,11 @@ Pod::Spec.new do |s|
    s.source_files = 'JKOCProjectTool/JKOCProjectTool.h'
    s.social_media_url = "https://www.jianshu.com/u/8fed18ed70c9"
    s.requires_arc = true
-   s.frameworks = 'UIKit','Foundation'
+   
    s.subspec 'JKCategory' do |ss|
      ss.source_files = 'JKOCProjectTool/JKCategory/**/*'
    end
+
    s.subspec 'JKComponent' do |ss|
      ss.source_files = 'JKOCProjectTool/JKComponent/**/*'
    end
