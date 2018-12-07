@@ -23,6 +23,7 @@
     [view jk_setGradientBackgroundWithColors:@[JKRGBCOLOR(255,219,0,1),JKRGBCOLOR(255,185,17,1)] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
     [view jk_addShadowToViewShadowRadius:4 withColor:JKRGBCOLOR(255,185,17,1) withShadowOffset:CGSizeMake(0, 2) withShadowOpacity:0.48];
     
+    
     [self.view addSubview:view];
     
     
