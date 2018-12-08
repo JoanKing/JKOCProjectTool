@@ -3,7 +3,7 @@ OC 项目的一个工具包
 
 里面分为2部分：JKComponent 与 JKCategory
 
-第一部分：JKComponent
+第一部分：JKKit
 
      1、JKDate： 有关时间的类
      2、JKGCDTimer：GCD定时器

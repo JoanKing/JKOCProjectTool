@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
    s.name         = "JKOCProjectTool"
-   s.version      = "0.1.5"
+   s.version      = "0.1.6"
    s.summary      = "OCTool."
    s.description  = "这是一个很好用的OC的工具类，我会不断的更新的"
 
