@@ -15,16 +15,24 @@
 
 /** 2、判断是不是苹果手机 */
 #define JKIs_Iphone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
-/**  3、判断是不是 iPhoneX */
+
+/** 3、判断是否为iPad */
+#define JKIs_iPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+
+/** 4、判断是不是 iPhoneX */
 #define JKIs_Iphone_X (JKIs_Iphone && [[UIScreen mainScreen] bounds].size.height >= 812.0 && [[UIScreen mainScreen] bounds].size.width >= 375.0)
-/**  4、适配iPhone x 导航栏的高度  64 + 24 */
+
+/** 5、适配iPhone x 导航栏的高度  64 + 24 */
 #define JKNaviHeight (JKIs_Iphone_X ? 88:64)
-/**  5、适配iPhone x 底部高度 49 + 34 */
+
+/** 6、适配iPhone x 底部高度 49 + 34 */
 #define JKTabbarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height > 20 ? 83 : 49)
-/**  6、适配iPhone x 顶部多 24 */
+
+/** 7、适配iPhone x 顶部多 24 */
 #define iPhoneX_TOP_HEIGHT  ([UIScreen mainScreen].bounds.size.height>=812?24:0)
 #define iPhoneX_TOP_HEIGHT2  ([UIScreen mainScreen].bounds.size.height>=812?10:0)
-/**  7、适配iPhone x 底部多 34 */
+
+/** 8、适配iPhone x 底部多 34 */
 #define JKiPhoneX_Bottom_HEIGHT  ([UIScreen mainScreen].bounds.size.height>=812?34:0)
 #define JKstatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height
 

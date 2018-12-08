@@ -27,6 +27,10 @@
 		E2E6215521B76195004838E4 /* UIImage+JKUIImageRedraw.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215421B76195004838E4 /* UIImage+JKUIImageRedraw.m */; };
 		E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */; };
 		E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215C21B76B10004838E4 /* JKTextExtension.m */; };
+		E2EDBC6221BB8465003B87CA /* CALayer+JKLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6121BB8465003B87CA /* CALayer+JKLayer.m */; };
+		E2EDBC6821BB9376003B87CA /* UIViewController+JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6721BB9376003B87CA /* UIViewController+JKViewController.m */; };
+		E2EDBC6B21BB94FF003B87CA /* UINavigationController+JKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6A21BB94FF003B87CA /* UINavigationController+JKNavigationController.m */; };
+		E2EDBC6E21BB95E8003B87CA /* UILabel+JKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6D21BB95E8003B87CA /* UILabel+JKLabel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +96,14 @@
 		E2E6215921B763AD004838E4 /* JKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKPrefixHeader.pch; sourceTree = "<group>"; };
 		E2E6215B21B76B10004838E4 /* JKTextExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKTextExtension.h; sourceTree = "<group>"; };
 		E2E6215C21B76B10004838E4 /* JKTextExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKTextExtension.m; sourceTree = "<group>"; };
+		E2EDBC6021BB8465003B87CA /* CALayer+JKLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+JKLayer.h"; sourceTree = "<group>"; };
+		E2EDBC6121BB8465003B87CA /* CALayer+JKLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+JKLayer.m"; sourceTree = "<group>"; };
+		E2EDBC6621BB9376003B87CA /* UIViewController+JKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKViewController.h"; sourceTree = "<group>"; };
+		E2EDBC6721BB9376003B87CA /* UIViewController+JKViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKViewController.m"; sourceTree = "<group>"; };
+		E2EDBC6921BB94FF003B87CA /* UINavigationController+JKNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JKNavigationController.h"; sourceTree = "<group>"; };
+		E2EDBC6A21BB94FF003B87CA /* UINavigationController+JKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JKNavigationController.m"; sourceTree = "<group>"; };
+		E2EDBC6C21BB95E8003B87CA /* UILabel+JKLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+JKLabel.h"; sourceTree = "<group>"; };
+		E2EDBC6D21BB95E8003B87CA /* UILabel+JKLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JKLabel.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +274,14 @@
 				E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */,
 				E276B27421B90C66007B374B /* NSString+JKString.h */,
 				E276B27521B90C66007B374B /* NSString+JKString.m */,
+				E2EDBC6021BB8465003B87CA /* CALayer+JKLayer.h */,
+				E2EDBC6121BB8465003B87CA /* CALayer+JKLayer.m */,
+				E2EDBC6621BB9376003B87CA /* UIViewController+JKViewController.h */,
+				E2EDBC6721BB9376003B87CA /* UIViewController+JKViewController.m */,
+				E2EDBC6921BB94FF003B87CA /* UINavigationController+JKNavigationController.h */,
+				E2EDBC6A21BB94FF003B87CA /* UINavigationController+JKNavigationController.m */,
+				E2EDBC6C21BB95E8003B87CA /* UILabel+JKLabel.h */,
+				E2EDBC6D21BB95E8003B87CA /* UILabel+JKLabel.m */,
 			);
 			path = JKCategory;
 			sourceTree = "<group>";
@@ -396,16 +416,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2EDBC6E21BB95E8003B87CA /* UILabel+JKLabel.m in Sources */,
+				E2EDBC6B21BB94FF003B87CA /* UINavigationController+JKNavigationController.m in Sources */,
 				E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */,
 				E2E6215521B76195004838E4 /* UIImage+JKUIImageRedraw.m in Sources */,
 				E26706772197DFFC00B41CA8 /* ViewController.m in Sources */,
 				E276B26D21B8B08E007B374B /* JKSandboxPath.m in Sources */,
 				E276B27621B90C66007B374B /* NSString+JKString.m in Sources */,
 				E263D07D21B6729900D5CE90 /* JKGCDTimer.m in Sources */,
+				E2EDBC6821BB9376003B87CA /* UIViewController+JKViewController.m in Sources */,
 				E26706822197DFFC00B41CA8 /* main.m in Sources */,
 				E263D07921B66AE300D5CE90 /* JKDate.m in Sources */,
 				E26706742197DFFC00B41CA8 /* AppDelegate.m in Sources */,
 				E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */,
+				E2EDBC6221BB8465003B87CA /* CALayer+JKLayer.m in Sources */,
 				E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */,
 				E27E279921BA7D0400FF4594 /* JKTopWindow.m in Sources */,
 				E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */,

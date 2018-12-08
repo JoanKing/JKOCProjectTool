@@ -29,6 +29,7 @@
 #import "JKSingle.h"
 #import "JKMacro.h"
 #import "JKScreenSize.h"
+#import "CALayer+JKLayer.h"
 
 /**以上是：分类的头文件**/
 

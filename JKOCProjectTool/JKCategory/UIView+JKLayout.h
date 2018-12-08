@@ -10,6 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef void (^TapActionBlock)(UITapGestureRecognizer *gestureRecoginzer);
+typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecoginzer);
+
+
 @interface UIView (JKLayout)
 
 @property CGPoint jk_startPoint;
@@ -31,6 +35,24 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGFloat left;
 @property (nonatomic) CGFloat bottom;
 @property (nonatomic) CGFloat right;
+
+/** 设置 view的 边框颜色(选择器和Hex颜色)以及 边框的宽度 */
+@property (assign,nonatomic) NSInteger borderWidth;
+@property (strong,nonatomic) NSString  *borderHexRgb;
+@property (strong,nonatomic) UIColor   *borderColor;
+
+/** 所有子视图 */
+- (NSArray *)jk_allSubviews;
+/** 移除所有子视图 */
+- (void)jk_removeAllSubviews;
+/** 找到当前view所在的viewcontroler */
+- (UIViewController *)jk_findViewController;
+/** 找到view上的第一响应者 */
+- (UIView *)jk_findFirstResponder;
+/** 添加tap手势 */
+- (void)jk_addTapActionWithBlock:(TapActionBlock)block;
+/** 添加长按手势 */
+- (void)jk_addLongPressActionWithBlock:(LongPressActionBlock)block;
 
 
 #pragma mark 1、判断一个view是否在window上面
@@ -90,6 +112,29 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)jk_setGradientBackgroundWithColors:(NSArray<UIColor *> *_Nullable)colors locations:(NSArray<NSNumber *> *_Nullable)locations startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
 
+#pragma mark 7、截取成图片 返回一个和自身大小的图片
+- (UIImage *)jk_snapshotImage;
+
+#pragma mark 8、截取成图片: 指定 宽高
+
+/**
+ 截取成图片: 指定 宽高
+
+ @param pitureSize 宽高
+ @return 返回一个图片对象
+ */
+-(UIImage *)jk_snapshotImageSize:(CGSize)pitureSize;
+
+#pragma mark 9、截取成图片:路径  指定 宽高
+
+/**
+ 把一个UIView生成PNG或者JPG格式的图片,保存在指定路径
+
+ @param path 图片要保存到的路径
+ @param type 图片的格式png或者jpg
+ @param pitureSize 保存图片的尺寸
+ */
+-(void)jk_snapshotImageSizePath:(NSString *)path withPicturetype:(NSString *)type withSize:(CGSize)pitureSize;
 @end
 
 NS_ASSUME_NONNULL_END

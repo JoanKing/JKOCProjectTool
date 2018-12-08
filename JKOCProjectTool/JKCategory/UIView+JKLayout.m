@@ -8,6 +8,12 @@
 
 #import "UIView+JKLayout.h"
 #import <objc/runtime.h>
+
+static char JKActionHandlerTapBlockKey;
+static char JKActionHandlerTapGestureKey;
+static char JKActionHandlerLongPressGestureKey;
+static char JKActionHandlerLongPressBlockKey;
+
 @implementation UIView (JKLayout)
 
 #pragma mark x
@@ -156,6 +162,158 @@
     self.frame = frame;
 }
 
+- (void)setBorderWidth:(NSInteger)borderWidth
+{
+    self.layer.borderWidth = borderWidth;
+}
+
+- (NSInteger)borderWidth
+{
+    return self.layer.borderWidth;
+}
+
+- (void)setBorderColor:(UIColor *)borderColor
+{
+    self.layer.borderColor = borderColor.CGColor;
+}
+
+- (UIColor *)borderColor
+{
+    return [UIColor colorWithCGColor:self.layer.borderColor];
+}
+
+- (void)setBorderHexRgb:(NSString *)borderHexRgb
+{
+    NSScanner *scanner = [NSScanner scannerWithString:borderHexRgb];
+    unsigned hexNum;
+    //这里是将16进制转化为10进制
+    if (![scanner scanHexInt:&hexNum])
+        return;
+    self.layer.borderColor = [self colorWithRGBHex:hexNum].CGColor;
+}
+
+- (UIColor *)colorWithRGBHex:(UInt32)hex
+{
+    int r = (hex >> 16) & 0xFF;
+    int g = (hex >> 8) & 0xFF;
+    int b = (hex) & 0xFF;
+    
+    return [UIColor colorWithRed:r / 255.0f
+                           green:g / 255.0f
+                            blue:b / 255.0f
+                           alpha:1.0f];
+}
+
+
+-(NSString *)borderHexRgb
+{
+    return @"0xffffff";
+}
+
+- (NSArray *)jk_allSubviews
+{
+    NSMutableArray *array = [NSMutableArray arrayWithCapacity:0];
+    
+    [array addObjectsFromArray:self.subviews];
+    
+    for (UIView *view in self.subviews)
+    {
+        [array addObjectsFromArray:[view jk_allSubviews]];
+    }
+    
+    return array;
+}
+
+- (void)jk_removeAllSubviews
+{
+    [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+}
+
+- (UIViewController *)jk_findViewController;
+{
+    UIResponder *responder = self.nextResponder;
+    do
+    {
+        if ([responder isKindOfClass:[UIViewController class]])
+        {
+            return (UIViewController *)responder;
+        }
+        responder = responder.nextResponder;
+    }
+    while (responder);
+    
+    return nil;
+}
+
+- (UIView *)jk_findFirstResponder
+{
+    if (([self isKindOfClass:[UITextField class]] || [self isKindOfClass:[UITextView class]])
+        && (self.isFirstResponder))
+    {
+        return self;
+    }
+    
+    for (UIView *v in self.subviews)
+    {
+        UIView *fv = [v jk_findFirstResponder];
+        if (fv)
+        {
+            return fv;
+        }
+    }
+    
+    return nil;
+}
+
+- (void)jk_addTapActionWithBlock:(TapActionBlock)block
+{
+    UITapGestureRecognizer *gesture = objc_getAssociatedObject(self, &JKActionHandlerTapGestureKey);
+    if (!gesture)
+    {
+        gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForTapGesture:)];
+        [self addGestureRecognizer:gesture];
+        objc_setAssociatedObject(self, &JKActionHandlerTapGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
+    }
+    objc_setAssociatedObject(self, &JKActionHandlerTapBlockKey, block, OBJC_ASSOCIATION_COPY);
+}
+
+- (void)handleActionForTapGesture:(UITapGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateRecognized)
+    {
+        TapActionBlock block = objc_getAssociatedObject(self, &JKActionHandlerTapBlockKey);
+        if (block)
+        {
+            block(gesture);
+        }
+    }
+}
+
+
+- (void)jk_addLongPressActionWithBlock:(LongPressActionBlock)block
+{
+    UILongPressGestureRecognizer *gesture = objc_getAssociatedObject(self, &JKActionHandlerLongPressGestureKey);
+    if (!gesture)
+    {
+        gesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleActionForLongPressGesture:)];
+        [self addGestureRecognizer:gesture];
+        objc_setAssociatedObject(self, &JKActionHandlerLongPressGestureKey, gesture, OBJC_ASSOCIATION_RETAIN);
+    }
+    objc_setAssociatedObject(self, &JKActionHandlerLongPressBlockKey, block, OBJC_ASSOCIATION_COPY);
+}
+
+- (void)handleActionForLongPressGesture:(UILongPressGestureRecognizer *)gesture
+{
+    if (gesture.state == UIGestureRecognizerStateRecognized)
+    {
+        LongPressActionBlock block = objc_getAssociatedObject(self, &JKActionHandlerLongPressBlockKey);
+        if (block)
+        {
+            block(gesture);
+        }
+    }
+}
+
 /**-----------**/
 
 -(BOOL)isShowingOnWindow{
@@ -290,5 +448,79 @@
 }
 
 /**-----------**/
+
+- (UIImage *)jk_snapshotImage {
+    
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 0);
+    [self drawViewHierarchyInRect:self.bounds afterScreenUpdates:YES];
+    UIImage *result = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    
+    return result;
+}
+
+-(UIImage *)jk_snapshotImageSize:(CGSize)pitureSize
+{
+    //1.开启一个和传进来的View大小一样的位图上下文
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size,NO,0);
+    //2.把控制器的View绘制到上下文当中
+    //想把UIView上面的东西绘制到上下文当中,必须得使用渲染的方式
+    //renderInContext:就是渲染的方式
+    CGContextRef ctx= UIGraphicsGetCurrentContext();
+    [self.layer renderInContext:ctx ];
+    
+    //3从上下文当中生成一张图片
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsBeginImageContext(CGSizeMake(pitureSize.width, pitureSize.height));
+    [newImage drawInRect:CGRectMake(0, 0, pitureSize.width, pitureSize.height)];
+    
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    //4.关闭上下文
+    UIGraphicsEndImageContext();
+    
+    return reSizeImage;
+}
+
+-(void)jk_snapshotImageSizePath:(NSString *)path withPicturetype:(NSString *)type withSize:(CGSize)pitureSize
+{
+    //1.开启一个和传进来的View大小一样的位图上下文
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size,NO,0);
+    //2.把控制器的View绘制到上下文当中
+    //想把UIView上面的东西绘制到上下文当中,必须得使用渲染的方式
+    //renderInContext:就是渲染的方式
+    CGContextRef ctx= UIGraphicsGetCurrentContext();
+    
+    [self.layer renderInContext:ctx ];
+    
+    //3从上下文当中生成一张图片
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    UIGraphicsBeginImageContext(CGSizeMake(pitureSize.width, pitureSize.height));
+    
+    [newImage drawInRect:CGRectMake(0, 0, pitureSize.width, pitureSize.height)];
+    
+    UIImage *reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    //4.关闭上下文
+    UIGraphicsEndImageContext();
+    
+    //5.把生成的图片写入到桌面(以文件的方式进行传输:二进制流NSData,即把图片转为二进制流)
+    NSData *data;
+    
+    if ([type isEqualToString:@"png"]) {
+        
+        //生成PNG格式的图片
+        data = UIImagePNGRepresentation(reSizeImage);
+        
+    }else if ([type isEqualToString:@"jpg"]){
+        
+        //5.1把图片转为二进制流(第一个参数是图片,第2个参数是图片压缩质量:1是最原始的质量)
+        data = UIImageJPEGRepresentation(reSizeImage,1);
+    }
+    
+    [data writeToFile:path atomically:YES];
+    
+}
+
 
 @end
