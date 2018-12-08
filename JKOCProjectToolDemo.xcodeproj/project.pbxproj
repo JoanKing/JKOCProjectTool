@@ -31,6 +31,10 @@
 		E2EDBC6821BB9376003B87CA /* UIViewController+JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6721BB9376003B87CA /* UIViewController+JKViewController.m */; };
 		E2EDBC6B21BB94FF003B87CA /* UINavigationController+JKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6A21BB94FF003B87CA /* UINavigationController+JKNavigationController.m */; };
 		E2EDBC6E21BB95E8003B87CA /* UILabel+JKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6D21BB95E8003B87CA /* UILabel+JKLabel.m */; };
+		E2EDBC7121BB9DBE003B87CA /* Test2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC7021BB9DBE003B87CA /* Test2ViewController.m */; };
+		E2EDBC7421BB9DCA003B87CA /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC7321BB9DCA003B87CA /* Test3ViewController.m */; };
+		E2EDBC7721BB9DD4003B87CA /* Test4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC7621BB9DD4003B87CA /* Test4ViewController.m */; };
+		E2EDBC7A21BB9DE2003B87CA /* Test5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC7921BB9DE2003B87CA /* Test5ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +108,14 @@
 		E2EDBC6A21BB94FF003B87CA /* UINavigationController+JKNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JKNavigationController.m"; sourceTree = "<group>"; };
 		E2EDBC6C21BB95E8003B87CA /* UILabel+JKLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+JKLabel.h"; sourceTree = "<group>"; };
 		E2EDBC6D21BB95E8003B87CA /* UILabel+JKLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JKLabel.m"; sourceTree = "<group>"; };
+		E2EDBC6F21BB9DBE003B87CA /* Test2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test2ViewController.h; sourceTree = "<group>"; };
+		E2EDBC7021BB9DBE003B87CA /* Test2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test2ViewController.m; sourceTree = "<group>"; };
+		E2EDBC7221BB9DCA003B87CA /* Test3ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test3ViewController.h; sourceTree = "<group>"; };
+		E2EDBC7321BB9DCA003B87CA /* Test3ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test3ViewController.m; sourceTree = "<group>"; };
+		E2EDBC7521BB9DD4003B87CA /* Test4ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test4ViewController.h; sourceTree = "<group>"; };
+		E2EDBC7621BB9DD4003B87CA /* Test4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test4ViewController.m; sourceTree = "<group>"; };
+		E2EDBC7821BB9DE2003B87CA /* Test5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test5ViewController.h; sourceTree = "<group>"; };
+		E2EDBC7921BB9DE2003B87CA /* Test5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test5ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +201,14 @@
 				E26706732197DFFC00B41CA8 /* AppDelegate.m */,
 				E26706752197DFFC00B41CA8 /* ViewController.h */,
 				E26706762197DFFC00B41CA8 /* ViewController.m */,
+				E2EDBC6F21BB9DBE003B87CA /* Test2ViewController.h */,
+				E2EDBC7021BB9DBE003B87CA /* Test2ViewController.m */,
+				E2EDBC7221BB9DCA003B87CA /* Test3ViewController.h */,
+				E2EDBC7321BB9DCA003B87CA /* Test3ViewController.m */,
+				E2EDBC7521BB9DD4003B87CA /* Test4ViewController.h */,
+				E2EDBC7621BB9DD4003B87CA /* Test4ViewController.m */,
+				E2EDBC7821BB9DE2003B87CA /* Test5ViewController.h */,
+				E2EDBC7921BB9DE2003B87CA /* Test5ViewController.m */,
 				E26706782197DFFC00B41CA8 /* Main.storyboard */,
 				E267067B2197DFFC00B41CA8 /* Assets.xcassets */,
 				E267067D2197DFFC00B41CA8 /* LaunchScreen.storyboard */,
@@ -418,12 +438,15 @@
 			files = (
 				E2EDBC6E21BB95E8003B87CA /* UILabel+JKLabel.m in Sources */,
 				E2EDBC6B21BB94FF003B87CA /* UINavigationController+JKNavigationController.m in Sources */,
+				E2EDBC7421BB9DCA003B87CA /* Test3ViewController.m in Sources */,
 				E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */,
 				E2E6215521B76195004838E4 /* UIImage+JKUIImageRedraw.m in Sources */,
 				E26706772197DFFC00B41CA8 /* ViewController.m in Sources */,
+				E2EDBC7121BB9DBE003B87CA /* Test2ViewController.m in Sources */,
 				E276B26D21B8B08E007B374B /* JKSandboxPath.m in Sources */,
 				E276B27621B90C66007B374B /* NSString+JKString.m in Sources */,
 				E263D07D21B6729900D5CE90 /* JKGCDTimer.m in Sources */,
+				E2EDBC7A21BB9DE2003B87CA /* Test5ViewController.m in Sources */,
 				E2EDBC6821BB9376003B87CA /* UIViewController+JKViewController.m in Sources */,
 				E26706822197DFFC00B41CA8 /* main.m in Sources */,
 				E263D07921B66AE300D5CE90 /* JKDate.m in Sources */,
@@ -431,6 +454,7 @@
 				E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */,
 				E2EDBC6221BB8465003B87CA /* CALayer+JKLayer.m in Sources */,
 				E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */,
+				E2EDBC7721BB9DD4003B87CA /* Test4ViewController.m in Sources */,
 				E27E279921BA7D0400FF4594 /* JKTopWindow.m in Sources */,
 				E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */,
 				E27E279221BA58C500FF4594 /* UIImageView+JKImageView.m in Sources */,

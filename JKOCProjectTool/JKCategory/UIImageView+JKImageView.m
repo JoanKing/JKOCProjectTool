@@ -10,6 +10,13 @@
 
 @implementation UIImageView (JKImageView)
 
++(instancetype)jk_createimageViewWithImageName:(NSString *)imageName frame:(CGRect)frame {
+    UIImageView *imageV=[[UIImageView alloc] initWithImage:[UIImage imageNamed:imageName]];
+    imageV.frame=frame;
+    return imageV;
+}
+
+
 - (void)jk_rotate360DegreeWithImageView {
     CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotationAnimation.toValue = [NSNumber numberWithFloat: M_PI * 2.0 ];

@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  寻找Navigation中的某个viewcontroler
 
- @param className 类对象名
+ @param className 类对象
  @return 返回一个实例对象
  */
 - (id)jk_findViewController:(Class)className;
@@ -44,7 +44,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  返回指定的控制器
 
- @param className 控制器的名字：类名
+ @param className 类对象
  @param animated 动画
  */
 - (void)jk_popToViewControllerWithClassName:(Class)className animated:(BOOL)animated;

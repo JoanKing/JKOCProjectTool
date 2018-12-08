@@ -30,6 +30,11 @@
 #import "JKMacro.h"
 #import "JKScreenSize.h"
 #import "CALayer+JKLayer.h"
+#import "UINavigationController+JKNavigationController.h"
+#import "UILabel+JKLabel.h"
+#import "UIViewController+JKViewController.h"
+#import "NSString+JKString.h"
+
 
 /**以上是：分类的头文件**/
 
