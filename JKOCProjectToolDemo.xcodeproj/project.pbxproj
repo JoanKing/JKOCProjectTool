@@ -24,7 +24,7 @@
 		E27E279921BA7D0400FF4594 /* JKTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E279821BA7D0400FF4594 /* JKTopWindow.m */; };
 		E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */; };
 		E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */; };
-		E2E6215521B76195004838E4 /* UIImage+JKUIImageRedraw.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215421B76195004838E4 /* UIImage+JKUIImageRedraw.m */; };
+		E2E6215521B76195004838E4 /* UIImage+JKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215421B76195004838E4 /* UIImage+JKImage.m */; };
 		E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */; };
 		E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215C21B76B10004838E4 /* JKTextExtension.m */; };
 		E2EDBC6221BB8465003B87CA /* CALayer+JKLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6121BB8465003B87CA /* CALayer+JKLayer.m */; };
@@ -93,8 +93,8 @@
 		E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JKMutableArray.m"; sourceTree = "<group>"; };
 		E2E6215021B75C4F004838E4 /* UIColor+JKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKColor.h"; sourceTree = "<group>"; };
 		E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKColor.m"; sourceTree = "<group>"; };
-		E2E6215321B76195004838E4 /* UIImage+JKUIImageRedraw.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKUIImageRedraw.h"; sourceTree = "<group>"; };
-		E2E6215421B76195004838E4 /* UIImage+JKUIImageRedraw.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKUIImageRedraw.m"; sourceTree = "<group>"; };
+		E2E6215321B76195004838E4 /* UIImage+JKImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKImage.h"; sourceTree = "<group>"; };
+		E2E6215421B76195004838E4 /* UIImage+JKImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKImage.m"; sourceTree = "<group>"; };
 		E2E6215621B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JKBarbuttonItem.h"; sourceTree = "<group>"; };
 		E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JKBarbuttonItem.m"; sourceTree = "<group>"; };
 		E2E6215921B763AD004838E4 /* JKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKPrefixHeader.pch; sourceTree = "<group>"; };
@@ -286,8 +286,8 @@
 				E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */,
 				E2E6215021B75C4F004838E4 /* UIColor+JKColor.h */,
 				E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */,
-				E2E6215321B76195004838E4 /* UIImage+JKUIImageRedraw.h */,
-				E2E6215421B76195004838E4 /* UIImage+JKUIImageRedraw.m */,
+				E2E6215321B76195004838E4 /* UIImage+JKImage.h */,
+				E2E6215421B76195004838E4 /* UIImage+JKImage.m */,
 				E27E279021BA58C500FF4594 /* UIImageView+JKImageView.h */,
 				E27E279121BA58C500FF4594 /* UIImageView+JKImageView.m */,
 				E2E6215621B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.h */,
@@ -440,7 +440,7 @@
 				E2EDBC6B21BB94FF003B87CA /* UINavigationController+JKNavigationController.m in Sources */,
 				E2EDBC7421BB9DCA003B87CA /* Test3ViewController.m in Sources */,
 				E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */,
-				E2E6215521B76195004838E4 /* UIImage+JKUIImageRedraw.m in Sources */,
+				E2E6215521B76195004838E4 /* UIImage+JKImage.m in Sources */,
 				E26706772197DFFC00B41CA8 /* ViewController.m in Sources */,
 				E2EDBC7121BB9DBE003B87CA /* Test2ViewController.m in Sources */,
 				E276B26D21B8B08E007B374B /* JKSandboxPath.m in Sources */,

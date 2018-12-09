@@ -23,7 +23,7 @@
 #import "UIView+JKLayout.h"
 #import "NSMutableArray+JKMutableArray.h"
 #import "UIColor+JKColor.h"
-#import "UIImage+JKUIImageRedraw.h"
+#import "UIImage+JKImage.h"
 #import "UIImageView+JKImageView.h"
 #import "UIBarButtonItem+JKBarbuttonItem.h"
 #import "JKSingle.h"

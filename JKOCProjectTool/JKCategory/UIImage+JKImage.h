@@ -9,19 +9,29 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+ 
+@interface UIImage (JKImage)
 
-@interface UIImage (JKUIImageRedraw)
-
-#pragma mark 1、图片大小的重新绘制
+#pragma mark 1、图片固定大小的重新绘制
 /**
  图片大小的重新绘制
 
  @param newSize 新的图片宽高
  @return 返回新的 UIImage对象
  */
-- (UIImage *)jk_ImageScaleToSize:(CGSize)newSize;
+- (UIImage *)jk_imageScaleToSureSize:(CGSize)newSize;
 
-#pragma mark 2、创建指定大小、颜色的图片
+#pragma mark 2、进行图像尺寸的压缩(也就是设置一个宽高，按比例缩小图片)
+/**
+ 进行图像尺寸的压缩
+
+ @param newSize 新的图片大小
+ @return 返回一个新的图片
+ */
+-(UIImage *)jk_imageScaleRatioSize:(CGSize)newSize;
+
+
+#pragma mark 3、创建指定大小、颜色的图片
 /**
  创建指定大小、颜色的图片
  

@@ -6,15 +6,53 @@
 //  Copyright © 2018年 JK科技有限公司. All rights reserved.
 //
 
-#import "UIImage+JKUIImageRedraw.h"
+#import "UIImage+JKImage.h"
 
-@implementation UIImage (JKUIImageRedraw)
+@implementation UIImage (JKImage)
 
-- (UIImage *)jk_ImageScaleToSize:(CGSize)newSize{
+- (UIImage *)jk_imageScaleToSureSize:(CGSize)newSize{
     
     UIGraphicsBeginImageContext(newSize);
     [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
+}
+
+-(UIImage *)jk_imageScaleRatioSize:(CGSize)newSize{
+    //进行图像尺寸的压缩
+    CGSize imageSize = self.size;//取出要压缩的image尺寸
+    CGFloat width = imageSize.width;    //图片宽度
+    CGFloat height = imageSize.height;  //图片高度
+    //1.宽高大于1280(宽高比不按照2来算，按照1来算)
+    if (width>newSize.width||height>newSize.height) {
+        if (width>height) {
+            CGFloat scale = height/width;
+            width = 100;
+            height = width*scale;
+        }else{
+            CGFloat scale = width/height;
+            height = 100;
+            width = height*scale;
+        }
+        //2.宽大于1280高小于1280
+    }else if(width>newSize.width||height<newSize.height){
+        CGFloat scale = height/width;
+        width = 100;
+        height = width*scale;
+        //3.宽小于1280高大于1280
+    }else if(width<newSize.width||height>newSize.height){
+        CGFloat scale = width/height;
+        height = 100;
+        width = height*scale;
+        //4.宽高都小于1280
+    }else{
+        
+    }
+    //进行尺寸重绘
+    UIGraphicsBeginImageContext(CGSizeMake(width, height));
+    [self drawInRect:CGRectMake(0,0,width,height)];
+    UIImage* newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newImage;
 }
