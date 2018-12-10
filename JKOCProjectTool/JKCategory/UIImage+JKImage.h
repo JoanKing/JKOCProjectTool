@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIImage *)jk_imageScaleToSureSize:(CGSize)newSize;
 
-#pragma mark 2、进行图像尺寸的压缩(也就是设置一个宽高，按比例缩小图片)
+#pragma mark 2、进行图像尺寸的压缩(也就是设置一个宽高，按比例缩小图片，仅仅是尺寸的缩小)
 /**
  进行图像尺寸的压缩
 
@@ -30,8 +30,17 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(UIImage *)jk_imageScaleRatioSize:(CGSize)newSize;
 
+#pragma mark 3、比例压缩图片后，按照宽与高谁小以谁的尺寸截取正方形图片
+/**
+ 截取中间部分:比例压缩图片后，按照宽与高谁小以谁的尺寸截取正方形图片
 
-#pragma mark 3、创建指定大小、颜色的图片
+ @param newSize 图片的最大尺寸
+ @return 返回截取后的图片
+ */
+-(UIImage *)jk_squareImageScaledToSize:(CGSize)newSize;
+
+
+#pragma mark 4、创建指定大小、颜色的图片
 /**
  创建指定大小、颜色的图片
  
@@ -41,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage *)jk_imageWithColor:(UIColor *)color size:(CGSize)size;
 
-#pragma mark 2、
+#pragma mark 5、
 /**
  创建纯色背景、文字居中的图片
  

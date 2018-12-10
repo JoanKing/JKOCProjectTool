@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
  数组字典的排序
 
  @param ascending YES：升序  NO降序
- @param key 字典的某一个键值
+ @param key 字典的某一个键值: 支持：字符串的abc,int/float类型
  */
 -(void)sortAscending:(BOOL)ascending withKey:(NSString *)key;
 

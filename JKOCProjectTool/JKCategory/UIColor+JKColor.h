@@ -19,7 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param hexString 十六进制颜色的字符串
  @return 返回 UIColor
  */
-+ (UIColor *)jkColorWithHexString: (NSString *)hexString;
++ (UIColor *)jk_colorWithHexString: (NSString *)hexString;
 
 
 @end

@@ -8,13 +8,15 @@
 
 /** 1、NSLog的宏 */
 #ifdef DEBUG
-#define NSLog(...) NSLog(@"%s 第%d行: %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
+#define JKLog(...) NSLog(@"%s 第%d行: %@\n\n",__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])
 #else
 #define NSLog(...)
 #endif
 
 /** 2、APP版本号 */
 #define JKAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+// build 可以更改，上线后版本号还是保持上面的
+#define JKAppBuild [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 
 /** 3、系统版本号 */
 #define kSystemVersion [[UIDevice currentDevice] systemVersion]

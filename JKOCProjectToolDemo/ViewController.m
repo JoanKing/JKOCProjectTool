@@ -27,7 +27,7 @@
     [view jk_addShadowToViewShadowRadius:4 withColor:JKRGBColor(255,185,17,1) withShadowOffset:CGSizeMake(0, 2) withShadowOpacity:0.48];
     [view jk_addTapActionWithBlock:^(UITapGestureRecognizer * _Nonnull gestureRecoginzer) {
         
-        NSLog(@"%@",@"我点击了");
+        JKLog(@"%@",@"我点击了");
     }];
     
     [self.view addSubview:view];
@@ -42,20 +42,20 @@
     
     JKEndTime;
     
-    NSLog(@"当前的语言=%@",JKCurrentLanguage);
+    JKLog(@"当前的语言=%@",JKCurrentLanguage);
     
 }
 
 -(void)hh{
     
-    NSLog(@"HH");
+    JKLog(@"HH");
 }
+
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
     Test2ViewController *vc = [Test2ViewController new];
     [self.navigationController pushViewController:vc animated:YES];
 }
-
 
 @end

@@ -10,7 +10,7 @@
 
 @implementation UIColor (JKColor)
 
-+ (UIColor *)jkColorWithHexString:(NSString *)hexString
++ (UIColor *)jk_colorWithHexString:(NSString *)hexString
 {
     NSString *cString = [[hexString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     
