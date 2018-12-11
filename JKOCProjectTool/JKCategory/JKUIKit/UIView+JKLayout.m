@@ -522,5 +522,15 @@ static char JKActionHandlerLongPressBlockKey;
     
 }
 
+-(UIImage *)testCgrect:(CGRect)rect{
+    
+    UIGraphicsBeginImageContextWithOptions(self.bounds.size, YES, 1);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *img = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *resultImg = [UIImage imageWithCGImage:CGImageCreateWithImageInRect(img.CGImage, rect)];
+    UIGraphicsEndImageContext();
+    
+    return resultImg;
+}
 
 @end

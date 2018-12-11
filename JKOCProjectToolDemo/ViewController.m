@@ -19,8 +19,6 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    JKStartTime;
-    
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(50, 200,JK_SCREEN_WIDTH-100 , 100)];
     view.layer.cornerRadius = 50;
     [view jk_setGradientBackgroundWithColors:@[JKRGBColor(255,219,0,1),JKRGBColor(255,185,17,1)] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
@@ -34,21 +32,7 @@
     
     [view.layer jk_shake];
     
-    JKWeakSelf(self);
-    dispatch_async(dispatch_get_main_queue(), ^{
-        
-        [weakself hh];
-    });
-    
-    JKEndTime;
-    
-    JKLog(@"当前的语言=%@",JKCurrentLanguage);
-    
-}
 
--(void)hh{
-    
-    JKLog(@"HH");
 }
 
 

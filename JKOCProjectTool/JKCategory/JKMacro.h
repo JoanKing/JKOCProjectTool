@@ -57,7 +57,9 @@
 #define kRadianToDegrees(radian) (radian * 180.0) / (M_PI)
 
 /** 12、图片 */
+// 根据路径加载一个图片
 #define JKImageOfFile(NAME,EXT) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:(NAME) ofType:(EXT)]]
+// 根据图片名加载一个图片
 #define JKImageNamed(NAME) [UIImage imageNamed:NAME]
 
 /** 13、字体大小（常规/粗体） */

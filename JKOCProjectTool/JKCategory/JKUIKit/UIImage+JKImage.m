@@ -12,14 +12,19 @@
 
 - (UIImage *)jk_imageScaleToSureSize:(CGSize)newSize{
     
+    // 创建context,并将其设置为正在使用的context
     UIGraphicsBeginImageContext(newSize);
+    // 绘制出图片(大小已经改变)
     [self drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    // 获取改变大小之后的图片
     UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    // context出栈
     UIGraphicsEndImageContext();
+    // 返回获得的图片
     return newImage;
 }
 
--(UIImage *)jk_imageScaleRatioSize:(CGSize)newSize{
+-(UIImage *)jk_imageZoomSize:(CGSize)newSize{
     //进行图像尺寸的压缩
     CGSize imageSize = self.size;//取出要压缩的image尺寸
     CGFloat width = imageSize.width;    //图片宽度
@@ -57,15 +62,14 @@
     return newImage;
 }
 
-- (UIImage *)jk_squareImageScaledToSize:(CGSize)newSize
-{
-    UIImage *image = [self jk_imageScaleRatioSize:newSize];
+-(UIImage *)jk_imageScale{
+    
     CGFloat scaleToSize = 0;
     
-    if (image.size.width > image.size.height) {
-        scaleToSize = image.size.height;
+    if (self.size.width > self.size.height) {
+        scaleToSize = self.size.height;
     }else{
-        scaleToSize = image.size.width;
+        scaleToSize = self.size.width;
     }
     
     // 缩放比例
@@ -73,25 +77,25 @@
     CGPoint origin;
     
     // 图片大小大于图片高度的情况
-    if (image.size.width > image.size.height)
+    if (self.size.width > self.size.height)
     {
-        //image原始高度为200，缩放image的高度为400pixels，所以缩放比率为2
+        //举例：image原始高度为100，缩放image的高度为200pixels，所以缩放比率为2
         // 计算缩放比例
-        CGFloat scaleRatio = scaleToSize / image.size.height;
+        CGFloat scaleRatio = scaleToSize / self.size.height;
         
         scaleTransform = CGAffineTransformMakeScale(scaleRatio, scaleRatio);
         
         //设置绘制原始图片的画笔坐标为CGPoint(-100, 0)pixels
         // 计算画笔的X轴
-        origin = CGPointMake(-(image.size.width - image.size.height) / 2.0f, 0);
+        origin = CGPointMake(-(self.size.width - self.size.height) / 2.0f, 0);
     }else{
         // 图片的高度大于宽度的情况
         
-        CGFloat scaleRatio = scaleToSize / image.size.width;
+        CGFloat scaleRatio = scaleToSize / self.size.width;
         scaleTransform = CGAffineTransformMakeScale(scaleRatio, scaleRatio);
         
         // 计算画笔的Y轴
-        origin = CGPointMake(0, -(image.size.height - image.size.width) / 2.0f);
+        origin = CGPointMake(0, -(self.size.height - self.size.width) / 2.0f);
     }
     
     CGSize size = CGSizeMake(scaleToSize, scaleToSize);
@@ -106,19 +110,41 @@
     
     CGContextRef context = UIGraphicsGetCurrentContext();
     
-    //将image原始图片(400x200)pixels缩放为(800x400)pixels
+    //将image原始图片(200x100)pixels缩放为(400x200)pixels
     CGContextConcatCTM(context, scaleTransform);
     
     //origin也会从原始(-100, 0)缩放到(-200, 0)
-    [image drawAtPoint:origin];
+    [self drawAtPoint:origin];
     
     //获取缩放后剪切的image图片
-    image = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *scaleImage = UIGraphicsGetImageFromCurrentImageContext();
     // 结束画板绘制
     UIGraphicsEndImageContext();
     
-    return image;
+    return scaleImage;
 }
+
+- (UIImage *)jk_imageZoomScaledToSize:(CGSize)newSize
+{
+    UIImage *image = [self jk_imageZoomSize:newSize];
+    
+    return [image jk_imageScale];
+}
+
+-(UIImage *)jk_scaleImageFromInRect:(CGRect)rect{
+    
+    //把像 素rect 转化为 点rect（如无转化则按原图像素取部分图片）
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CGFloat x= rect.origin.x*scale,y=rect.origin.y*scale,w=rect.size.width*scale,h=rect.size.height*scale;
+    CGRect dianRect = CGRectMake(x, y, w, h);
+    
+    //截取部分图片并生成新图片
+    CGImageRef sourceImageRef = [(UIImage *)self CGImage];
+    CGImageRef newImageRef = CGImageCreateWithImageInRect(sourceImageRef, dianRect);
+    UIImage *newImage = [UIImage imageWithCGImage:newImageRef scale:[UIScreen mainScreen].scale orientation:UIImageOrientationUp];
+    return newImage;
+}
+
 
 /*******************/
 

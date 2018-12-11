@@ -21,19 +21,51 @@
 
 /**以下是：分类的头文件**/
 #import "UIView+JKLayout.h"
+
 #import "NSMutableArray+JKMutableArray.h"
+
 #import "UIColor+JKColor.h"
+
 #import "UIImage+JKImage.h"
+
 #import "UIImageView+JKImageView.h"
+
 #import "UIBarButtonItem+JKBarbuttonItem.h"
+
 #import "JKSingle.h"
+
 #import "JKMacro.h"
+
 #import "JKScreenSize.h"
+
 #import "CALayer+JKLayer.h"
+
 #import "UINavigationController+JKNavigationController.h"
+
 #import "UILabel+JKLabel.h"
+
 #import "UIViewController+JKViewController.h"
+
 #import "NSString+JKString.h"
+#import "NSString+JKHash.h"
+#import "NSString+JKRemoveEmoji.h"
+#import "NSString+JKPinyin.h"
+#import "NSString+JKXML.h"
+#import "NSString+JKContains.h"
+#import "NSString+JKBase64.h"
+#import "NSString+JKRegex.h"
+
+#import "NSData+JKData.h"
+#import "NSData+JKBase64.h"
+// 加密技术
+#import "NSData+JKEncrypt.h"
+#import "NSData+JKHash.h"
+// 压缩
+#import "NSData+JKGzip.h"
+
+
+#import "NSDate+JKFormatter.h"
+#import "NSDate+JKExtension.h"
 
 
 /**以上是：分类的头文件**/

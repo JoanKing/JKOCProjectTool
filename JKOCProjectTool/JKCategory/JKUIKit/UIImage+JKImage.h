@@ -12,9 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
  
 @interface UIImage (JKImage)
 
-#pragma mark 1、图片固定大小的重新绘制
+#pragma mark 1、将图片大小压缩到指定比例
 /**
- 图片大小的重新绘制
+ 将图片大小压缩到指定比例
 
  @param newSize 新的图片宽高
  @return 返回新的 UIImage对象
@@ -28,16 +28,34 @@ NS_ASSUME_NONNULL_BEGIN
  @param newSize 新的图片大小
  @return 返回一个新的图片
  */
--(UIImage *)jk_imageScaleRatioSize:(CGSize)newSize;
+-(UIImage *)jk_imageZoomSize:(CGSize)newSize;
 
-#pragma mark 3、比例压缩图片后，按照宽与高谁小以谁的尺寸截取正方形图片
+#pragma mark 3、按照宽高在中间截取图片
+/**
+ 按照宽高在中间截取图片： 宽与高谁小谁就是就是截取的尺寸，以原图的中心为准
+ @return 返回截取后的图片
+ */
+-(UIImage *)jk_imageScale;
+
+#pragma mark 4、比例压缩图片后，按照宽与高谁小以谁的尺寸截取正方形图片
 /**
  截取中间部分:比例压缩图片后，按照宽与高谁小以谁的尺寸截取正方形图片
 
  @param newSize 图片的最大尺寸
  @return 返回截取后的图片
  */
--(UIImage *)jk_squareImageScaledToSize:(CGSize)newSize;
+-(UIImage *)jk_imageZoomScaledToSize:(CGSize)newSize;
+
+#pragma mark 5、从图片中按指定的位置大小截取图片的一部分
+// 解释：ios可以自动识别@2x 和@3x的图片，以适应在不同屏幕上显示的图片大小一致，这里截取的图片是按像素在原图上截取，原图大小和屏幕上显示的大小未必一致，所以要进行相应的转化，缩放比就是[UIScreen mainScreen].scale，不同屏幕的scale是不同的
+/**
+ 从图片中按指定的位置大小截取图片的一部分
+ 
+ @param rect 要截取的区域
+ @return 返回剪切后的图片
+ */
+-(UIImage *)jk_scaleImageFromInRect:(CGRect)rect;
+
 
 
 #pragma mark 4、创建指定大小、颜色的图片

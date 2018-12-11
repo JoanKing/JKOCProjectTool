@@ -125,7 +125,7 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
  */
 -(UIImage *)jk_snapshotImageSize:(CGSize)pitureSize;
 
-#pragma mark 9、截取成图片:路径  指定 宽高
+#pragma mark 9、截取成图片:路径  指定 宽高；把一个UIView生成PNG或者JPG格式的图片,保存在指定路径
 
 /**
  把一个UIView生成PNG或者JPG格式的图片,保存在指定路径
@@ -135,6 +135,9 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
  @param pitureSize 保存图片的尺寸
  */
 -(void)jk_snapshotImageSizePath:(NSString *)path withPicturetype:(NSString *)type withSize:(CGSize)pitureSize;
+
+
+
 @end
 
 NS_ASSUME_NONNULL_END
