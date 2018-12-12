@@ -15,6 +15,9 @@
 #import "JKGCDTimer.h"
 #import "JKDate.h"
 #import "JKTextExtension.h"
+/** 4、针对UITextView与UITextFiled输入字符的限制 */
+// [对象 setValue:@200 forKey:@"limit"];
+#import "JKLimitInput.h"
 
 /**以上是：自己写的类的头文件**/
 
@@ -27,6 +30,9 @@
 #import "UIColor+JKColor.h"
 
 #import "UIImage+JKImage.h"
+#import "UIImage+JKGIF.h"
+#import "UIImage+JKDirection.h"
+#import "UIImage+JKColorImage.h"
 
 #import "UIImageView+JKImageView.h"
 
@@ -67,6 +73,26 @@
 #import "NSDate+JKFormatter.h"
 #import "NSDate+JKExtension.h"
 
+#import "UITextField+JKTextField.h"
+
+#import "UIDevice+JKHardware.h"
+
+#import "UITextView+JKExtension.h"
+
+#import "UIFont+JKExtension.h"
+
+#import "UIWebView+JKExtension.h"
+
+#import "UIButton+JKExtension.h"
+
+#import "UIResponder+JKExtension.h"
+
+#import "UIApplication+JKExtension.h"
+
+// window的一些等级
+#import "UIWindow+JKHierarchy.h"
+
+#import "UIScrollView+JKExtension.h"
 
 /**以上是：分类的头文件**/
 

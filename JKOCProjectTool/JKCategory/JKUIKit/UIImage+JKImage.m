@@ -145,68 +145,86 @@
     return newImage;
 }
 
-
-/*******************/
-
-+ (UIImage *)jk_imageWithColor:(UIColor *)color size:(CGSize)size {
-    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
-    UIGraphicsBeginImageContext(rect.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGContextSetFillColorWithColor(context, [color CGColor]);
-    CGContextFillRect(context, rect);
-    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
-    return image;
+-(UIImage *)jk_setImageWithStretchableImageLeftCapWidth:(NSInteger)leftCapWidth withTopCapHeight:(NSInteger)topCapHeight{
+    
+  return [self stretchableImageWithLeftCapWidth:leftCapWidth topCapHeight:topCapHeight];
 }
 
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size text:(NSAttributedString *)attributeString {
-    UIImage *image = [UIImage jk_imageWithColor:color size:size];
++(UIImage *)jk_waterMarkImageWithBackImage:(UIImage *)bgImage andMarkImageName:(NSString *)markName{
     
-    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
-    CGSize textSize = [attributeString size];
-    CGFloat textX = (size.width - textSize.width) / 2.f;
-    CGFloat textY = (size.height - textSize.height) / 2.f;
-    CGRect textRect = CGRectMake(textX, textY, textSize.width,textSize.height);
+    UIGraphicsBeginImageContextWithOptions(bgImage.size, NO, 0.0);
+    [bgImage drawInRect:CGRectMake(0, 0, bgImage.size.width, bgImage.size.height)];
     
-    UIGraphicsBeginImageContext(size);
-    [image drawInRect:rect];
-    [attributeString drawInRect:textRect];
-    UIImage *newImage =UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *waterImage = [UIImage imageNamed:markName];
+    CGFloat scale = 0.3;
+    CGFloat margin = 5;
+    CGFloat waterW = waterImage.size.width * scale;
+    CGFloat waterH = waterImage.size.height * scale;
+    CGFloat waterX = bgImage.size.width - waterW - margin;
+    CGFloat waterY = bgImage.size.height - waterH - margin;
+    
+    [waterImage drawInRect:CGRectMake(waterX, waterY, waterW, waterH)];
+    
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     
     return newImage;
 }
 
-+ (UIImage *)ellipseImage:(UIImage *)image withInset:(CGFloat)inset {
-    return [self ellipseImage:image withInset:inset withBorderWidth:0 withBorderColor:[UIColor clearColor]];
-}
-
-+ (UIImage *)ellipseImage: (UIImage *) image withInset:(CGFloat)inset withBorderWidth:(CGFloat)width withBorderColor:(UIColor*)color {
-    UIGraphicsBeginImageContext(image.size);
-    CGContextRef context = UIGraphicsGetCurrentContext();
-    CGRect rect = CGRectMake(inset, inset, image.size.width - inset * 2.f , image.size.height - inset * 2.f);
+// 给图片添加图片水印
++ (UIImage *)jx_waterMarkImageWithBackgroundImage:(UIImage *)bg_image waterImage:(UIImage *)waterImage waterImageRect:(CGRect)rect{
     
-    CGContextAddEllipseInRect(context, rect);
-    CGContextClip(context);
-    [image drawInRect:rect];
+    //1.获取图片
     
-    if (width > 0) {
-        CGContextSetStrokeColorWithColor(context, color.CGColor);
-        CGContextSetLineCap(context,kCGLineCapButt);
-        CGContextSetLineWidth(context, width);
-        CGRect rect2 = CGRectMake(inset + width/2, inset +  width/2, image.size.width - width- inset * 2.0f, image.size.height - width- inset * 2.0f);
-        CGContextAddEllipseInRect(context, rect2);
-        
-        CGContextStrokePath(context);
-    }
-    
-    UIImage *newimg = UIGraphicsGetImageFromCurrentImageContext();
+    //2.开启上下文
+    UIGraphicsBeginImageContextWithOptions(bg_image.size, NO, 0);
+    //3.绘制背景图片
+    [bg_image drawInRect:CGRectMake(0, 0, bg_image.size.width, bg_image.size.height)];
+    //绘制水印图片到当前上下文
+    [waterImage drawInRect:rect];
+    //4.从上下文中获取新图片
+    UIImage * newImage = UIGraphicsGetImageFromCurrentImageContext();
+    //5.关闭图形上下文
     UIGraphicsEndImageContext();
-    return newimg;
+    //返回图片
+    return newImage;
 }
 
+// 给图片添加文字水印
++(UIImage *)jx_waterImageWithImage:(UIImage *)image text:(NSString *)text textPoint:(CGPoint)point attributedString:(NSDictionary *)attributed{
+    //1.开启上下文
+    //size新图片的大小
+    //opaque YES不透明 NO透明
+    UIGraphicsBeginImageContextWithOptions(image.size, NO, 0);
+    //2.绘制图片
+    [image drawInRect:CGRectMake(0, 0, image.size.width, image.size.height)];
+    //添加水印文字
+    [text drawAtPoint:point withAttributes:attributed];
+    //3.从上下文中获取新图片
+    UIImage * newImage = UIGraphicsGetImageFromCurrentImageContext();
+    //4.关闭图形上下文
+    UIGraphicsEndImageContext();
+    //返回图片
+    return newImage;
+}
 
+// 合并两个图片
++ (UIImage*)jk_mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage {
+    CGImageRef firstImageRef = firstImage.CGImage;
+    CGFloat firstWidth = CGImageGetWidth(firstImageRef);
+    CGFloat firstHeight = CGImageGetHeight(firstImageRef);
+    CGImageRef secondImageRef = secondImage.CGImage;
+    CGFloat secondWidth = CGImageGetWidth(secondImageRef);
+    CGFloat secondHeight = CGImageGetHeight(secondImageRef);
+    CGSize mergedSize = CGSizeMake(MAX(firstWidth, secondWidth), MAX(firstHeight, secondHeight));
+    UIGraphicsBeginImageContext(mergedSize);
+    [firstImage drawInRect:CGRectMake(0, 0, firstWidth, firstHeight)];
+    [secondImage drawInRect:CGRectMake(0, 0, secondWidth, secondHeight)];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
 
-
+/*******************/
 
 @end

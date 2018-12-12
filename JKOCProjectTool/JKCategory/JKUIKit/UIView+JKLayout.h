@@ -46,14 +46,13 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
 /** 移除所有子视图 */
 - (void)jk_removeAllSubviews;
 /** 找到当前view所在的viewcontroler */
-- (UIViewController *)jk_findViewController;
+- (UIViewController *)jk_findCurrentViewController;
 /** 找到view上的第一响应者 */
 - (UIView *)jk_findFirstResponder;
 /** 添加tap手势 */
 - (void)jk_addTapActionWithBlock:(TapActionBlock)block;
 /** 添加长按手势 */
 - (void)jk_addLongPressActionWithBlock:(LongPressActionBlock)block;
-
 
 #pragma mark 1、判断一个view是否在window上面
 -(BOOL)isShowingOnWindow;
@@ -94,9 +93,9 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
  绘制渐变色返回一个自身对象
 
  @param colors 颜色数组，最前面的是第一个颜色，后面的依次排列
- @param locations 起始位置
- @param startPoint 开始的点
- @param endPoint 结束的点
+ @param locations 起始位置 一般是nil
+ @param startPoint 开始的点 (0,0) x与y -- 最小值：0 最大值：1
+ @param endPoint 结束的点 (0,0) x与y -- 最小值：0 最大值：1
  @return 返回的渐变色之后的view
  */
 + (UIView *_Nullable)jk_gradientViewWithColors:(NSArray<UIColor *> *_Nullable)colors locations:(NSArray<NSNumber *> *_Nullable)locations startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
@@ -106,9 +105,9 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
  绘制渐变色
 
  @param colors 颜色数组，最前面的是第一个颜色，后面的依次排列
- @param locations 起始位置
- @param startPoint 开始的点
- @param endPoint 结束的点
+ @param locations 起始位置 一般是nil
+ @param startPoint 开始的点 (0,0) x与y -- 最小值：0 最大值：1
+ @param endPoint 结束的点 (0,0) x与y -- 最小值：0 最大值：1
  */
 - (void)jk_setGradientBackgroundWithColors:(NSArray<UIColor *> *_Nullable)colors locations:(NSArray<NSNumber *> *_Nullable)locations startPoint:(CGPoint)startPoint endPoint:(CGPoint)endPoint;
 

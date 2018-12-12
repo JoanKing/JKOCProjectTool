@@ -31,9 +31,12 @@
     [self.view addSubview:view];
     
     [view.layer jk_shake];
-    
 
+
+    JKLog(@"\n获取设备名称=%@\n获取手机名称=%@\n当前wifi的名字是：%@",[UIDevice jk_getDeviceName],[UIDevice jk_getIphoneName],[UIDevice jk_getWifiName]);
+    
 }
+
 
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{

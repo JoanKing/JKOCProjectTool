@@ -229,7 +229,7 @@ static char JKActionHandlerLongPressBlockKey;
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
 }
 
-- (UIViewController *)jk_findViewController;
+- (UIViewController *)jk_findCurrentViewController;
 {
     UIResponder *responder = self.nextResponder;
     do

@@ -44,6 +44,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)jk_stopRotate;
 
+#pragma mark 5、倒影
+/**
+   倒影
+ */
+- (void)jk_reflect;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

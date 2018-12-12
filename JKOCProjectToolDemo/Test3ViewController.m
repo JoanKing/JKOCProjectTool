@@ -19,7 +19,17 @@
     
     self.title = @"Test3";
     self.view.backgroundColor = [UIColor whiteColor];
+    
+    UIImageView *imageview = [[UIImageView alloc]initWithFrame:CGRectMake(20, 100, 100, 100)];
+    imageview.image = [[UIImage jk_animatedGIFNamed:@"monkey"] jk_animatedImageByScalingAndCroppingToSize:CGSizeMake(50, 50)];
+    imageview.backgroundColor = [UIColor yellowColor];
+    [self.view addSubview:imageview];
+    
+    
+   
+    
 }
+
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     

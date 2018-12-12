@@ -21,6 +21,20 @@
 		E20F22ED21BF92E800F45F27 /* NSData+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22EC21BF92E800F45F27 /* NSData+JKEncrypt.m */; };
 		E20F22F021BF936F00F45F27 /* NSData+JKGzip.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22EF21BF936F00F45F27 /* NSData+JKGzip.m */; };
 		E20F22F321BF940D00F45F27 /* NSData+JKHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22F221BF940D00F45F27 /* NSData+JKHash.m */; };
+		E20F22F821BF9B7400F45F27 /* UITextField+JKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22F721BF9B7400F45F27 /* UITextField+JKTextField.m */; };
+		E23876A621C0D4E10090EC82 /* UITextView+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876A521C0D4E10090EC82 /* UITextView+JKExtension.m */; };
+		E23876AA21C0DD590090EC82 /* JKLimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876A821C0DD590090EC82 /* JKLimitInput.m */; };
+		E23876AD21C0DFB30090EC82 /* UIFont+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876AC21C0DFB30090EC82 /* UIFont+JKExtension.m */; };
+		E23876B821C0E77F0090EC82 /* UIWebView+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876B721C0E77F0090EC82 /* UIWebView+JKExtension.m */; };
+		E23876BE21C0F2B70090EC82 /* UIButton+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876BD21C0F2B70090EC82 /* UIButton+JKExtension.m */; };
+		E23876C121C106F60090EC82 /* UIResponder+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876C021C106F60090EC82 /* UIResponder+JKExtension.m */; };
+		E23876C421C109C30090EC82 /* UIApplication+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876C321C109C30090EC82 /* UIApplication+JKExtension.m */; };
+		E23876C721C10C4B0090EC82 /* UIWindow+JKHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876C621C10C4B0090EC82 /* UIWindow+JKHierarchy.m */; };
+		E23876CA21C10FA50090EC82 /* UIScrollView+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876C921C10FA50090EC82 /* UIScrollView+JKExtension.m */; };
+		E23876CD21C113AE0090EC82 /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876CC21C113AE0090EC82 /* UIImage+JKGIF.m */; };
+		E23876D021C1152C0090EC82 /* monkey.gif in Resources */ = {isa = PBXBuildFile; fileRef = E23876CF21C1152C0090EC82 /* monkey.gif */; };
+		E23876D321C1194B0090EC82 /* UIImage+JKDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876D221C1194B0090EC82 /* UIImage+JKDirection.m */; };
+		E23876D621C156EB0090EC82 /* UIImage+JKColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876D521C156EB0090EC82 /* UIImage+JKColorImage.m */; };
 		E263D07121B6669300D5CE90 /* UIView+JKLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E263D07021B6669300D5CE90 /* UIView+JKLayout.m */; };
 		E263D07921B66AE300D5CE90 /* JKDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E263D07821B66AE300D5CE90 /* JKDate.m */; };
 		E263D07D21B6729900D5CE90 /* JKGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E263D07B21B6729900D5CE90 /* JKGCDTimer.m */; };
@@ -49,6 +63,7 @@
 		E2EDBC7421BB9DCA003B87CA /* Test3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC7321BB9DCA003B87CA /* Test3ViewController.m */; };
 		E2EDBC7721BB9DD4003B87CA /* Test4ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC7621BB9DD4003B87CA /* Test4ViewController.m */; };
 		E2EDBC7A21BB9DE2003B87CA /* Test5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC7921BB9DE2003B87CA /* Test5ViewController.m */; };
+		E2F073DE21C0005E00A4ADC7 /* UIDevice+JKHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F073DD21C0005E00A4ADC7 /* UIDevice+JKHardware.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +112,33 @@
 		E20F22EF21BF936F00F45F27 /* NSData+JKGzip.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKGzip.m"; sourceTree = "<group>"; };
 		E20F22F121BF940D00F45F27 /* NSData+JKHash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+JKHash.h"; sourceTree = "<group>"; };
 		E20F22F221BF940D00F45F27 /* NSData+JKHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKHash.m"; sourceTree = "<group>"; };
+		E20F22F621BF9B7400F45F27 /* UITextField+JKTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKTextField.h"; sourceTree = "<group>"; };
+		E20F22F721BF9B7400F45F27 /* UITextField+JKTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKTextField.m"; sourceTree = "<group>"; };
+		E23876A421C0D4E10090EC82 /* UITextView+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+JKExtension.h"; sourceTree = "<group>"; };
+		E23876A521C0D4E10090EC82 /* UITextView+JKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JKExtension.m"; sourceTree = "<group>"; };
+		E23876A821C0DD590090EC82 /* JKLimitInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLimitInput.m; sourceTree = "<group>"; };
+		E23876A921C0DD590090EC82 /* JKLimitInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKLimitInput.h; sourceTree = "<group>"; };
+		E23876AB21C0DFB30090EC82 /* UIFont+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+JKExtension.h"; sourceTree = "<group>"; };
+		E23876AC21C0DFB30090EC82 /* UIFont+JKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JKExtension.m"; sourceTree = "<group>"; };
+		E23876B621C0E77F0090EC82 /* UIWebView+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JKExtension.h"; sourceTree = "<group>"; };
+		E23876B721C0E77F0090EC82 /* UIWebView+JKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JKExtension.m"; sourceTree = "<group>"; };
+		E23876BC21C0F2B70090EC82 /* UIButton+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKExtension.h"; sourceTree = "<group>"; };
+		E23876BD21C0F2B70090EC82 /* UIButton+JKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKExtension.m"; sourceTree = "<group>"; };
+		E23876BF21C106F60090EC82 /* UIResponder+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIResponder+JKExtension.h"; sourceTree = "<group>"; };
+		E23876C021C106F60090EC82 /* UIResponder+JKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+JKExtension.m"; sourceTree = "<group>"; };
+		E23876C221C109C30090EC82 /* UIApplication+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JKExtension.h"; sourceTree = "<group>"; };
+		E23876C321C109C30090EC82 /* UIApplication+JKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JKExtension.m"; sourceTree = "<group>"; };
+		E23876C521C10C4B0090EC82 /* UIWindow+JKHierarchy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JKHierarchy.h"; sourceTree = "<group>"; };
+		E23876C621C10C4B0090EC82 /* UIWindow+JKHierarchy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JKHierarchy.m"; sourceTree = "<group>"; };
+		E23876C821C10FA50090EC82 /* UIScrollView+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+JKExtension.h"; sourceTree = "<group>"; };
+		E23876C921C10FA50090EC82 /* UIScrollView+JKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+JKExtension.m"; sourceTree = "<group>"; };
+		E23876CB21C113AE0090EC82 /* UIImage+JKGIF.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGIF.h"; sourceTree = "<group>"; };
+		E23876CC21C113AE0090EC82 /* UIImage+JKGIF.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKGIF.m"; sourceTree = "<group>"; };
+		E23876CF21C1152C0090EC82 /* monkey.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = monkey.gif; sourceTree = "<group>"; };
+		E23876D121C1194B0090EC82 /* UIImage+JKDirection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKDirection.h"; sourceTree = "<group>"; };
+		E23876D221C1194B0090EC82 /* UIImage+JKDirection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKDirection.m"; sourceTree = "<group>"; };
+		E23876D421C156EB0090EC82 /* UIImage+JKColorImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKColorImage.h"; sourceTree = "<group>"; };
+		E23876D521C156EB0090EC82 /* UIImage+JKColorImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKColorImage.m"; sourceTree = "<group>"; };
 		E263D06F21B6669300D5CE90 /* UIView+JKLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JKLayout.h"; sourceTree = "<group>"; };
 		E263D07021B6669300D5CE90 /* UIView+JKLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKLayout.m"; sourceTree = "<group>"; };
 		E263D07721B66AE300D5CE90 /* JKDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKDate.h; sourceTree = "<group>"; };
@@ -158,6 +200,8 @@
 		E2EDBC7621BB9DD4003B87CA /* Test4ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test4ViewController.m; sourceTree = "<group>"; };
 		E2EDBC7821BB9DE2003B87CA /* Test5ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Test5ViewController.h; sourceTree = "<group>"; };
 		E2EDBC7921BB9DE2003B87CA /* Test5ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Test5ViewController.m; sourceTree = "<group>"; };
+		E2F073DC21C0005E00A4ADC7 /* UIDevice+JKHardware.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JKHardware.h"; sourceTree = "<group>"; };
+		E2F073DD21C0005E00A4ADC7 /* UIDevice+JKHardware.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JKHardware.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,8 +234,6 @@
 			children = (
 				E2D0452721B5697900DD55CC /* NSMutableArray+JKMutableArray.h */,
 				E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */,
-				E2E6215021B75C4F004838E4 /* UIColor+JKColor.h */,
-				E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */,
 				E20F209021BF58D300F45F27 /* NSData+JKData.h */,
 				E20F209121BF58D300F45F27 /* NSData+JKData.m */,
 				E20F22F121BF940D00F45F27 /* NSData+JKHash.h */,
@@ -222,6 +264,8 @@
 				E20F22C821BF7C8C00F45F27 /* NSDate+JKExtension.m */,
 				E20F22CA21BF7F5200F45F27 /* NSDate+JKFormatter.h */,
 				E20F22CB21BF7F5200F45F27 /* NSDate+JKFormatter.m */,
+				E23876AB21C0DFB30090EC82 /* UIFont+JKExtension.h */,
+				E23876AC21C0DFB30090EC82 /* UIFont+JKExtension.m */,
 			);
 			path = JKFoundation;
 			sourceTree = "<group>";
@@ -231,12 +275,22 @@
 			children = (
 				E263D06F21B6669300D5CE90 /* UIView+JKLayout.h */,
 				E263D07021B6669300D5CE90 /* UIView+JKLayout.m */,
+				E2E6215021B75C4F004838E4 /* UIColor+JKColor.h */,
+				E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */,
 				E2E6215321B76195004838E4 /* UIImage+JKImage.h */,
 				E2E6215421B76195004838E4 /* UIImage+JKImage.m */,
+				E23876D421C156EB0090EC82 /* UIImage+JKColorImage.h */,
+				E23876D521C156EB0090EC82 /* UIImage+JKColorImage.m */,
+				E23876CB21C113AE0090EC82 /* UIImage+JKGIF.h */,
+				E23876CC21C113AE0090EC82 /* UIImage+JKGIF.m */,
+				E23876D121C1194B0090EC82 /* UIImage+JKDirection.h */,
+				E23876D221C1194B0090EC82 /* UIImage+JKDirection.m */,
 				E27E279021BA58C500FF4594 /* UIImageView+JKImageView.h */,
 				E27E279121BA58C500FF4594 /* UIImageView+JKImageView.m */,
 				E2E6215621B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.h */,
 				E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */,
+				E23876BC21C0F2B70090EC82 /* UIButton+JKExtension.h */,
+				E23876BD21C0F2B70090EC82 /* UIButton+JKExtension.m */,
 				E2EDBC6021BB8465003B87CA /* CALayer+JKLayer.h */,
 				E2EDBC6121BB8465003B87CA /* CALayer+JKLayer.m */,
 				E2EDBC6621BB9376003B87CA /* UIViewController+JKViewController.h */,
@@ -245,13 +299,47 @@
 				E2EDBC6A21BB94FF003B87CA /* UINavigationController+JKNavigationController.m */,
 				E2EDBC6C21BB95E8003B87CA /* UILabel+JKLabel.h */,
 				E2EDBC6D21BB95E8003B87CA /* UILabel+JKLabel.m */,
+				E20F22F621BF9B7400F45F27 /* UITextField+JKTextField.h */,
+				E20F22F721BF9B7400F45F27 /* UITextField+JKTextField.m */,
+				E23876A421C0D4E10090EC82 /* UITextView+JKExtension.h */,
+				E23876A521C0D4E10090EC82 /* UITextView+JKExtension.m */,
+				E2F073DC21C0005E00A4ADC7 /* UIDevice+JKHardware.h */,
+				E2F073DD21C0005E00A4ADC7 /* UIDevice+JKHardware.m */,
+				E23876B621C0E77F0090EC82 /* UIWebView+JKExtension.h */,
+				E23876B721C0E77F0090EC82 /* UIWebView+JKExtension.m */,
+				E23876BF21C106F60090EC82 /* UIResponder+JKExtension.h */,
+				E23876C021C106F60090EC82 /* UIResponder+JKExtension.m */,
+				E23876C221C109C30090EC82 /* UIApplication+JKExtension.h */,
+				E23876C321C109C30090EC82 /* UIApplication+JKExtension.m */,
+				E23876C521C10C4B0090EC82 /* UIWindow+JKHierarchy.h */,
+				E23876C621C10C4B0090EC82 /* UIWindow+JKHierarchy.m */,
+				E23876C821C10FA50090EC82 /* UIScrollView+JKExtension.h */,
+				E23876C921C10FA50090EC82 /* UIScrollView+JKExtension.m */,
 			);
 			path = JKUIKit;
+			sourceTree = "<group>";
+		};
+		E23876A721C0DD590090EC82 /* JKLimitInput */ = {
+			isa = PBXGroup;
+			children = (
+				E23876A921C0DD590090EC82 /* JKLimitInput.h */,
+				E23876A821C0DD590090EC82 /* JKLimitInput.m */,
+			);
+			path = JKLimitInput;
+			sourceTree = "<group>";
+		};
+		E23876CE21C1152C0090EC82 /* JKResource */ = {
+			isa = PBXGroup;
+			children = (
+				E23876CF21C1152C0090EC82 /* monkey.gif */,
+			);
+			path = JKResource;
 			sourceTree = "<group>";
 		};
 		E263D07221B66A3600D5CE90 /* JKKit */ = {
 			isa = PBXGroup;
 			children = (
+				E23876A721C0DD590090EC82 /* JKLimitInput */,
 				E27E279621BA7D0400FF4594 /* JKTopWindow */,
 				E276B26A21B8B058007B374B /* JKSandboxPath */,
 				E2E6215A21B76AF1004838E4 /* JKTextExtension */,
@@ -315,6 +403,7 @@
 				E2EDBC7621BB9DD4003B87CA /* Test4ViewController.m */,
 				E2EDBC7821BB9DE2003B87CA /* Test5ViewController.h */,
 				E2EDBC7921BB9DE2003B87CA /* Test5ViewController.m */,
+				E23876CE21C1152C0090EC82 /* JKResource */,
 				E26706782197DFFC00B41CA8 /* Main.storyboard */,
 				E267067B2197DFFC00B41CA8 /* Assets.xcassets */,
 				E267067D2197DFFC00B41CA8 /* LaunchScreen.storyboard */,
@@ -497,6 +586,7 @@
 			files = (
 				E267067F2197DFFC00B41CA8 /* LaunchScreen.storyboard in Resources */,
 				E267067C2197DFFC00B41CA8 /* Assets.xcassets in Resources */,
+				E23876D021C1152C0090EC82 /* monkey.gif in Resources */,
 				E267067A2197DFFC00B41CA8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,6 +614,7 @@
 			files = (
 				E20F22C921BF7C8C00F45F27 /* NSDate+JKExtension.m in Sources */,
 				E2EDBC6E21BB95E8003B87CA /* UILabel+JKLabel.m in Sources */,
+				E23876B821C0E77F0090EC82 /* UIWebView+JKExtension.m in Sources */,
 				E2EDBC6B21BB94FF003B87CA /* UINavigationController+JKNavigationController.m in Sources */,
 				E2EDBC7421BB9DCA003B87CA /* Test3ViewController.m in Sources */,
 				E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */,
@@ -540,21 +631,34 @@
 				E263D07D21B6729900D5CE90 /* JKGCDTimer.m in Sources */,
 				E2EDBC7A21BB9DE2003B87CA /* Test5ViewController.m in Sources */,
 				E20F22DB21BF8BA200F45F27 /* NSString+JKContains.m in Sources */,
+				E23876C121C106F60090EC82 /* UIResponder+JKExtension.m in Sources */,
 				E20F22D521BF875700F45F27 /* NSString+JKBase64.m in Sources */,
+				E23876D621C156EB0090EC82 /* UIImage+JKColorImage.m in Sources */,
+				E23876CD21C113AE0090EC82 /* UIImage+JKGIF.m in Sources */,
+				E23876BE21C0F2B70090EC82 /* UIButton+JKExtension.m in Sources */,
+				E23876AD21C0DFB30090EC82 /* UIFont+JKExtension.m in Sources */,
 				E20F22E721BF8F8200F45F27 /* NSString+JKRemoveEmoji.m in Sources */,
 				E2EDBC6821BB9376003B87CA /* UIViewController+JKViewController.m in Sources */,
 				E20F22ED21BF92E800F45F27 /* NSData+JKEncrypt.m in Sources */,
+				E23876CA21C10FA50090EC82 /* UIScrollView+JKExtension.m in Sources */,
+				E23876A621C0D4E10090EC82 /* UITextView+JKExtension.m in Sources */,
 				E26706822197DFFC00B41CA8 /* main.m in Sources */,
+				E23876D321C1194B0090EC82 /* UIImage+JKDirection.m in Sources */,
 				E263D07921B66AE300D5CE90 /* JKDate.m in Sources */,
 				E26706742197DFFC00B41CA8 /* AppDelegate.m in Sources */,
 				E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */,
 				E2EDBC6221BB8465003B87CA /* CALayer+JKLayer.m in Sources */,
 				E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */,
+				E23876AA21C0DD590090EC82 /* JKLimitInput.m in Sources */,
 				E2EDBC7721BB9DD4003B87CA /* Test4ViewController.m in Sources */,
 				E27E279921BA7D0400FF4594 /* JKTopWindow.m in Sources */,
 				E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */,
+				E23876C421C109C30090EC82 /* UIApplication+JKExtension.m in Sources */,
 				E20F22D821BF882200F45F27 /* NSString+JKRegex.m in Sources */,
+				E23876C721C10C4B0090EC82 /* UIWindow+JKHierarchy.m in Sources */,
+				E20F22F821BF9B7400F45F27 /* UITextField+JKTextField.m in Sources */,
 				E20F22E421BF8DDE00F45F27 /* NSString+JKPinyin.m in Sources */,
+				E2F073DE21C0005E00A4ADC7 /* UIDevice+JKHardware.m in Sources */,
 				E20F22F321BF940D00F45F27 /* NSData+JKHash.m in Sources */,
 				E27E279221BA58C500FF4594 /* UIImageView+JKImageView.m in Sources */,
 				E20F22EA21BF900F00F45F27 /* NSString+JKHash.m in Sources */,

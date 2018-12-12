@@ -12,18 +12,18 @@ NS_ASSUME_NONNULL_BEGIN
  
 @interface UIImage (JKImage)
 
-#pragma mark 1、将图片大小压缩到指定比例
+#pragma mark 1、获得指定size的图片
 /**
- 将图片大小压缩到指定比例
+  获得指定size的图片
 
  @param newSize 新的图片宽高
  @return 返回新的 UIImage对象
  */
 - (UIImage *)jk_imageScaleToSureSize:(CGSize)newSize;
 
-#pragma mark 2、进行图像尺寸的压缩(也就是设置一个宽高，按比例缩小图片，仅仅是尺寸的缩小)
+#pragma mark 2、进行图像尺寸的压缩(通过指定图片最长边，获得等比例的图片size)
 /**
- 进行图像尺寸的压缩
+ 通过指定图片最长边，获得等比例的图片size
 
  @param newSize 新的图片大小
  @return 返回一个新的图片
@@ -56,49 +56,63 @@ NS_ASSUME_NONNULL_BEGIN
  */
 -(UIImage *)jk_scaleImageFromInRect:(CGRect)rect;
 
-
-
-#pragma mark 4、创建指定大小、颜色的图片
+#pragma mark 6、图片的局部拉伸：比如聊天的泡泡保持一部分不拉伸，也可用xcode里面点开图片设置
+// 然后中间的１像素用于中间的平铺，达到最后所需要的尺寸。效果相当于只能保持左边和上面固定，拉伸下面和右边。
 /**
- 创建指定大小、颜色的图片
- 
- @param color 图片颜色
- @param size 图片大小
- @return 创建的图片
- */
-+ (UIImage *)jk_imageWithColor:(UIColor *)color size:(CGSize)size;
+ 图片的局部拉伸
 
-#pragma mark 5、
+ @param leftCapWidth 左边不拉伸的像素
+ @param topCapHeight 上边不拉伸的像素
+ @return 返回处理过的 UIImage
+ */
+-(UIImage *)jk_setImageWithStretchableImageLeftCapWidth:(NSInteger)leftCapWidth withTopCapHeight:(NSInteger)topCapHeight;
+
+#pragma mark 7、背景图片右下角添加水印图片
 /**
- 创建纯色背景、文字居中的图片
- 
- @param color 图片背景色
- @param size 图片大小
- @param attributeString 居中文字
- @return 创建的图片
+ 背景图片右下角添加水印图片
+
+ @param bgImage 背景图片的名字
+ @param markName 水印图片的名字
+ @return 合成的图片
  */
-+ (UIImage *)imageWithColor:(UIColor *)color size:(CGSize)size text:(NSAttributedString *)attributeString;
++(UIImage *)jk_waterMarkImageWithBackImage:(UIImage *)bgImage andMarkImageName:(NSString *)markName;
+
+#pragma mark 8、给图片添加图片水印
+/**
+ 给图片添加图片水印
+
+ @param bg_image 背景图片
+ @param waterImage 水印图片
+ @param rect 添加水印的 rect
+ @return 返回一个合成后的图片
+ */
++ (UIImage *)jx_waterMarkImageWithBackgroundImage:(UIImage *)bg_image waterImage:(UIImage *)waterImage waterImageRect:(CGRect)rect;
+
+#pragma mark 9、给图片添加文字水印
 
 /**
- 裁剪圆形图片
- 
- @param image 需要裁剪的图片
- @param inset 裁剪inset
- @return 裁剪后的图片
+ 给图片添加文字水印
+
+ @param image 底图
+ @param text 文字
+ @param point 起点
+ @param attributed 属性：
+   NSDictionary * firstAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:12],NSForegroundColorAttributeName:[UIColor redColor]}
+ @return 返回合成后的图片
  */
-+ (UIImage *)ellipseImage:(UIImage *)image withInset:(CGFloat)inset;
++(UIImage *)jx_waterImageWithImage:(UIImage *)image text:(NSString *)text textPoint:(CGPoint)point attributedString:(NSDictionary *)attributed;
 
-
+#pragma mark 10、合并两个图片
 /**
- 裁剪带边框的圆形图片
- 
- @param image 需要裁剪的图片
- @param inset 裁剪inset
- @param width 边框宽度
- @param color 边框颜色
- @return 裁剪后的图片
+ 合并两个图片
+
+ @param firstImage 一个图片
+ @param secondImage 二个图片
+ @return return 合并后图片
  */
-+ (UIImage *)ellipseImage: (UIImage *) image withInset:(CGFloat)inset withBorderWidth:(CGFloat)width withBorderColor:(UIColor*)color;
++ (UIImage*)jk_mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage;
+
+
 
 
 @end
