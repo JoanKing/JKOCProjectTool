@@ -29,9 +29,9 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
 
    - 方式2：使用CocoaPods 导入
 
-         platform :ios, '9.0'
+         platform :ios, '8.0'
 
-         target 'JKTest' do
+         target 'ProjectName' do
 
             use_frameworks!
  
