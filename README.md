@@ -25,15 +25,15 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
 
 使用方式：
 
-     方式1：下载下来，把文件夹 JKOCProjectTool 拖入项目
+   - 方式1：下载下来，把文件夹 JKOCProjectTool 拖入项目
 
-     方式2：使用CocoaPods 导入
+   - 方式2：使用CocoaPods 导入
 
-        platform :ios, '9.0'
+         platform :ios, '9.0'
 
-        target 'JKTest' do
+         target 'JKTest' do
 
-           use_frameworks!
-
-           pod 'JKOCProjectTool'
-        end  
+            use_frameworks!
+ 
+            pod 'JKOCProjectTool'
+         end  
