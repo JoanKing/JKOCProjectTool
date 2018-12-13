@@ -1,11 +1,11 @@
 # JKOCProjectTool
-OC 项目的一个工具包
+OC项目的一个工具包，里面是一些常用的组件以及分类Categorys
 
 
 ## Requirements
 This library requires `iOS 7.0+` and `Xcode 8.0+`.
 
-里面分为2部分：JKKit 与 JKCategory
+#### 里面分为2部分：JKKit 与 JKCategory
 
 #### 第一部分：JKKit
 
@@ -29,4 +29,11 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
 
      方式2：使用CocoaPods 导入
 
-        pod 'JKOCProjectTool' 
+        platform :ios, '9.0'
+
+        target 'JKTest' do
+
+           use_frameworks!
+
+           pod 'JKOCProjectTool'
+        end  
