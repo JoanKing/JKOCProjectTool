@@ -135,6 +135,17 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
  */
 -(void)jk_snapshotImageSizePath:(NSString *)path withPicturetype:(NSString *)type withSize:(CGSize)pitureSize;
 
+#pragma mark 10、通过 CAShapeLayer 方式绘制虚线
+/**
+ 通过 CAShapeLayer 方式绘制虚线
+ 
+ @param lineWidth 虚线的宽度
+ @param lineSpacing 虚线的间距
+ @param lineColor 虚线的颜色
+ @param isHorizonal 虚线的方向  YES 为水平方向， NO 为垂直方向
+ */
+-(void)jk_drawLineOfDashByCAShapeLayerLineWidth:(int)lineWidth withLineSpacing:(int)lineSpacing withLineColor:(UIColor *)lineColor withLineDirection:(BOOL)isHorizonal;
+
 
 
 @end

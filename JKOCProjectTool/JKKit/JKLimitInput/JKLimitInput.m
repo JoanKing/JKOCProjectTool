@@ -71,7 +71,6 @@ IMPLEMENT_PROPERTY(UITextView)
     }
 }
 
-
 -(void) textViewDidChange: (NSNotification *) notificaiton {
     if (!self.enableLimitCount) return;
     UITextView *textView = (UITextView *)notificaiton.object;
