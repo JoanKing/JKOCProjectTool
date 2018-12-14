@@ -22,8 +22,8 @@
     
     UITextView *textView = [[UITextView alloc]initWithFrame:CGRectMake(20, 100, JK_SCREEN_WIDTH-40, 100)];
     textView.backgroundColor = [UIColor yellowColor];
-    [textView addPlaceHolder:@"哈哈"];
-    textView.placeHolderTextView.font = [UIFont systemFontOfSize:28.f];
+    [textView jk_addPlaceHolder:@"哈哈"];
+    textView.jk_placeHolderTextView.font = [UIFont systemFontOfSize:28.f];
     [textView setValue:@10 forKey:@"limit"];
     textView.font = [UIFont systemFontOfSize:28.f];
     [self.view addSubview:textView];

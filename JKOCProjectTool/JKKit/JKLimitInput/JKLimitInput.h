@@ -21,6 +21,12 @@ DECLARE_PROPERTY(UITextView)
 
 @property(nonatomic, assign) BOOL enableLimitCount;
 
+/**  可限制输入的字符个数 
+ 
+ [UITextField的对象 setValue:@10 forKey:@"limit"];
+ 
+ */
+
 +(JKLimitInput *) sharedInstance;
 
 

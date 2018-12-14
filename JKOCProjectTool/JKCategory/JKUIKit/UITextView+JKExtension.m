@@ -7,7 +7,7 @@
 //
 
 #import "UITextView+JKExtension.h"
-static const char *phTextView = "placeHolderTextView";
+static const char *jk_phTextView = "jk_placeHolderTextView";
 @implementation UITextView (JKExtension)
 
 - (NSRange)jk_selectedRange
@@ -51,14 +51,19 @@ static const char *phTextView = "placeHolderTextView";
     return textLength;
 }
 
-- (UITextView *)placeHolderTextView {
-    return objc_getAssociatedObject(self, phTextView);
+// 提示语属性 与 使用
+-(UITextView *)jk_placeHolderTextView{
+    
+    return objc_getAssociatedObject(self, jk_phTextView);
 }
-- (void)setPlaceHolderTextView:(UITextView *)placeHolderTextView {
-    objc_setAssociatedObject(self, phTextView, placeHolderTextView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+- (void)setJk_placeHolderTextView:(UITextView *)jk_placeHolderTextView{
+    
+    objc_setAssociatedObject(self, jk_phTextView, jk_placeHolderTextView, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
-- (void)addPlaceHolder:(NSString *)placeHolder {
-    if (![self placeHolderTextView]) {
+
+- (void)jk_addPlaceHolder:(NSString *)placeHolder {
+    if (![self jk_placeHolderTextView]) {
         self.delegate = self;
         UITextView *textView = [[UITextView alloc] initWithFrame:self.bounds];
         textView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
@@ -68,7 +73,7 @@ static const char *phTextView = "placeHolderTextView";
         textView.userInteractionEnabled = NO;
         textView.text = placeHolder;
         [self addSubview:textView];
-        [self setPlaceHolderTextView:textView];
+        [self setJk_placeHolderTextView:textView];
     }
 }
 
@@ -78,9 +83,9 @@ static const char *phTextView = "placeHolderTextView";
     
     if([textView.text length] > 0)
     {
-        self.placeHolderTextView.hidden = YES;
+        self.jk_placeHolderTextView.hidden = YES;
     }else{
-        self.placeHolderTextView.hidden = NO;
+        self.jk_placeHolderTextView.hidden = NO;
     }
     
     

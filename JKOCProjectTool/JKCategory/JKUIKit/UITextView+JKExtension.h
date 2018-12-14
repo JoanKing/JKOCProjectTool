@@ -50,8 +50,18 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSInteger)jk_getInputLengthWithText:(NSString *)text;
 
-@property (nonatomic, strong) UITextView *placeHolderTextView;
-- (void)addPlaceHolder:(NSString *)placeHolder;
+#pragma mark 1.5、提示语属性 与 使用
+/**
+  UITextView 提示语
+ */
+@property (nonatomic, strong) UITextView *jk_placeHolderTextView;
+
+/**
+ 提示语使用
+
+ @param placeHolder 提示语文字
+ */
+- (void)jk_addPlaceHolder:(NSString *)placeHolder;
 
 @end
 

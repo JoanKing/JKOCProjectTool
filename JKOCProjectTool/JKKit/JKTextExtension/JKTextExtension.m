@@ -42,24 +42,24 @@
 
 /***以上是通用模块***/
 
-+(CGFloat)jkHeightTextContent:(NSString *)textContent withSizeFont:(CGFloat)textfont withMaxSize:(CGSize)maxSize{
++(CGFloat)jk_heightTextContent:(NSString *)textContent withSizeFont:(CGFloat)textfont withMaxSize:(CGSize)maxSize{
 
-    return [self jkSizeTextContent:textContent withSizeFont:textfont withMaxSize:maxSize].height;
+    return [self jk_sizeTextContent:textContent withSizeFont:textfont withMaxSize:maxSize].height;
 }
 
-+(CGFloat)jkWidthTextContent:(NSString *)textContent withTextfont:(CGFloat)textfont withMaxSize:(CGSize)maxSize{
++(CGFloat)jk_widthTextContent:(NSString *)textContent withTextfont:(CGFloat)textfont withMaxSize:(CGSize)maxSize{
     
-    return [self jkSizeTextContent:textContent withSizeFont:textfont withMaxSize:maxSize].width;
+    return [self jk_sizeTextContent:textContent withSizeFont:textfont withMaxSize:maxSize].width;
 }
 
-+(CGSize)jkSizeTextContent:(NSString *)textContent withSizeFont:(CGFloat)textfont withMaxSize:(CGSize)maxSize{
++(CGSize)jk_sizeTextContent:(NSString *)textContent withSizeFont:(CGFloat)textfont withMaxSize:(CGSize)maxSize{
     
     UIFont *font = [UIFont systemFontOfSize:textfont];
     NSDictionary *attrs = @{NSFontAttributeName:font};
     return [textContent boundingRectWithSize:maxSize options:NSStringDrawingUsesLineFragmentOrigin|NSStringDrawingUsesFontLeading |NSLineBreakByCharWrapping attributes:attrs context:nil].size;
 }
 
-+(CGSize)jkSizeAttributedTextContentToFit:(NSMutableAttributedString *)attributedText withMaxSize:(CGSize)maxSize{
++(CGSize)jk_sizeAttributedTextContentToFit:(NSMutableAttributedString *)attributedText withMaxSize:(CGSize)maxSize{
     
     UILabel *tempLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, maxSize.width, maxSize.height)];
     tempLabel.attributedText = attributedText;
@@ -68,17 +68,17 @@
     return tempLabel.frame.size;
 }
 
-+(NSString *)jkRemoveStringHeadAndFootSpace:(NSString *)string{
++(NSString *)jk_removeStringHeadAndFootSpace:(NSString *)string{
     
     return [self jk_custom_RemoveString:string withType:@"0"];
 }
 
-+(NSString *)jkRemoveStringHeadAndFootSpaceAndWrap:(NSString *)string{
++(NSString *)jk_removeStringHeadAndFootSpaceAndWrap:(NSString *)string{
     
     return [self jk_custom_RemoveString:string withType:@"1"];
 }
 
-+(NSString *)jkRemoveStringAllSpaceAndWrap:(NSString *)string{
++(NSString *)jk_removeStringAllSpaceAndWrap:(NSString *)string{
 
     return [self jk_custom_RemoveString:string withType:@"2"];
 }
@@ -93,12 +93,12 @@
  *
  *  @return 生成的富文本
  */
-+ (NSMutableAttributedString *)ls_changeCorlorWithColor:(UIColor *)color TotalString:(NSString *)totalStr SubStringArray:(NSArray *)subArray {
++ (NSMutableAttributedString *)jk_changeCorlorWithColor:(UIColor *)color TotalString:(NSString *)totalStr SubStringArray:(NSArray *)subArray {
     
     NSMutableAttributedString *attributedStr = [[NSMutableAttributedString alloc] initWithString:totalStr];
     for (NSString *rangeStr in subArray) {
         
-        NSMutableArray *array = [self ls_getRangeWithTotalString:totalStr SubString:rangeStr];
+        NSMutableArray *array = [self jk_getRangeWithTotalString:totalStr SubString:rangeStr];
         
         for (NSNumber *rangeNum in array) {
             
@@ -120,7 +120,7 @@
  *
  *  @return 位置数组
  */
-+ (NSMutableArray *)ls_getRangeWithTotalString:(NSString *)totalString SubString:(NSString *)subString {
++ (NSMutableArray *)jk_getRangeWithTotalString:(NSString *)totalString SubString:(NSString *)subString {
     
     NSMutableArray *arrayRanges = [NSMutableArray array];
     

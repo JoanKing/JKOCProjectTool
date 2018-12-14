@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param maxSize 文本的最大宽高
  @return 返回文本高度
  */
-+(CGFloat)jkHeightTextContent:(NSString *)textContent withSizeFont:(CGFloat)textfont withMaxSize:(CGSize)maxSize;
++(CGFloat)jk_heightTextContent:(NSString *)textContent withSizeFont:(CGFloat)textfont withMaxSize:(CGSize)maxSize;
 
 #pragma mark 2、计算一个文本的宽度
 /**
@@ -32,7 +32,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param maxSize 文本的最大宽高
  @return 返回文本高度
  */
-+(CGFloat)jkWidthTextContent:(NSString *)textContent withTextfont:(CGFloat)textfont withMaxSize:(CGSize)maxSize;
++(CGFloat)jk_widthTextContent:(NSString *)textContent withTextfont:(CGFloat)textfont withMaxSize:(CGSize)maxSize;
 
 #pragma mark 3、计算一个文本的Size
 /**
@@ -43,7 +43,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param maxSize 文本的最大宽高
  @return 返回文本的 Size
  */
-+(CGSize)jkSizeTextContent:(NSString *)textContent withSizeFont:(CGFloat)textfont withMaxSize:(CGSize)maxSize;
++(CGSize)jk_sizeTextContent:(NSString *)textContent withSizeFont:(CGFloat)textfont withMaxSize:(CGSize)maxSize;
 
 #pragma mark 4、富文本的Size
 /**
@@ -53,7 +53,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param maxSize 富文本的最大宽高
  @return 返回富文本的size
  */
-+(CGSize)jkSizeAttributedTextContentToFit:(NSMutableAttributedString *)attributedText withMaxSize:(CGSize)maxSize;
++(CGSize)jk_sizeAttributedTextContentToFit:(NSMutableAttributedString *)attributedText withMaxSize:(CGSize)maxSize;
 
 #pragma mark 5、移除字符串头部和尾部的空格
 
@@ -63,7 +63,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param string 字符串内容
  @return 返回 移除字符串头部和尾部的空格 的字符串
  */
-+(NSString *)jkRemoveStringHeadAndFootSpace:(NSString *)string;
++(NSString *)jk_removeStringHeadAndFootSpace:(NSString *)string;
 
 #pragma mark 6、移除字符串头部和尾部的空格以及换行符
 /**
@@ -72,7 +72,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param string 字符串内容
  @return 返回去除 首尾空格 后的字符串
  */
-+(NSString *)jkRemoveStringHeadAndFootSpaceAndWrap:(NSString *)string;
++(NSString *)jk_removeStringHeadAndFootSpaceAndWrap:(NSString *)string;
 
 #pragma mark  7、去除所有的空格与换行
 /**
@@ -81,7 +81,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param string 字符串内容
  @return 返回 去除所有的空格与换行 后的字符串
  */
-+(NSString *)jkRemoveStringAllSpaceAndWrap:(NSString *)string;
++(NSString *)jk_removeStringAllSpaceAndWrap:(NSString *)string;
 
 #pragma mark 8、单纯改变一句话中的某些字的颜色（一种颜色）
 /**
@@ -92,7 +92,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param subArray 需要改变颜色的文字数组(要是有相同的 只取第一个)
  @return 生成的富文本
  */
-+ (NSMutableAttributedString *)ls_changeCorlorWithColor:(UIColor *)color TotalString:(NSString *)totalStr SubStringArray:(NSArray *)subArray;
++ (NSMutableAttributedString *)jk_changeCorlorWithColor:(UIColor *)color TotalString:(NSString *)totalStr SubStringArray:(NSArray *)subArray;
 
 @end
 
