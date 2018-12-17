@@ -33,6 +33,7 @@
 #import "UIImage+JKGIF.h"
 #import "UIImage+JKDirection.h"
 #import "UIImage+JKColorImage.h"
+#import "UIImage+JKScaleVideoImage.h"
 
 #import "UIImageView+JKImageView.h"
 

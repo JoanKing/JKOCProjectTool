@@ -22,6 +22,7 @@
 		E20F22F021BF936F00F45F27 /* NSData+JKGzip.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22EF21BF936F00F45F27 /* NSData+JKGzip.m */; };
 		E20F22F321BF940D00F45F27 /* NSData+JKHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22F221BF940D00F45F27 /* NSData+JKHash.m */; };
 		E20F22F821BF9B7400F45F27 /* UITextField+JKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22F721BF9B7400F45F27 /* UITextField+JKTextField.m */; };
+		E234EEB421C7994100112FC3 /* UIImage+JKScaleVideoImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E234EEB321C7994100112FC3 /* UIImage+JKScaleVideoImage.m */; };
 		E23876A621C0D4E10090EC82 /* UITextView+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876A521C0D4E10090EC82 /* UITextView+JKExtension.m */; };
 		E23876AA21C0DD590090EC82 /* JKLimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876A821C0DD590090EC82 /* JKLimitInput.m */; };
 		E23876AD21C0DFB30090EC82 /* UIFont+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876AC21C0DFB30090EC82 /* UIFont+JKExtension.m */; };
@@ -114,6 +115,8 @@
 		E20F22F221BF940D00F45F27 /* NSData+JKHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKHash.m"; sourceTree = "<group>"; };
 		E20F22F621BF9B7400F45F27 /* UITextField+JKTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKTextField.h"; sourceTree = "<group>"; };
 		E20F22F721BF9B7400F45F27 /* UITextField+JKTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKTextField.m"; sourceTree = "<group>"; };
+		E234EEB221C7994100112FC3 /* UIImage+JKScaleVideoImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKScaleVideoImage.h"; sourceTree = "<group>"; };
+		E234EEB321C7994100112FC3 /* UIImage+JKScaleVideoImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKScaleVideoImage.m"; sourceTree = "<group>"; };
 		E23876A421C0D4E10090EC82 /* UITextView+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+JKExtension.h"; sourceTree = "<group>"; };
 		E23876A521C0D4E10090EC82 /* UITextView+JKExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JKExtension.m"; sourceTree = "<group>"; };
 		E23876A821C0DD590090EC82 /* JKLimitInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKLimitInput.m; sourceTree = "<group>"; };
@@ -279,6 +282,8 @@
 				E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */,
 				E2E6215321B76195004838E4 /* UIImage+JKImage.h */,
 				E2E6215421B76195004838E4 /* UIImage+JKImage.m */,
+				E234EEB221C7994100112FC3 /* UIImage+JKScaleVideoImage.h */,
+				E234EEB321C7994100112FC3 /* UIImage+JKScaleVideoImage.m */,
 				E23876D421C156EB0090EC82 /* UIImage+JKColorImage.h */,
 				E23876D521C156EB0090EC82 /* UIImage+JKColorImage.m */,
 				E23876CB21C113AE0090EC82 /* UIImage+JKGIF.h */,
@@ -621,6 +626,7 @@
 				E2E6215521B76195004838E4 /* UIImage+JKImage.m in Sources */,
 				E20F22CC21BF7F5200F45F27 /* NSDate+JKFormatter.m in Sources */,
 				E20F22F021BF936F00F45F27 /* NSData+JKGzip.m in Sources */,
+				E234EEB421C7994100112FC3 /* UIImage+JKScaleVideoImage.m in Sources */,
 				E26706772197DFFC00B41CA8 /* ViewController.m in Sources */,
 				E20F22D221BF867E00F45F27 /* NSData+JKBase64.m in Sources */,
 				E2EDBC7121BB9DBE003B87CA /* Test2ViewController.m in Sources */,
