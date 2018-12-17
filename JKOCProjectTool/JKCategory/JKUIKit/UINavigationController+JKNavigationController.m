@@ -77,4 +77,21 @@
     [UIView commitAnimations];
 }
 
+- (UINavigationController*)jk_currentNavigationController
+{
+    UINavigationController* nav = nil;
+    if ([self isKindOfClass:[UINavigationController class]]) {
+        nav = (id)self;
+    }
+    else {
+        if ([self isKindOfClass:[UITabBarController class]]) {
+            nav = [((UITabBarController*)self).selectedViewController jk_currentNavigationController];
+        }
+        else {
+            nav = self.navigationController;
+        }
+    }
+    return nav;
+}
+
 @end

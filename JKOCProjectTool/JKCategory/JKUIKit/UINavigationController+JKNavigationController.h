@@ -76,6 +76,13 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)jk_popViewControllerWithTransition:(UIViewAnimationTransition)transition;
 
+#pragma mark 8、返回当前vc的 navigationController
+/**
+ 返回当前vc的 navigationController
+
+ @return 返回当前vc的导航控制器
+ */
+- (UINavigationController*)jk_currentNavigationController;
 
 @end
 
