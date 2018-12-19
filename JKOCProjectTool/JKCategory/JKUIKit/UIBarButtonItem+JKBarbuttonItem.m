@@ -11,7 +11,7 @@
 @implementation UIBarButtonItem (JKBarbuttonItem)
 
 
-+(UIBarButtonItem *)itemWithTarget:(id)target Image:(NSString *)image action:(SEL)action;
++(UIBarButtonItem *)jk_itemWithTarget:(id)target Image:(NSString *)image action:(SEL)action;
 {
     UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
@@ -20,6 +20,15 @@
     button.frame =CGRectMake(0, 0, size.width, size.height);
     return [[UIBarButtonItem alloc]initWithCustomView:button];
 }
+
+// 用作修正位置的UIBarButtonItem
++(UIBarButtonItem *)jk_itemFixedSpaceWithWidth:(CGFloat)width{
+    
+    UIBarButtonItem *fixedSpace = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    fixedSpace.width = width;
+    return fixedSpace;
+}
+
 
 
 @end

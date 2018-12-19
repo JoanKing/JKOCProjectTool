@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSString (JKRegex)
 
-#pragma mark 1、下面是字符串的正则
+#pragma mark 下面是字符串的正则
 // 来自：https://github.com/KevinHM
 /** 下面是字符串的正则 */
 
@@ -88,10 +88,13 @@ NS_ASSUME_NONNULL_BEGIN
  *  最后是8个数字(\d{8})
  */
 
+
+#pragma mark 1、验证 手机号码的有效性:分电信、联通、移动和小灵通
 /**
  *  手机号码的有效性:分电信、联通、移动和小灵通
  */
-- (BOOL)isMobileNumberClassification;
+- (BOOL)jk_isMobileNumberClassification;
+
 /**
  *  手机号有效性
  */
@@ -125,6 +128,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (BOOL)bankCardluhmCheck;
 
+#pragma mark 根据卡号判断银行的名字
+
+/**
+ 根据卡号判断银行的名字
+
+ @param bankNumber 银行卡号
+ @return 返回银行的名字
+ */
++(NSString *)jk_bankNameAccordingToBankNumber:(NSString *)bankNumber;
+
 /**
  *  IP地址有效性
  */
@@ -154,6 +167,16 @@ NS_ASSUME_NONNULL_BEGIN
  *  工商税号
  */
 - (BOOL)isValidTaxNo;
+
+#pragma mark 判断是否是纯数字
+/**
+ 判断是否是纯数字
+ 
+ @param str 字符串
+ @return yes/no
+ */
++ (BOOL)jk_deptNumInputShouldNumber:(NSString *)str;
+
 
 /**
  @brief     是否符合最小长度、最长长度，是否包含中文,首字母是否可以为数字

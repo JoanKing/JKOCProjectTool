@@ -112,6 +112,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (UIImage*)jk_mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage;
 
+#pragma mark 11、获取图片后缀
+/**
+ 获取图片后缀
+ 
+ @param image 图
+ @return 后缀 png/jpg
+ */
++(NSString *)jk_imageSuffixImage:(UIImage *)image;
 
 
 

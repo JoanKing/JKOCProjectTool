@@ -18,6 +18,10 @@
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+
+    
+    NSString *bankName = [NSString jk_bankNameAccordingToBankNumber:@"6221504910008273051"];
+    NSLog(@"银行的名字=%@",bankName);
     
     UIView *view = [[UIView alloc]initWithFrame:CGRectMake(50, 200,JK_SCREEN_WIDTH-100 , 100)];
     view.layer.cornerRadius = 50;

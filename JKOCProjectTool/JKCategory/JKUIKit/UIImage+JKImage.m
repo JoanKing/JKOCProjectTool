@@ -227,4 +227,16 @@
 
 /*******************/
 
+// 获取图片后缀
++ (NSString *)jk_imageSuffixImage:(UIImage *)image
+{
+    NSString *suffixTemp = @".jpg";
+    
+    if (UIImageJPEGRepresentation(image,1) == nil)
+    {
+        suffixTemp = @".png";
+    }
+    return suffixTemp;
+}
+
 @end

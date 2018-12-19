@@ -109,4 +109,42 @@
     return l + (int)ceilf((float)(a + b) / 2.0);
 }
 
+// 判断字符串是否有空格
++ (BOOL)jk_stringIsEmpty:(NSString *) str {
+    NSRange range = [str rangeOfString:@" "];
+    if (range.location != NSNotFound) {
+        return YES; //yes代表包含空格
+    }else {
+        return NO; //反之
+    }
+}
+
++ (BOOL)jk_stringChineseNumEnglish:(NSString *)string {
+    
+    //    [a-zA-Z0-9]*
+    BOOL B = NO;
+    NSString *regex = @"[a-zA-Z\u4e00-\u9fa5][a-zA-Z0-9\u4e00-\u9fa5]+";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", regex];
+    B = [pred evaluateWithObject:string];
+    return B;
+    
+}
+
+//判断中英混合的的字符串长度
++ (int)jk_stringConvertToInt:(NSString*)strtemp
+{
+    int strlength = 0;
+    char *p = (char *)[strtemp cStringUsingEncoding:NSUnicodeStringEncoding];
+    for (int i=0; i < [strtemp lengthOfBytesUsingEncoding:NSUnicodeStringEncoding]; i++) {
+        if (*p) {
+            p++;
+            strlength++;
+        }
+        else {
+            p++;
+        }
+    }
+    return strlength;
+}
+
 @end

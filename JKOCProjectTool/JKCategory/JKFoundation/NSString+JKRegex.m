@@ -19,7 +19,7 @@
 #pragma mark -
 
 //手机号分服务商
-- (BOOL)isMobileNumberClassification{
+- (BOOL)jk_isMobileNumberClassification{
     /**
      * 手机号码
      * 移动：134[0-8],135,136,137,138,139,150,151,157,158,159,182,187,188,1705
@@ -31,7 +31,8 @@
     /**
      10         * 中国移动：China Mobile
      11         * 134[0-8],135,136,137,138,139,150,151,157,158,159,182,187,188，1705
-     12         */
+     12
+     */
     NSString * CM = @"^1(34[0-8]|(3[5-9]|5[017-9]|8[278])\\d|705)\\d{7}$";
     /**
      15         * 中国联通：China Unicom
@@ -129,6 +130,20 @@
 {
     NSString *taxNoRegex = @"[0-9]\\d{13}([0-9]|X)$";
     return [self isValidateByRegex:taxNoRegex];
+}
+
+// 判断是否是纯数字
++ (BOOL)jk_deptNumInputShouldNumber:(NSString *)str
+{
+    if (str.length == 0) {
+        return NO;
+    }
+    NSString *regex = @"[0-9]*";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex];
+    if ([pred evaluateWithObject:str]) {
+        return YES;
+    }
+    return NO;
 }
 
 - (BOOL)isValidWithMinLenth:(NSInteger)minLenth
@@ -322,6 +337,35 @@
     NSInteger luhmTotal = lastNumber + sumEvenNumTotal + sumOddNum2Total + sumOddNumTotal;
     
     return (luhmTotal%10 ==0)?YES:NO;
+}
+
+// 根据卡号判断银行的名字
++(NSString *)jk_bankNameAccordingToBankNumber:(NSString *)bankNumber{
+    NSString *filePath = [[NSBundle mainBundle]pathForResource:@"JKBank" ofType:@"plist"];
+    NSDictionary *resultDic = [NSDictionary dictionaryWithContentsOfFile:filePath];
+    NSArray *bankBin = resultDic.allKeys;
+    if (bankNumber == nil || bankNumber.length<16 || bankNumber.length>19) {
+        return @"";
+    }
+    NSString *cardbin_6 ;
+    if (bankNumber.length >= 6) {
+        cardbin_6 = [bankNumber substringWithRange:NSMakeRange(0, 6)];
+    }
+    NSString *cardbin_8 = nil;
+    if (bankNumber.length >= 8) {
+        //8位
+        cardbin_8 = [bankNumber substringWithRange:NSMakeRange(0, 8)];
+    }
+    if ([bankBin containsObject:cardbin_6]) {
+        return [resultDic objectForKey:cardbin_6];
+    } else if ([bankBin containsObject:cardbin_8]){
+        return [resultDic objectForKey:cardbin_8];
+    } else {
+        
+        return @"";
+    }
+    
+    return @"";
 }
 
 - (BOOL)isIPAddress{

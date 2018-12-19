@@ -80,16 +80,81 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark 7、NSDate类型的时间转固定格式的时间
 /**
  时间戳字符串转固定格式的时间
- 
+
  @param date NSDate类型的时间
  @param dateType 1：2018 12/04；
  2：2018 12/04 4:50；
  3：2018-12-04
  4：2018-12-04 16:57
  不属于上面的类型的格式：2018-12-04 16:57
- @return 返回转换后的格式
+ @param judgeYear 是否判断年份
+ @return 返回转化后的字符串
  */
 +(NSString *)convertDate:(NSDate *)date withDateType:(NSString *)dateType withJudgeYear:(BOOL)judgeYear;
+
+#pragma mark 8.1、时间差转多久之前
+/**
+ 时间差转多久之前
+ 
+ @param timestamp 时间戳
+ @return 多久之前
+ */
++ (NSString *)jk_time1TurnStringTimestamp:(NSString *)timestamp;
+
+#pragma mark 8.2、时间差转多久之前
+/**
+ 时间差转多久之前
+ 
+ @param timestamp 时间戳
+ @return 多久之前
+ */
++ (NSString *)jk_time2TurnStringTimestamp:(NSString *)timestamp;
+
+#pragma mark 9、剩余多少天
+/**
+ 剩余多少天
+ 
+ @param seconds 秒
+ @return 剩余
+ */
++ (NSString *)jk_laveTimeTurnString:(NSInteger)seconds;
+
+#pragma mark 10、时间戳转年龄
+/**
+ 时间戳转年龄
+ 
+ @param timestamp 时间戳
+ @return 年龄
+ */
++ (NSString *)jk_ageConstellationWithStamp:(NSString *)timestamp;
+
+#pragma mark 11、根据时间戳转星座
+/**
+ 根据时间戳转星座
+
+ @param timestamp 时间戳
+ @return 星座
+ */
++ (NSString *)jk_calculateConstellationWithStamp:(NSString *)timestamp;
+
+#pragma mark 12、根据生日计算星座
+/**
+ 根据生日计算星座
+
+ @param month 月份
+ @param day 日期
+ @return 星座名称
+ */
++(NSString *)jk_calculateConstellationWithMonth:(NSInteger)month day:(NSInteger)day;
+
+#pragma mark 13、秒数转时间 xx:xx:xx
+/**
+ 秒数转时间 xx:xx:xx
+ 
+ @param seconds 秒数
+ @return return value description
+ */
++ (NSString *)jk_numberOfSecondsTurnString:(NSInteger)seconds;
 
 @end
 

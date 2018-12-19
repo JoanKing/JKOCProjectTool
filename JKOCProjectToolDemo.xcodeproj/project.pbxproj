@@ -52,6 +52,8 @@
 		E27E279221BA58C500FF4594 /* UIImageView+JKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E279121BA58C500FF4594 /* UIImageView+JKImageView.m */; };
 		E27E279921BA7D0400FF4594 /* JKTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E279821BA7D0400FF4594 /* JKTopWindow.m */; };
 		E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */; };
+		E2DC2C7221C9CDE5001716AB /* NSObject+JKRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DC2C7121C9CDE5001716AB /* NSObject+JKRuntime.m */; };
+		E2DC2C7721C9DAA1001716AB /* JKBank.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2DC2C7621C9DAA1001716AB /* JKBank.plist */; };
 		E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */; };
 		E2E6215521B76195004838E4 /* UIImage+JKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215421B76195004838E4 /* UIImage+JKImage.m */; };
 		E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */; };
@@ -178,6 +180,9 @@
 		E27E279821BA7D0400FF4594 /* JKTopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKTopWindow.m; sourceTree = "<group>"; };
 		E2D0452721B5697900DD55CC /* NSMutableArray+JKMutableArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JKMutableArray.h"; sourceTree = "<group>"; };
 		E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JKMutableArray.m"; sourceTree = "<group>"; };
+		E2DC2C7021C9CDE5001716AB /* NSObject+JKRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JKRuntime.h"; sourceTree = "<group>"; };
+		E2DC2C7121C9CDE5001716AB /* NSObject+JKRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JKRuntime.m"; sourceTree = "<group>"; };
+		E2DC2C7621C9DAA1001716AB /* JKBank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JKBank.plist; sourceTree = "<group>"; };
 		E2E6215021B75C4F004838E4 /* UIColor+JKColor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKColor.h"; sourceTree = "<group>"; };
 		E2E6215121B75C4F004838E4 /* UIColor+JKColor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKColor.m"; sourceTree = "<group>"; };
 		E2E6215321B76195004838E4 /* UIImage+JKImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKImage.h"; sourceTree = "<group>"; };
@@ -269,6 +274,8 @@
 				E20F22CB21BF7F5200F45F27 /* NSDate+JKFormatter.m */,
 				E23876AB21C0DFB30090EC82 /* UIFont+JKExtension.h */,
 				E23876AC21C0DFB30090EC82 /* UIFont+JKExtension.m */,
+				E2DC2C7021C9CDE5001716AB /* NSObject+JKRuntime.h */,
+				E2DC2C7121C9CDE5001716AB /* NSObject+JKRuntime.m */,
 			);
 			path = JKFoundation;
 			sourceTree = "<group>";
@@ -440,6 +447,7 @@
 		E26706A62197E13100B41CA8 /* JKOCProjectTool */ = {
 			isa = PBXGroup;
 			children = (
+				E2DC2C7521C9DA8D001716AB /* JKResource */,
 				E263D07221B66A3600D5CE90 /* JKKit */,
 				E2EBD18821B23420002AEF19 /* JKCategory */,
 				E26706AB2197E1FA00B41CA8 /* JKOCProjectTool.h */,
@@ -463,6 +471,14 @@
 				E27E279821BA7D0400FF4594 /* JKTopWindow.m */,
 			);
 			path = JKTopWindow;
+			sourceTree = "<group>";
+		};
+		E2DC2C7521C9DA8D001716AB /* JKResource */ = {
+			isa = PBXGroup;
+			children = (
+				E2DC2C7621C9DAA1001716AB /* JKBank.plist */,
+			);
+			path = JKResource;
 			sourceTree = "<group>";
 		};
 		E2E6215A21B76AF1004838E4 /* JKTextExtension */ = {
@@ -590,6 +606,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E267067F2197DFFC00B41CA8 /* LaunchScreen.storyboard in Resources */,
+				E2DC2C7721C9DAA1001716AB /* JKBank.plist in Resources */,
 				E267067C2197DFFC00B41CA8 /* Assets.xcassets in Resources */,
 				E23876D021C1152C0090EC82 /* monkey.gif in Resources */,
 				E267067A2197DFFC00B41CA8 /* Main.storyboard in Resources */,
@@ -637,6 +654,7 @@
 				E263D07D21B6729900D5CE90 /* JKGCDTimer.m in Sources */,
 				E2EDBC7A21BB9DE2003B87CA /* Test5ViewController.m in Sources */,
 				E20F22DB21BF8BA200F45F27 /* NSString+JKContains.m in Sources */,
+				E2DC2C7221C9CDE5001716AB /* NSObject+JKRuntime.m in Sources */,
 				E23876C121C106F60090EC82 /* UIResponder+JKExtension.m in Sources */,
 				E20F22D521BF875700F45F27 /* NSString+JKBase64.m in Sources */,
 				E23876D621C156EB0090EC82 /* UIImage+JKColorImage.m in Sources */,

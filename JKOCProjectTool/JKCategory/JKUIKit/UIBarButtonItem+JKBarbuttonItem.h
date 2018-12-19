@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIBarButtonItem (JKBarbuttonItem)
 
-#pragma mark 1、创建一个item 点击item之后调用的方法
+#pragma mark 1、根据图片创建一个item 点击item之后调用的方法
 /**
  创建一个item   点击item之后调用的方法
 
@@ -21,7 +21,17 @@ NS_ASSUME_NONNULL_BEGIN
  @param action 方法调用
  @return 创建完的item
  */
-+(UIBarButtonItem *)itemWithTarget:(id)target Image:(NSString *)image action:(SEL)action;
++(UIBarButtonItem *)jk_itemWithTarget:(id)target Image:(NSString *)image action:(SEL)action;
+
+#pragma mark 2、用作修正位置的UIBarButtonItem
+/**
+ 用作修正位置的UIBarButtonItem
+ 
+ @param width 修正宽度
+ @return 修正位置的UIBarButtonItem
+ */
++(UIBarButtonItem *)jk_itemFixedSpaceWithWidth:(CGFloat)width;
+
 
 @end
 
