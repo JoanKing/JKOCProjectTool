@@ -121,6 +121,57 @@ typedef void(^ReadImage)(UIImage *image,BOOL readImageStatus);
 /** 计算文件夹的大小 folderPath: 文件夹的大小*/
 -(NSString *)jKCalculateTheSizeOfTheFolderPath:(NSString *)folderPath;
 
+#pragma mark 19、沙盒路径的截取
+/** 沙盒路径的截取
+ 
+   @"/Library/Application Support/Documents/DownLoad/test/mine.zip"
+ */
+#pragma mark 19.1、从路径中获得完整的文件名（带后缀）
+
+/**
+ 从路径中获得完整的文件名（带后缀）
+
+ @param path 路径
+ @return 返回: mine.zip
+ */
++(NSString *)jk_lastPathComponentPath:(NSString *)path;
+
+#pragma mark 19.2、返回路径z后缀之前的路径
+/**
+ 返回路径z后缀之前的路径
+
+ @param path 路径
+ @return 返回: /Library/Application Support/Documents/DownLoad/test
+ */
++(NSString *)jk_stringByDeletingLastPathComponentPath:(NSString *)path;
+
+#pragma mark 19.3、从路径中获得完整的文件名不带'.',也就是路径的后缀
+/**
+ 从路径中获得完整的文件名不带'.',也就是路径的后缀
+
+ @param path 路径
+ @return 返回:zip
+ */
++(NSString *)jk_pathExtensionPathComponentPath:(NSString *)path;
+
+#pragma mark 19.4、除了路径后缀之前的内容
+/**
+ 路径”标准化
+
+ @param path 路径
+ @return 返回：/Library/Application Support/Documents/DownLoad/test/mine
+ */
++(NSString *)jk_stringByDeletingPathExtensionPath:(NSString *)path;
+
+#pragma mark 19.5、获取文件名字
+/**
+ 获取文件名字
+
+ @param path 路径
+ @return 返回：mine
+ */
++(NSString *)jk_stringPathNameExtensionPath:(NSString *)path;
+
 @end
 
 NS_ASSUME_NONNULL_END

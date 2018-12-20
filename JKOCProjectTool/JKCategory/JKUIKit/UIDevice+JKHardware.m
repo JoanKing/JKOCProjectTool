@@ -322,8 +322,24 @@ void UncaughtExceptionHandler(NSException *exception) {
      CORETELEPHONY_EXTERN NSString * const CTRadioAccessTechnologyeHRPD         __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
      CORETELEPHONY_EXTERN NSString * const CTRadioAccessTechnologyLTE           __OSX_AVAILABLE_STARTING(__MAC_NA,__IPHONE_7_0);
      **/
-    CTTelephonyNetworkInfo* info=[[CTTelephonyNetworkInfo alloc]init];
-    return info.currentRadioAccessTechnology;
+    NSArray *typeStrings2G = @[CTRadioAccessTechnologyEdge,CTRadioAccessTechnologyGPRS,CTRadioAccessTechnologyCDMA1x];
+    NSArray *typeStrings3G = @[CTRadioAccessTechnologyHSDPA,CTRadioAccessTechnologyWCDMA,CTRadioAccessTechnologyHSUPA,CTRadioAccessTechnologyCDMAEVDORev0,CTRadioAccessTechnologyCDMAEVDORevA,CTRadioAccessTechnologyCDMAEVDORevB,CTRadioAccessTechnologyeHRPD];
+    NSArray *typeStrings4G = @[CTRadioAccessTechnologyLTE];
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) {
+        CTTelephonyNetworkInfo *teleInfo= [[CTTelephonyNetworkInfo alloc] init];
+        NSString *accessString = teleInfo.currentRadioAccessTechnology;
+       
+        if ([typeStrings4G containsObject:accessString]) {
+            return @"4G网络";
+        } else if ([typeStrings3G containsObject:accessString]) {
+            return @"3G网络";
+        } else if ([typeStrings2G containsObject:accessString]) {
+            return @"2G网络";
+        } else {
+            return @"未知网络";
+        }
+    }
+    return @"未知网络";
 }
 
 +(NSString*)jk_getTotalMemorySize

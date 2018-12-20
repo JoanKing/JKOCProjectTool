@@ -19,6 +19,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
 
+    NSLog(@"网络的类型=%@",[UIDevice jk_getNetworkType]);
+    
     
     NSString *bankName = [NSString jk_bankNameAccordingToBankNumber:@"6221504910008273051"];
     NSLog(@"银行的名字=%@",bankName);

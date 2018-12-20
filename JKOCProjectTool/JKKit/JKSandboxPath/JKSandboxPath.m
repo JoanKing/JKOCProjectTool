@@ -453,4 +453,25 @@
     }
 }
 
++(NSString *)jk_lastPathComponentPath:(NSString *)path{
+    return [path lastPathComponent];
+}
+
++(NSString *)jk_stringByDeletingLastPathComponentPath:(NSString *)path{
+    return [path stringByDeletingLastPathComponent];
+}
+
++(NSString *)jk_pathExtensionPathComponentPath:(NSString *)path{
+    return [path pathExtension];
+}
+
++(NSString *)jk_stringByDeletingPathExtensionPath:(NSString *)path{
+    return [path stringByDeletingPathExtension];
+}
+
++(NSString *)jk_stringPathNameExtensionPath:(NSString *)path{
+    
+    return [[path lastPathComponent] stringByDeletingPathExtension];
+}
+
 @end
