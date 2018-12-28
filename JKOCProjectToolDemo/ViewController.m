@@ -7,8 +7,13 @@
 //
 
 #import "ViewController.h"
-#import "Test2ViewController.h"
-@interface ViewController ()
+#import "TestViewController.h"
+#import "RSATestViewController.h"
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property(nonatomic,strong) UITableView *tableView;
+
+@property(nonatomic,strong) NSMutableArray *dataArray;
 
 @end
 
@@ -17,40 +22,92 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor whiteColor];
-
-    NSLog(@"%d",(-1)>=3);
+    self.title = @"JKOCProjectTool";
+    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用"]];
     
-    NSLog(@"网络的类型=%@",[UIDevice jk_getNetworkType]);
-    
-    
-    NSString *bankName = [NSString jk_bankNameAccordingToBankNumber:@"6221504910008273051"];
-    NSLog(@"银行的名字=%@",bankName);
-    
-    UIView *view = [[UIView alloc]initWithFrame:CGRectMake(50, 200,JK_SCREEN_WIDTH-100 , 100)];
-    view.layer.cornerRadius = 50;
-    [view jk_setGradientBackgroundWithColors:@[JKRGBColor(255,219,0,1),JKRGBColor(255,185,17,1)] locations:nil startPoint:CGPointMake(0, 0) endPoint:CGPointMake(1, 0)];
-    [view jk_addShadowToViewShadowRadius:4 withColor:JKRGBColor(255,185,17,1) withShadowOffset:CGSizeMake(0, 2) withShadowOpacity:0.48];
-    [view jk_addTapActionWithBlock:^(UITapGestureRecognizer * _Nonnull gestureRecoginzer) {
-        
-        JKLog(@"%@",@"我点击了");
-    }];
-    
-    [self.view addSubview:view];
-    
-    [view.layer jk_shake];
-
-
-    JKLog(@"\n获取设备名称=%@\n获取手机名称=%@\n当前wifi的名字是：%@",[UIDevice jk_getDeviceName],[UIDevice jk_getIphoneName],[UIDevice jk_getWifiName]);
-    
+    [self.view addSubview:self.tableView];
 }
 
-
-
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     
-    Test2ViewController *vc = [Test2ViewController new];
-    [self.navigationController pushViewController:vc animated:YES];
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    
+    return self.dataArray.count;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellID"];
+    
+    if (!cell) {
+        
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellID"];
+    }
+    
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld、 %@",indexPath.row,self.dataArray[indexPath.row]];
+    cell.backgroundColor = JKRandomColor;
+    
+    
+    return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    return 100;
+}
+
+-(UITableView *)tableView{
+    
+    if (!_tableView) {
+        
+        _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 44+JKstatusBarHeight, JK_SCREEN_WIDTH, JK_SCREEN_HEIGHT-44-JKstatusBarHeight) style:UITableViewStylePlain];
+        _tableView.backgroundColor = [UIColor whiteColor];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        if (@available(iOS 11.0, *)) {
+            
+            _tableView.estimatedRowHeight = 0;
+            _tableView.estimatedSectionFooterHeight = 0;
+            _tableView.estimatedSectionHeaderHeight = 0;
+            _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            
+        } else {
+            // 小于11.0的不做操作
+            self.automaticallyAdjustsScrollViewInsets = NO;
+        }
+    }
+    
+    return _tableView;
+}
+
+-(NSMutableArray *)dataArray{
+    
+    if (!_dataArray) {
+        _dataArray = [[NSMutableArray alloc]init];
+    }
+    
+    return _dataArray;
+}
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    NSString *cell_name = [NSString stringWithFormat:@"%@",self.dataArray[indexPath.row]];
+    if ([cell_name isEqualToString:@"最初的测试"]) {
+        
+        TestViewController *testViewController = [TestViewController new];
+        [self.navigationController pushViewController:testViewController animated:YES];
+        
+    }else if ([cell_name isEqualToString:@"RSA加密的使用"]){
+        
+        RSATestViewController *rsaTestViewController = [RSATestViewController new];
+        [self.navigationController pushViewController:rsaTestViewController animated:YES];
+    }
+    
 }
 
 @end
+

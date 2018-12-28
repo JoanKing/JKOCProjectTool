@@ -7,19 +7,8 @@
 //
 
 #import "NSString+JKBase64.h"
-#import "NSData+JKBase64.h"
+#import <CommonCrypto/CommonCryptor.h>
 @implementation NSString (JKBase64)
-
-- (NSString *)jk_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth
-{
-    NSData *data = [self dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
-    return [data jk_base64EncodedStringWithWrapWidth:wrapWidth];
-}
-
-- (NSData *)jk_base64DecodedData
-{
-    return [NSData jk_dataWithBase64EncodedString:self];
-}
 
 - (NSString *)jk_encodedbase64String
 {
@@ -30,8 +19,31 @@
 - (NSString *)jk_decodedbase64String
 {
     NSData *data = [[NSData alloc]initWithBase64EncodedString:self options:NSDataBase64DecodingIgnoreUnknownCharacters];
-    return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];;
-    
+    return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
 }
+
+// base64 编码
++(NSString *)jk_encodedbase64String:(NSString *)encodedString{
+    
+    NSData *data = [encodedString dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    return [data base64EncodedStringWithOptions:0];
+}
+// base64 解码
++(NSString *)jk_decodedbase64String:(NSString *)decodedString{
+    
+    NSData *data = [[NSData alloc]initWithBase64EncodedString:decodedString options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+}
+
++ (NSString*)encodeBase64Data:(NSData *)data{
+    
+    return [data base64EncodedStringWithOptions:0];
+}
+
++ (NSString*)decodeBase64Data:(NSData *)data{
+    
+    return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
+}
+
 
 @end

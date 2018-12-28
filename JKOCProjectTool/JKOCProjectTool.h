@@ -18,6 +18,8 @@
 /** 4、针对UITextView与UITextFiled输入字符的限制 */
 // [对象 setValue:@200 forKey:@"limit"];
 #import "JKLimitInput.h"
+/** 5、RSA加密的使用 */
+#import "JKRSATool.h"
 
 /**以上是：自己写的类的头文件**/
 
@@ -98,6 +100,8 @@
 
 // 有关 Runtime 的一些知识点
 #import "NSObject+JKRuntime.h"
+
+
 
 /**以上是：分类的头文件**/
 
