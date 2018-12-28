@@ -20,8 +20,9 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
 
             use_frameworks!
  
-快速            pod 'JKOCProjectTool'
-         end  
+            pod 'JKOCProjectTool'
+         
+	 end  
 
 ## 里面分为2部分：JKKit 与 JKCategory
 
