@@ -62,6 +62,7 @@
 #import "NSString+JKXML.h"
 #import "NSString+JKContains.h"
 #import "NSString+JKBase64.h"
+// 正则相关
 #import "NSString+JKRegex.h"
 
 
@@ -70,6 +71,8 @@
 // 加密技术
 #import "NSData+JKEncrypt.h"
 #import "NSData+JKHash.h"
+#import "NSData+JK_AES.h"
+#import "NSString+JK_MD5.h"
 // 压缩
 #import "NSData+JKGzip.h"
 
