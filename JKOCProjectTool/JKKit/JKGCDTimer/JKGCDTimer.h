@@ -6,6 +6,8 @@
 //  Copyright © 2018年 JK科技有限公司. All rights reserved.
 //
 
+// 博客地址：https://github.com/JoanKing/JKGCDTimer
+
 #import <Foundation/Foundation.h>
 
 NS_ASSUME_NONNULL_BEGIN

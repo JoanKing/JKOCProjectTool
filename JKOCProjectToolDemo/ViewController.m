@@ -9,6 +9,11 @@
 #import "ViewController.h"
 #import "TestViewController.h"
 #import "RSATestViewController.h"
+// 有关日期的使用
+#import "DateViewController.h"
+// MD5加密
+#import "MD5TestViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property(nonatomic,strong) UITableView *tableView;
@@ -23,7 +28,7 @@
     [super viewDidLoad];
     
     self.title = @"JKOCProjectTool";
-    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用"]];
+    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密"]];
     
     [self.view addSubview:self.tableView];
 }
@@ -105,8 +110,16 @@
         
         RSATestViewController *rsaTestViewController = [RSATestViewController new];
         [self.navigationController pushViewController:rsaTestViewController animated:YES];
+    }else if ([cell_name isEqualToString:@"有关日期的使用"])
+    {
+        
+        DateViewController *dateViewController = [DateViewController new];
+        [self.navigationController pushViewController:dateViewController animated:YES];
+    }else if([cell_name isEqualToString:@"MD5加密"]){
+        
+        MD5TestViewController *md5TestViewController = [MD5TestViewController new];
+        [self.navigationController pushViewController:md5TestViewController animated:YES];
     }
-    
 }
 
 @end

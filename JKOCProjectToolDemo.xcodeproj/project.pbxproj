@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E208EBEA21D61CA0008EFD53 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E208EBE921D61CA0008EFD53 /* DateViewController.m */; };
+		E208EBED21D62FEE008EFD53 /* MD5TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E208EBEC21D62FEE008EFD53 /* MD5TestViewController.m */; };
 		E20F209221BF58D300F45F27 /* NSData+JKData.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F209121BF58D300F45F27 /* NSData+JKData.m */; };
 		E20F22C921BF7C8C00F45F27 /* NSDate+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22C821BF7C8C00F45F27 /* NSDate+JKExtension.m */; };
 		E20F22CC21BF7F5200F45F27 /* NSDate+JKFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22CB21BF7F5200F45F27 /* NSDate+JKFormatter.m */; };
@@ -94,6 +96,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E208EBE821D61CA0008EFD53 /* DateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
+		E208EBE921D61CA0008EFD53 /* DateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
+		E208EBEB21D62FEE008EFD53 /* MD5TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MD5TestViewController.h; sourceTree = "<group>"; };
+		E208EBEC21D62FEE008EFD53 /* MD5TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MD5TestViewController.m; sourceTree = "<group>"; };
 		E20F209021BF58D300F45F27 /* NSData+JKData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+JKData.h"; sourceTree = "<group>"; };
 		E20F209121BF58D300F45F27 /* NSData+JKData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKData.m"; sourceTree = "<group>"; };
 		E20F22C721BF7C8C00F45F27 /* NSDate+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+JKExtension.h"; sourceTree = "<group>"; };
@@ -445,6 +451,10 @@
 				E2EDBC7921BB9DE2003B87CA /* Test5ViewController.m */,
 				E2E4AF4D21D5EFA10045F822 /* RSATestViewController.h */,
 				E2E4AF4E21D5EFA10045F822 /* RSATestViewController.m */,
+				E208EBE821D61CA0008EFD53 /* DateViewController.h */,
+				E208EBE921D61CA0008EFD53 /* DateViewController.m */,
+				E208EBEB21D62FEE008EFD53 /* MD5TestViewController.h */,
+				E208EBEC21D62FEE008EFD53 /* MD5TestViewController.m */,
 				E23876CE21C1152C0090EC82 /* JKResource */,
 				E26706782197DFFC00B41CA8 /* Main.storyboard */,
 				E267067B2197DFFC00B41CA8 /* Assets.xcassets */,
@@ -702,6 +712,7 @@
 				E20F22D521BF875700F45F27 /* NSString+JKBase64.m in Sources */,
 				E23876D621C156EB0090EC82 /* UIImage+JKColorImage.m in Sources */,
 				E23876CD21C113AE0090EC82 /* UIImage+JKGIF.m in Sources */,
+				E208EBED21D62FEE008EFD53 /* MD5TestViewController.m in Sources */,
 				E23876BE21C0F2B70090EC82 /* UIButton+JKExtension.m in Sources */,
 				E23876AD21C0DFB30090EC82 /* UIFont+JKExtension.m in Sources */,
 				E20F22E721BF8F8200F45F27 /* NSString+JKRemoveEmoji.m in Sources */,
@@ -727,6 +738,7 @@
 				E2E4AF4821D5EE9B0045F822 /* NSString+JK_MD5.m in Sources */,
 				E23876C721C10C4B0090EC82 /* UIWindow+JKHierarchy.m in Sources */,
 				E20F22F821BF9B7400F45F27 /* UITextField+JKTextField.m in Sources */,
+				E208EBEA21D61CA0008EFD53 /* DateViewController.m in Sources */,
 				E20F22E421BF8DDE00F45F27 /* NSString+JKPinyin.m in Sources */,
 				E2F073DE21C0005E00A4ADC7 /* UIDevice+JKHardware.m in Sources */,
 				E20F22F321BF940D00F45F27 /* NSData+JKHash.m in Sources */,
