@@ -33,7 +33,7 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
       4、JKSandboxPath 沙盒路径的配置
       5、JKRSATool RSA 加密
       6、JKLimitInput 输入字符的限制
-      7、JKTopWindo 点击状态栏滑动界面置顶
+      7、JKTopWindow 点击状态栏滑动界面置顶
     
 #### 第二部分：JKCategory：分类的综述
     
