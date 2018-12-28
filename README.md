@@ -4,7 +4,7 @@ OC项目的一个工具包，里面是一些常用的组件以及分类Categorys
 ## Requirements
 This library requires `iOS 7.0+` and `Xcode 8.0+`.
 
-## 快速开始
+## 开始
 
 ### 配置工程
 
@@ -20,10 +20,10 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
 
             use_frameworks!
  
-            pod 'JKOCProjectTool'
+快速            pod 'JKOCProjectTool'
          end  
 
-#### 里面分为2部分：JKKit 与 JKCategory
+## 里面分为2部分：JKKit 与 JKCategory
 
 #### 第一部分：JKKit
 
