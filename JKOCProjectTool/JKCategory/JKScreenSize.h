@@ -24,6 +24,7 @@
 
 /** 5、适配iPhone x 导航栏的高度  64 + 24 */
 #define JKNaviHeight (JKIs_Iphone_X ? 88:64)
+#define JKNaviStatusHeight ([[UIApplication sharedApplication] statusBarFrame].size.height+44)
 
 /** 6、适配iPhone x 底部高度 49 + 34 */
 #define JKTabbarHeight ([[UIApplication sharedApplication] statusBarFrame].size.height > 20 ? 83 : 49)

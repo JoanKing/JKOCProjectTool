@@ -19,6 +19,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
 
+    NSLog(@"%d",(-1)>=3);
+    
     NSLog(@"网络的类型=%@",[UIDevice jk_getNetworkType]);
     
     

@@ -12,26 +12,29 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface NSData (JKBase64)
 
+#pragma mark 1、字符串base64后转data
 /**
- *  @brief  字符串base64后转data
- *
- *  @param string 传入字符串
- *
- *  @return 传入字符串 base64后的data
+ 字符串base64后转data
+
+ @param string 传入字符串
+ @return 传入字符串 base64后的data
  */
 + (NSData *)jk_dataWithBase64EncodedString:(NSString *)string;
+
+#pragma mark 2、NSData转string
 /**
- *  @brief  NSData转string
- *
- *  @param wrapWidth 换行长度  76  64
- *
- *  @return base64后的字符串
+ NSData转string
+
+ @param wrapWidth wrapWidth 换行长度  76  64
+ @return base64后的字符串
  */
 - (NSString *)jk_base64EncodedStringWithWrapWidth:(NSUInteger)wrapWidth;
+
+#pragma mark 3、NSData转string 换行长度默认64
 /**
- *  @brief  NSData转string 换行长度默认64
- *
- *  @return base64后的字符串
+ NSData转string 换行长度默认64
+
+ @return base64后的字符串
  */
 - (NSString *)jk_base64EncodedString;
 

@@ -17,9 +17,38 @@ NS_ASSUME_NONNULL_BEGIN
 @property (readonly) NSString *sha256String;
 @property (readonly) NSString *sha512String;
 
+#pragma mark 1、MD5 加密字符串
+/**
+ MD5 加密后的字符串
+
+ @param key 要加密的字符串
+ @return MD5 加密后的字符串
+ */
+
 - (NSString *)jk_hmacMD5StringWithKey:(NSString *)key;
+#pragma mark 2、SHA1 加密字符串
+/**
+ SHA1 加密字符串
+
+ @param key 要加密的字符串
+ @return SHA1 加密后的字符串
+ */
 - (NSString *)jk_hmacSHA1StringWithKey:(NSString *)key;
+#pragma mark 3、SHA256 加密字符串
+/**
+ SHA256 加密字符串
+
+ @param key 要加密的字符串
+ @return SHA256 加密后的字符串
+ */
 - (NSString *)jk_hmacSHA256StringWithKey:(NSString *)key;
+#pragma mark 4、SHA512 加密字符串
+/**
+ SHA512 加密字符串
+
+ @param key 要加密的字符串
+ @return SHA512 加密后的字符串
+ */
 - (NSString *)jk_hmacSHA512StringWithKey:(NSString *)key;
 
 @end
