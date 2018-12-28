@@ -39,3 +39,16 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
       3、UIColor+JKColor：颜色的扩展，目前里面只有16进制的设置
       4、UIImage+JKUIImageRedraw：图片的设置
       5、UIBarButtonItem+JKBarbuttonItem：自定义UIBarButtonItem 
+      
+## 版本历史
+- 0.1.9
+
+- 新增： 这次主要是加密技术的添加
+	- JKCategory/JKFoundation/NSString+JKBase64 
+	- JKCategory/JKFoundation/NSData+JK_AES
+	- JKCategory/JKFoundation/NSString+JK_MD5
+   
+	- JKKit/JKRSATool   RSA加密的添加
+
+- 优化：主要是优化有关 Base64 的代码
+	- NSString+JKBase64 优化里面的内容
