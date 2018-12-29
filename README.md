@@ -34,7 +34,7 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
       5、JKRSATool RSA 加密
       6、JKLimitInput 输入字符的限制
       7、JKTopWindow 点击状态栏滑动界面置顶
-      8、JKQRCode   二维码生成以及相机扫描的使用
+      8、JKQRCode   二维码带logo以及普通二维码的生成以及相机扫描的使用
     
 #### 第二部分：JKCategory：分类的综述
     
