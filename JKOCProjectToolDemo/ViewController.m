@@ -13,6 +13,8 @@
 #import "DateViewController.h"
 // MD5加密
 #import "MD5TestViewController.h"
+// 二维码生成以及扫描的测试
+#import "JKQRCodeTestViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -28,7 +30,8 @@
     [super viewDidLoad];
     
     self.title = @"JKOCProjectTool";
-    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密"]];
+    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
+    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密",@"二维码生成以及扫描的测试"]];
     
     [self.view addSubview:self.tableView];
 }
@@ -61,7 +64,7 @@
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    return 100;
+    return 80;
 }
 
 -(UITableView *)tableView{
@@ -118,6 +121,10 @@
     }else if([cell_name isEqualToString:@"MD5加密"]){
         
         MD5TestViewController *md5TestViewController = [MD5TestViewController new];
+        [self.navigationController pushViewController:md5TestViewController animated:YES];
+    }else if ([cell_name isEqualToString:@"二维码生成以及扫描的测试"]){
+        
+        JKQRCodeTestViewController *md5TestViewController = [JKQRCodeTestViewController new];
         [self.navigationController pushViewController:md5TestViewController animated:YES];
     }
 }

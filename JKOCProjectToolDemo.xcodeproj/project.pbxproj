@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E201FCAB21D7D081000C4135 /* JKQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = E201FCA721D7D081000C4135 /* JKQRCode.m */; };
+		E201FCAC21D7D081000C4135 /* JKScanningQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E201FCAA21D7D081000C4135 /* JKScanningQRViewController.m */; };
+		E201FCAF21D7D0A1000C4135 /* JKQRCodeTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E201FCAE21D7D0A1000C4135 /* JKQRCodeTestViewController.m */; };
 		E208EBEA21D61CA0008EFD53 /* DateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E208EBE921D61CA0008EFD53 /* DateViewController.m */; };
 		E208EBED21D62FEE008EFD53 /* MD5TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E208EBEC21D62FEE008EFD53 /* MD5TestViewController.m */; };
 		E20F209221BF58D300F45F27 /* NSData+JKData.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F209121BF58D300F45F27 /* NSData+JKData.m */; };
@@ -96,6 +99,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E201FCA721D7D081000C4135 /* JKQRCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKQRCode.m; sourceTree = "<group>"; };
+		E201FCA821D7D081000C4135 /* JKScanningQRViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKScanningQRViewController.h; sourceTree = "<group>"; };
+		E201FCA921D7D081000C4135 /* JKQRCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKQRCode.h; sourceTree = "<group>"; };
+		E201FCAA21D7D081000C4135 /* JKScanningQRViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKScanningQRViewController.m; sourceTree = "<group>"; };
+		E201FCAD21D7D0A1000C4135 /* JKQRCodeTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKQRCodeTestViewController.h; sourceTree = "<group>"; };
+		E201FCAE21D7D0A1000C4135 /* JKQRCodeTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKQRCodeTestViewController.m; sourceTree = "<group>"; };
 		E208EBE821D61CA0008EFD53 /* DateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DateViewController.h; sourceTree = "<group>"; };
 		E208EBE921D61CA0008EFD53 /* DateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DateViewController.m; sourceTree = "<group>"; };
 		E208EBEB21D62FEE008EFD53 /* MD5TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MD5TestViewController.h; sourceTree = "<group>"; };
@@ -262,6 +271,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E201FCA621D7D081000C4135 /* JKQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				E201FCA721D7D081000C4135 /* JKQRCode.m */,
+				E201FCA821D7D081000C4135 /* JKScanningQRViewController.h */,
+				E201FCA921D7D081000C4135 /* JKQRCode.h */,
+				E201FCAA21D7D081000C4135 /* JKScanningQRViewController.m */,
+			);
+			path = JKQRCode;
+			sourceTree = "<group>";
+		};
 		E20F22F421BF973600F45F27 /* JKFoundation */ = {
 			isa = PBXGroup;
 			children = (
@@ -382,6 +402,7 @@
 		E263D07221B66A3600D5CE90 /* JKKit */ = {
 			isa = PBXGroup;
 			children = (
+				E201FCA621D7D081000C4135 /* JKQRCode */,
 				E2E4AF4921D5EF160045F822 /* JKRSATool */,
 				E23876A721C0DD590090EC82 /* JKLimitInput */,
 				E27E279621BA7D0400FF4594 /* JKTopWindow */,
@@ -455,6 +476,8 @@
 				E208EBE921D61CA0008EFD53 /* DateViewController.m */,
 				E208EBEB21D62FEE008EFD53 /* MD5TestViewController.h */,
 				E208EBEC21D62FEE008EFD53 /* MD5TestViewController.m */,
+				E201FCAD21D7D0A1000C4135 /* JKQRCodeTestViewController.h */,
+				E201FCAE21D7D0A1000C4135 /* JKQRCodeTestViewController.m */,
 				E23876CE21C1152C0090EC82 /* JKResource */,
 				E26706782197DFFC00B41CA8 /* Main.storyboard */,
 				E267067B2197DFFC00B41CA8 /* Assets.xcassets */,
@@ -692,6 +715,7 @@
 				E2EDBC7421BB9DCA003B87CA /* Test3ViewController.m in Sources */,
 				E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */,
 				E2E6215521B76195004838E4 /* UIImage+JKImage.m in Sources */,
+				E201FCAB21D7D081000C4135 /* JKQRCode.m in Sources */,
 				E2E4AF4721D5EE9B0045F822 /* NSData+JK_AES.m in Sources */,
 				E20F22CC21BF7F5200F45F27 /* NSDate+JKFormatter.m in Sources */,
 				E20F22F021BF936F00F45F27 /* NSData+JKGzip.m in Sources */,
@@ -701,6 +725,7 @@
 				E2EDBC7121BB9DBE003B87CA /* Test2ViewController.m in Sources */,
 				E20F209221BF58D300F45F27 /* NSData+JKData.m in Sources */,
 				E20F22E121BF8C9D00F45F27 /* NSString+JKXML.m in Sources */,
+				E201FCAC21D7D081000C4135 /* JKScanningQRViewController.m in Sources */,
 				E276B26D21B8B08E007B374B /* JKSandboxPath.m in Sources */,
 				E276B27621B90C66007B374B /* NSString+JKString.m in Sources */,
 				E263D07D21B6729900D5CE90 /* JKGCDTimer.m in Sources */,
@@ -730,6 +755,7 @@
 				E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */,
 				E23876AA21C0DD590090EC82 /* JKLimitInput.m in Sources */,
 				E2EDBC7721BB9DD4003B87CA /* Test4ViewController.m in Sources */,
+				E201FCAF21D7D0A1000C4135 /* JKQRCodeTestViewController.m in Sources */,
 				E27E279921BA7D0400FF4594 /* JKTopWindow.m in Sources */,
 				E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */,
 				E23876C421C109C30090EC82 /* UIApplication+JKExtension.m in Sources */,
