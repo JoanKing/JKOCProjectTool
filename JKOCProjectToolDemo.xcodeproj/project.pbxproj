@@ -274,9 +274,9 @@
 		E201FCA621D7D081000C4135 /* JKQRCode */ = {
 			isa = PBXGroup;
 			children = (
+				E201FCA921D7D081000C4135 /* JKQRCode.h */,
 				E201FCA721D7D081000C4135 /* JKQRCode.m */,
 				E201FCA821D7D081000C4135 /* JKScanningQRViewController.h */,
-				E201FCA921D7D081000C4135 /* JKQRCode.h */,
 				E201FCAA21D7D081000C4135 /* JKScanningQRViewController.m */,
 			);
 			path = JKQRCode;
