@@ -66,3 +66,7 @@
 #define JKBoldFont(FONTSIZE)      [UIFont boldSystemFontOfSize:FONTSIZE]
 #define JKSystemFont(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
 #define JKFont(NAME,FONTSIZE)     [UIFont fontWithName:(NAME) size:(FONTSIZE)]
+
+#define JKOCProjectToolBundlePath(file) [@"JKOCProjectTool.bundle" stringByAppendingPathComponent:file]
+#define JKOCProjectToolFrameworkBundlePath(file) [@"Frameworks/JKOCProjectTool.framework/JKOCProjectTool.bundle" stringByAppendingPathComponent:file]
+#define JKOCProjectToolBundleSourcePath(file)     JKOCProjectToolBundlePath(file) ? :JKOCProjectToolFrameworkBundlePath(file)

@@ -17,6 +17,8 @@
 #import "JKQRCodeTestViewController.h"
 // 根据银行卡号取银行的名字
 #import "JKBankNameViewController.h"
+// BundleSource 资源文件的测试
+#import "JKBundleSourceViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -33,7 +35,7 @@
     
     self.title = @"JKOCProjectTool";
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密",@"二维码生成以及扫描的测试",@"根据银行卡号取银行的名字"]];
+    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密",@"二维码生成以及扫描的测试",@"根据银行卡号取银行的名字",@"Bundle资源文件的测试"]];
     
     [self.view addSubview:self.tableView];
 }
@@ -132,7 +134,13 @@
         
         JKBankNameViewController *jkBankNameViewController = [JKBankNameViewController new];
         [self.navigationController pushViewController:jkBankNameViewController animated:YES];
+    }else if ([cell_name isEqualToString: @"Bundle资源文件的测试"]){
+        
+        JKBundleSourceViewController *jkBundleSourceViewController = [JKBundleSourceViewController new];
+        [self.navigationController pushViewController:jkBundleSourceViewController animated:YES];
     }
+    
+   
 }
 
 @end

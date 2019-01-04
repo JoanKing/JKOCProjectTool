@@ -41,6 +41,8 @@
 		E23876D021C1152C0090EC82 /* monkey.gif in Resources */ = {isa = PBXBuildFile; fileRef = E23876CF21C1152C0090EC82 /* monkey.gif */; };
 		E23876D321C1194B0090EC82 /* UIImage+JKDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876D221C1194B0090EC82 /* UIImage+JKDirection.m */; };
 		E23876D621C156EB0090EC82 /* UIImage+JKColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876D521C156EB0090EC82 /* UIImage+JKColorImage.m */; };
+		E253AC1621DF55FB00EBE328 /* JKOCProjectTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E253AC1521DF55FB00EBE328 /* JKOCProjectTool.bundle */; };
+		E253AC1921DF562F00EBE328 /* JKBundleSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E253AC1821DF562F00EBE328 /* JKBundleSourceViewController.m */; };
 		E263D07121B6669300D5CE90 /* UIView+JKLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E263D07021B6669300D5CE90 /* UIView+JKLayout.m */; };
 		E263D07921B66AE300D5CE90 /* JKDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E263D07821B66AE300D5CE90 /* JKDate.m */; };
 		E263D07D21B6729900D5CE90 /* JKGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E263D07B21B6729900D5CE90 /* JKGCDTimer.m */; };
@@ -69,7 +71,6 @@
 		E2E6215521B76195004838E4 /* UIImage+JKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215421B76195004838E4 /* UIImage+JKImage.m */; };
 		E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */; };
 		E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215C21B76B10004838E4 /* JKTextExtension.m */; };
-		E2E66E6F21DDDA6A009751A6 /* JKOCProjectTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2E66E6E21DDDA6A009751A6 /* JKOCProjectTool.bundle */; };
 		E2E66E7221DDDB21009751A6 /* JKBankNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E66E7121DDDB21009751A6 /* JKBankNameViewController.m */; };
 		E2EDBC6221BB8465003B87CA /* CALayer+JKLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6121BB8465003B87CA /* CALayer+JKLayer.m */; };
 		E2EDBC6821BB9376003B87CA /* UIViewController+JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6721BB9376003B87CA /* UIViewController+JKViewController.m */; };
@@ -167,6 +168,9 @@
 		E23876D221C1194B0090EC82 /* UIImage+JKDirection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKDirection.m"; sourceTree = "<group>"; };
 		E23876D421C156EB0090EC82 /* UIImage+JKColorImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKColorImage.h"; sourceTree = "<group>"; };
 		E23876D521C156EB0090EC82 /* UIImage+JKColorImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKColorImage.m"; sourceTree = "<group>"; };
+		E253AC1521DF55FB00EBE328 /* JKOCProjectTool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JKOCProjectTool.bundle; sourceTree = "<group>"; };
+		E253AC1721DF562F00EBE328 /* JKBundleSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKBundleSourceViewController.h; sourceTree = "<group>"; };
+		E253AC1821DF562F00EBE328 /* JKBundleSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKBundleSourceViewController.m; sourceTree = "<group>"; };
 		E263D06F21B6669300D5CE90 /* UIView+JKLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JKLayout.h"; sourceTree = "<group>"; };
 		E263D07021B6669300D5CE90 /* UIView+JKLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKLayout.m"; sourceTree = "<group>"; };
 		E263D07721B66AE300D5CE90 /* JKDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKDate.h; sourceTree = "<group>"; };
@@ -226,7 +230,6 @@
 		E2E6215921B763AD004838E4 /* JKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKPrefixHeader.pch; sourceTree = "<group>"; };
 		E2E6215B21B76B10004838E4 /* JKTextExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKTextExtension.h; sourceTree = "<group>"; };
 		E2E6215C21B76B10004838E4 /* JKTextExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKTextExtension.m; sourceTree = "<group>"; };
-		E2E66E6E21DDDA6A009751A6 /* JKOCProjectTool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JKOCProjectTool.bundle; sourceTree = "<group>"; };
 		E2E66E7021DDDB21009751A6 /* JKBankNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKBankNameViewController.h; sourceTree = "<group>"; };
 		E2E66E7121DDDB21009751A6 /* JKBankNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKBankNameViewController.m; sourceTree = "<group>"; };
 		E2EDBC6021BB8465003B87CA /* CALayer+JKLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+JKLayer.h"; sourceTree = "<group>"; };
@@ -483,6 +486,8 @@
 				E201FCAE21D7D0A1000C4135 /* JKQRCodeTestViewController.m */,
 				E2E66E7021DDDB21009751A6 /* JKBankNameViewController.h */,
 				E2E66E7121DDDB21009751A6 /* JKBankNameViewController.m */,
+				E253AC1721DF562F00EBE328 /* JKBundleSourceViewController.h */,
+				E253AC1821DF562F00EBE328 /* JKBundleSourceViewController.m */,
 				E23876CE21C1152C0090EC82 /* JKResource */,
 				E26706782197DFFC00B41CA8 /* Main.storyboard */,
 				E267067B2197DFFC00B41CA8 /* Assets.xcassets */,
@@ -544,7 +549,7 @@
 		E2DC2C7521C9DA8D001716AB /* JKResource */ = {
 			isa = PBXGroup;
 			children = (
-				E2E66E6E21DDDA6A009751A6 /* JKOCProjectTool.bundle */,
+				E253AC1521DF55FB00EBE328 /* JKOCProjectTool.bundle */,
 			);
 			path = JKResource;
 			sourceTree = "<group>";
@@ -683,7 +688,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E267067F2197DFFC00B41CA8 /* LaunchScreen.storyboard in Resources */,
-				E2E66E6F21DDDA6A009751A6 /* JKOCProjectTool.bundle in Resources */,
+				E253AC1621DF55FB00EBE328 /* JKOCProjectTool.bundle in Resources */,
 				E267067C2197DFFC00B41CA8 /* Assets.xcassets in Resources */,
 				E23876D021C1152C0090EC82 /* monkey.gif in Resources */,
 				E267067A2197DFFC00B41CA8 /* Main.storyboard in Resources */,
@@ -771,6 +776,7 @@
 				E23876C721C10C4B0090EC82 /* UIWindow+JKHierarchy.m in Sources */,
 				E20F22F821BF9B7400F45F27 /* UITextField+JKTextField.m in Sources */,
 				E208EBEA21D61CA0008EFD53 /* DateViewController.m in Sources */,
+				E253AC1921DF562F00EBE328 /* JKBundleSourceViewController.m in Sources */,
 				E20F22E421BF8DDE00F45F27 /* NSString+JKPinyin.m in Sources */,
 				E2F073DE21C0005E00A4ADC7 /* UIDevice+JKHardware.m in Sources */,
 				E20F22F321BF940D00F45F27 /* NSData+JKHash.m in Sources */,
