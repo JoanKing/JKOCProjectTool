@@ -346,7 +346,7 @@
     // Frameworks/JKOCProjectTool.framework/JKOCProjectTool.bundle
     //JKOCProjectToolPath(@"JKBank.plist")
     //NSString *filePath = [[NSBundle mainBundle] pathForResource:@"Frameworks/JKOCProjectTool.framework/JKOCProjectTool.bundle/JKBank.plist" ofType:nil];
-    NSString *filePath = JKOCProjectToolBundlePlistName(@"JKBank.plist");
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:JKOCProjectToolFrameworkBundlePath(@"JKBank.plist") ofType:nil] ? : [[NSBundle mainBundle] pathForResource:JKOCProjectToolBundlePath(@"JKBank.plist") ofType:nil];
     NSDictionary *resultDic = [NSDictionary dictionaryWithContentsOfFile:filePath];
 
     NSArray *bankBin = resultDic.allKeys;
