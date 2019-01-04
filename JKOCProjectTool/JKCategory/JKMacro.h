@@ -70,3 +70,7 @@
 #define JKOCProjectToolBundlePath(file) [@"JKOCProjectTool.bundle" stringByAppendingPathComponent:file]
 #define JKOCProjectToolFrameworkBundlePath(file) [@"Frameworks/JKOCProjectTool.framework/JKOCProjectTool.bundle" stringByAppendingPathComponent:file]
 #define JKOCProjectToolBundleImageName(file)  [UIImage imageNamed:JKOCProjectToolBundlePath(file)] ? :[UIImage imageNamed:JKOCProjectToolFrameworkBundlePath(file)]
+
+#define JKOCProjectToolBundlePlistName(file) [[NSBundle mainBundle] pathForResource:JKOCProjectToolFrameworkBundlePath(file) ofType:nil] ? : [[NSBundle mainBundle] pathForResource:JKOCProjectToolBundlePath(file) ofType:nil]
+
+

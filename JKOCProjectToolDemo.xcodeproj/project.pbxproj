@@ -42,8 +42,7 @@
 		E23876D321C1194B0090EC82 /* UIImage+JKDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876D221C1194B0090EC82 /* UIImage+JKDirection.m */; };
 		E23876D621C156EB0090EC82 /* UIImage+JKColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876D521C156EB0090EC82 /* UIImage+JKColorImage.m */; };
 		E253AC1921DF562F00EBE328 /* JKBundleSourceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E253AC1821DF562F00EBE328 /* JKBundleSourceViewController.m */; };
-		E253AC2321DF7BC600EBE328 /* JKOCProjectTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E253AC2221DF7BC500EBE328 /* JKOCProjectTool.bundle */; };
-		E253AC2521DF7BD000EBE328 /* JKBank.plist in Resources */ = {isa = PBXBuildFile; fileRef = E253AC2421DF7BD000EBE328 /* JKBank.plist */; };
+		E253AC2721DF82BA00EBE328 /* JKOCProjectTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E253AC2621DF82BA00EBE328 /* JKOCProjectTool.bundle */; };
 		E263D07121B6669300D5CE90 /* UIView+JKLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = E263D07021B6669300D5CE90 /* UIView+JKLayout.m */; };
 		E263D07921B66AE300D5CE90 /* JKDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E263D07821B66AE300D5CE90 /* JKDate.m */; };
 		E263D07D21B6729900D5CE90 /* JKGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E263D07B21B6729900D5CE90 /* JKGCDTimer.m */; };
@@ -171,8 +170,7 @@
 		E23876D521C156EB0090EC82 /* UIImage+JKColorImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKColorImage.m"; sourceTree = "<group>"; };
 		E253AC1721DF562F00EBE328 /* JKBundleSourceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKBundleSourceViewController.h; sourceTree = "<group>"; };
 		E253AC1821DF562F00EBE328 /* JKBundleSourceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKBundleSourceViewController.m; sourceTree = "<group>"; };
-		E253AC2221DF7BC500EBE328 /* JKOCProjectTool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JKOCProjectTool.bundle; sourceTree = "<group>"; };
-		E253AC2421DF7BD000EBE328 /* JKBank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JKBank.plist; sourceTree = "<group>"; };
+		E253AC2621DF82BA00EBE328 /* JKOCProjectTool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JKOCProjectTool.bundle; sourceTree = "<group>"; };
 		E263D06F21B6669300D5CE90 /* UIView+JKLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JKLayout.h"; sourceTree = "<group>"; };
 		E263D07021B6669300D5CE90 /* UIView+JKLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKLayout.m"; sourceTree = "<group>"; };
 		E263D07721B66AE300D5CE90 /* JKDate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKDate.h; sourceTree = "<group>"; };
@@ -551,8 +549,7 @@
 		E2DC2C7521C9DA8D001716AB /* JKResource */ = {
 			isa = PBXGroup;
 			children = (
-				E253AC2421DF7BD000EBE328 /* JKBank.plist */,
-				E253AC2221DF7BC500EBE328 /* JKOCProjectTool.bundle */,
+				E253AC2621DF82BA00EBE328 /* JKOCProjectTool.bundle */,
 			);
 			path = JKResource;
 			sourceTree = "<group>";
@@ -691,13 +688,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E267067F2197DFFC00B41CA8 /* LaunchScreen.storyboard in Resources */,
-				E253AC2321DF7BC600EBE328 /* JKOCProjectTool.bundle in Resources */,
+				E253AC2721DF82BA00EBE328 /* JKOCProjectTool.bundle in Resources */,
 				E267067C2197DFFC00B41CA8 /* Assets.xcassets in Resources */,
 				E23876D021C1152C0090EC82 /* monkey.gif in Resources */,
 				E267067A2197DFFC00B41CA8 /* Main.storyboard in Resources */,
 				E2E4AF5321D5F01C0045F822 /* public_key.der in Resources */,
 				E2E4AF5221D5F01C0045F822 /* private_key.p12 in Resources */,
-				E253AC2521DF7BD000EBE328 /* JKBank.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
