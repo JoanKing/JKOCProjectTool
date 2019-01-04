@@ -45,6 +45,11 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
       5、UIBarButtonItem+JKBarbuttonItem：自定义UIBarButtonItem 
       
 ## 版本历史
+- 0.2.0
+
+- 新增： 这次主要是相册读取二维码以及扫描二维码
+	- JKCategory/JKKit/JKQRCode
+	
 - 0.1.9
 
 - 新增： 这次主要是加密技术的添加
