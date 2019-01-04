@@ -195,6 +195,9 @@
 }
 
 
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    
+    [self.textFiled resignFirstResponder];
+}
 
 @end

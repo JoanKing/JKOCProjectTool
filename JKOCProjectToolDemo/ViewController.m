@@ -15,6 +15,8 @@
 #import "MD5TestViewController.h"
 // 二维码生成以及扫描的测试
 #import "JKQRCodeTestViewController.h"
+// 根据银行卡号取银行的名字
+#import "JKBankNameViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -31,7 +33,7 @@
     
     self.title = @"JKOCProjectTool";
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密",@"二维码生成以及扫描的测试"]];
+    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密",@"二维码生成以及扫描的测试",@"根据银行卡号取银行的名字"]];
     
     [self.view addSubview:self.tableView];
 }
@@ -126,6 +128,10 @@
         
         JKQRCodeTestViewController *md5TestViewController = [JKQRCodeTestViewController new];
         [self.navigationController pushViewController:md5TestViewController animated:YES];
+    }else if ([cell_name isEqualToString:@"根据银行卡号取银行的名字"]){
+        
+        JKBankNameViewController *jkBankNameViewController = [JKBankNameViewController new];
+        [self.navigationController pushViewController:jkBankNameViewController animated:YES];
     }
 }
 

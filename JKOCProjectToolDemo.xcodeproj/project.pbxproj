@@ -58,7 +58,6 @@
 		E27E279921BA7D0400FF4594 /* JKTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E27E279821BA7D0400FF4594 /* JKTopWindow.m */; };
 		E2D0452921B5697900DD55CC /* NSMutableArray+JKMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */; };
 		E2DC2C7221C9CDE5001716AB /* NSObject+JKRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DC2C7121C9CDE5001716AB /* NSObject+JKRuntime.m */; };
-		E2DC2C7721C9DAA1001716AB /* JKBank.plist in Resources */ = {isa = PBXBuildFile; fileRef = E2DC2C7621C9DAA1001716AB /* JKBank.plist */; };
 		E2E4AF4721D5EE9B0045F822 /* NSData+JK_AES.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4AF4321D5EE9B0045F822 /* NSData+JK_AES.m */; };
 		E2E4AF4821D5EE9B0045F822 /* NSString+JK_MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4AF4421D5EE9B0045F822 /* NSString+JK_MD5.m */; };
 		E2E4AF4C21D5EF160045F822 /* JKRSATool.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E4AF4A21D5EF160045F822 /* JKRSATool.m */; };
@@ -70,6 +69,8 @@
 		E2E6215521B76195004838E4 /* UIImage+JKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215421B76195004838E4 /* UIImage+JKImage.m */; };
 		E2E6215821B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215721B762E5004838E4 /* UIBarButtonItem+JKBarbuttonItem.m */; };
 		E2E6215D21B76B10004838E4 /* JKTextExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E6215C21B76B10004838E4 /* JKTextExtension.m */; };
+		E2E66E6F21DDDA6A009751A6 /* JKOCProjectTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E2E66E6E21DDDA6A009751A6 /* JKOCProjectTool.bundle */; };
+		E2E66E7221DDDB21009751A6 /* JKBankNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2E66E7121DDDB21009751A6 /* JKBankNameViewController.m */; };
 		E2EDBC6221BB8465003B87CA /* CALayer+JKLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6121BB8465003B87CA /* CALayer+JKLayer.m */; };
 		E2EDBC6821BB9376003B87CA /* UIViewController+JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6721BB9376003B87CA /* UIViewController+JKViewController.m */; };
 		E2EDBC6B21BB94FF003B87CA /* UINavigationController+JKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2EDBC6A21BB94FF003B87CA /* UINavigationController+JKNavigationController.m */; };
@@ -204,7 +205,6 @@
 		E2D0452821B5697900DD55CC /* NSMutableArray+JKMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JKMutableArray.m"; sourceTree = "<group>"; };
 		E2DC2C7021C9CDE5001716AB /* NSObject+JKRuntime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+JKRuntime.h"; sourceTree = "<group>"; };
 		E2DC2C7121C9CDE5001716AB /* NSObject+JKRuntime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JKRuntime.m"; sourceTree = "<group>"; };
-		E2DC2C7621C9DAA1001716AB /* JKBank.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JKBank.plist; sourceTree = "<group>"; };
 		E2E4AF4321D5EE9B0045F822 /* NSData+JK_AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+JK_AES.m"; sourceTree = "<group>"; };
 		E2E4AF4421D5EE9B0045F822 /* NSString+JK_MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JK_MD5.m"; sourceTree = "<group>"; };
 		E2E4AF4521D5EE9B0045F822 /* NSString+JK_MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JK_MD5.h"; sourceTree = "<group>"; };
@@ -226,6 +226,9 @@
 		E2E6215921B763AD004838E4 /* JKPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKPrefixHeader.pch; sourceTree = "<group>"; };
 		E2E6215B21B76B10004838E4 /* JKTextExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKTextExtension.h; sourceTree = "<group>"; };
 		E2E6215C21B76B10004838E4 /* JKTextExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKTextExtension.m; sourceTree = "<group>"; };
+		E2E66E6E21DDDA6A009751A6 /* JKOCProjectTool.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JKOCProjectTool.bundle; sourceTree = "<group>"; };
+		E2E66E7021DDDB21009751A6 /* JKBankNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKBankNameViewController.h; sourceTree = "<group>"; };
+		E2E66E7121DDDB21009751A6 /* JKBankNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKBankNameViewController.m; sourceTree = "<group>"; };
 		E2EDBC6021BB8465003B87CA /* CALayer+JKLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CALayer+JKLayer.h"; sourceTree = "<group>"; };
 		E2EDBC6121BB8465003B87CA /* CALayer+JKLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "CALayer+JKLayer.m"; sourceTree = "<group>"; };
 		E2EDBC6621BB9376003B87CA /* UIViewController+JKViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKViewController.h"; sourceTree = "<group>"; };
@@ -478,6 +481,8 @@
 				E208EBEC21D62FEE008EFD53 /* MD5TestViewController.m */,
 				E201FCAD21D7D0A1000C4135 /* JKQRCodeTestViewController.h */,
 				E201FCAE21D7D0A1000C4135 /* JKQRCodeTestViewController.m */,
+				E2E66E7021DDDB21009751A6 /* JKBankNameViewController.h */,
+				E2E66E7121DDDB21009751A6 /* JKBankNameViewController.m */,
 				E23876CE21C1152C0090EC82 /* JKResource */,
 				E26706782197DFFC00B41CA8 /* Main.storyboard */,
 				E267067B2197DFFC00B41CA8 /* Assets.xcassets */,
@@ -539,7 +544,7 @@
 		E2DC2C7521C9DA8D001716AB /* JKResource */ = {
 			isa = PBXGroup;
 			children = (
-				E2DC2C7621C9DAA1001716AB /* JKBank.plist */,
+				E2E66E6E21DDDA6A009751A6 /* JKOCProjectTool.bundle */,
 			);
 			path = JKResource;
 			sourceTree = "<group>";
@@ -678,7 +683,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E267067F2197DFFC00B41CA8 /* LaunchScreen.storyboard in Resources */,
-				E2DC2C7721C9DAA1001716AB /* JKBank.plist in Resources */,
+				E2E66E6F21DDDA6A009751A6 /* JKOCProjectTool.bundle in Resources */,
 				E267067C2197DFFC00B41CA8 /* Assets.xcassets in Resources */,
 				E23876D021C1152C0090EC82 /* monkey.gif in Resources */,
 				E267067A2197DFFC00B41CA8 /* Main.storyboard in Resources */,
@@ -714,6 +719,7 @@
 				E2EDBC6B21BB94FF003B87CA /* UINavigationController+JKNavigationController.m in Sources */,
 				E2EDBC7421BB9DCA003B87CA /* Test3ViewController.m in Sources */,
 				E2E6215221B75C4F004838E4 /* UIColor+JKColor.m in Sources */,
+				E2E66E7221DDDB21009751A6 /* JKBankNameViewController.m in Sources */,
 				E2E6215521B76195004838E4 /* UIImage+JKImage.m in Sources */,
 				E201FCAB21D7D081000C4135 /* JKQRCode.m in Sources */,
 				E2E4AF4721D5EE9B0045F822 /* NSData+JK_AES.m in Sources */,
