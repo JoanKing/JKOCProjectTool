@@ -343,7 +343,7 @@
 +(NSString *)jk_bankNameAccordingToBankNumber:(NSString *)bankNumber{
     
     // 加载资源文件的路径
-    NSString *filePath = [[NSBundle bundleForClass:self] pathForResource:@"JKBank" ofType:@"plist" inDirectory:@"JKOCProjectTool.bundle"];
+    NSString *filePath = [[NSBundle bundleForClass:[self class]] pathForResource:@"JKBank" ofType:@"plist" inDirectory:@"JKOCProjectTool.bundle"];
     NSDictionary *resultDic = [NSDictionary dictionaryWithContentsOfFile:filePath];
     NSArray *bankBin = resultDic.allKeys;
     if (bankNumber == nil || bankNumber.length<16 || bankNumber.length>19) {
