@@ -341,7 +341,7 @@
 
 // 根据卡号判断银行的名字
 +(NSString *)jk_bankNameAccordingToBankNumber:(NSString *)bankNumber{
-    
+
     NSBundle *currentBundle = [NSBundle bundleForClass:self];
     NSString *filePath = [currentBundle pathForResource:@"JKBank" ofType:@"plist" inDirectory:@"JKOCProjectTool.bundle"];
     NSDictionary *resultDic = [NSDictionary dictionaryWithContentsOfFile:filePath];

@@ -19,7 +19,10 @@
    
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.title = @"根据银行卡号取银行的名字";
+    
     NSString *bankName = [NSString jk_bankNameAccordingToBankNumber:@"6221504910008273051"];
+    
     NSLog(@"银行的名字=%@",bankName);
 }
 
