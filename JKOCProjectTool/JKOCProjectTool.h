@@ -9,8 +9,6 @@
 #ifndef JKOCProjectTool_h
 #define JKOCProjectTool_h
 
-#ifdef __OBJC__
-
 #import <UIKit/UIKit.h>
 
 /**以下是：自己写的类的头文件**/
@@ -105,8 +103,6 @@
 
 // 有关 Runtime 的一些知识点
 #import "NSObject+JKRuntime.h"
-
-#endif
 
 /**以上是：分类的头文件**/
 
