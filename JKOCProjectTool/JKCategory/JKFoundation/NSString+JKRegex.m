@@ -346,8 +346,9 @@
     // Frameworks/JKOCProjectTool.framework/JKOCProjectTool.bundle
     //JKOCProjectToolPath(@"JKBank.plist")
     
-    NSString *filePath = [[NSBundle mainBundle]pathForResource:@"JKBank" ofType:@"plist"];
+    NSString *filePath = JKOCProjectToolBundlePlistName(@"JKBank.plist");
     NSDictionary *resultDic = [NSDictionary dictionaryWithContentsOfFile:filePath];
+
     NSArray *bankBin = resultDic.allKeys;
     if (bankNumber == nil || bankNumber.length<16 || bankNumber.length>19) {
         return @"";
