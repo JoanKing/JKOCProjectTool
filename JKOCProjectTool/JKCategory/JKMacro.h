@@ -69,4 +69,6 @@
 
 #define JKOCProjectToolBundlePath(file) [@"JKOCProjectTool.bundle" stringByAppendingPathComponent:file]
 #define JKOCProjectToolFrameworkBundlePath(file) [@"Frameworks/JKOCProjectTool.framework/JKOCProjectTool.bundle" stringByAppendingPathComponent:file]
-#define JKOCProjectToolBundleSourcePath(file)     JKOCProjectToolBundlePath(file) ? :JKOCProjectToolFrameworkBundlePath(file)
+#define JKOCProjectToolBundleImageName(file)  [UIImage imageNamed:JKOCProjectToolBundlePath(file)] ? :[UIImage imageNamed:JKOCProjectToolFrameworkBundlePath(file)]
+// bundle 里面是plist文件的
+#define JKOCProjectToolBundlePlistName(file)  [[NSBundle mainBundle]pathForResource:file ofType:@""] ? : [[NSBundle mainBundle]pathForResource:JKOCProjectToolBundlePath(file) ofType:@""]

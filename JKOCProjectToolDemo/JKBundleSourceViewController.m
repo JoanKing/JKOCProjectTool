@@ -19,6 +19,11 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    
+    UIImageView *imageView = [[UIImageView alloc]initWithFrame:CGRectMake(20, 100, 40, 40)];
+    imageView.image = JKOCProjectToolBundleImageName(@"icon_scan");
+    [self.view addSubview:imageView];
+    
     NSString *bankName = [NSString jk_bankNameAccordingToBankNumber:@"6221504910008273051"];
     NSLog(@"银行的名字=%@",bankName);
     

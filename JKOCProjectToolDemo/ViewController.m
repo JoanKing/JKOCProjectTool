@@ -139,8 +139,6 @@
         JKBundleSourceViewController *jkBundleSourceViewController = [JKBundleSourceViewController new];
         [self.navigationController pushViewController:jkBundleSourceViewController animated:YES];
     }
-    
-   
 }
 
 @end

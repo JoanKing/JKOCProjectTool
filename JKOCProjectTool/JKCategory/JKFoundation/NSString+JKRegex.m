@@ -345,7 +345,8 @@
     // 加载资源文件的路径
     // Frameworks/JKOCProjectTool.framework/JKOCProjectTool.bundle
     //JKOCProjectToolPath(@"JKBank.plist")
-    NSString *filePath = [[NSBundle mainBundle]pathForResource:JKOCProjectToolBundleSourcePath(@"JKBank.plist") ofType:@""];
+    
+    NSString *filePath = JKOCProjectToolBundlePlistName(@"JKBank.plist");
     NSDictionary *resultDic = [NSDictionary dictionaryWithContentsOfFile:filePath];
     NSArray *bankBin = resultDic.allKeys;
     if (bankNumber == nil || bankNumber.length<16 || bankNumber.length>19) {
