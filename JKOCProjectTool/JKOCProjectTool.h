@@ -20,6 +20,8 @@
 #import "JKLimitInput.h"
 /** 5、RSA加密的使用 */
 #import "JKRSATool.h"
+/** 6、可点击标签的添加 */
+#import "JKSmallLabels.h"
 
 /**以上是：自己写的类的头文件**/
 

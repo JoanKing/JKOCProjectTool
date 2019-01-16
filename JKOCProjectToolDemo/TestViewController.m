@@ -36,6 +36,10 @@
     
     [view.layer jk_shake];
     
+    UIButton *btn = [[UIButton alloc]initWithFrame:CGRectMake(50, view.bottom+30,JK_SCREEN_WIDTH-100 , 100)];
+    [self.view addSubview:btn];
+    
+    [btn.layer jk_shake];
     
     JKLog(@"\n获取设备名称=%@\n获取手机名称=%@\n当前wifi的名字是：%@",[UIDevice jk_getDeviceName],[UIDevice jk_getIphoneName],[UIDevice jk_getWifiName]);
     

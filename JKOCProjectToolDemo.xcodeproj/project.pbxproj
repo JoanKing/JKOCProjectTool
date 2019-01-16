@@ -27,6 +27,8 @@
 		E20F22F021BF936F00F45F27 /* NSData+JKGzip.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22EF21BF936F00F45F27 /* NSData+JKGzip.m */; };
 		E20F22F321BF940D00F45F27 /* NSData+JKHash.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22F221BF940D00F45F27 /* NSData+JKHash.m */; };
 		E20F22F821BF9B7400F45F27 /* UITextField+JKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = E20F22F721BF9B7400F45F27 /* UITextField+JKTextField.m */; };
+		E230D3A421EEDD69006FD26C /* JKSmallLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = E230D3A221EEDD69006FD26C /* JKSmallLabels.m */; };
+		E230D3A721EEDDCF006FD26C /* JKSmallLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E230D3A621EEDDCF006FD26C /* JKSmallLabelViewController.m */; };
 		E234EEB421C7994100112FC3 /* UIImage+JKScaleVideoImage.m in Sources */ = {isa = PBXBuildFile; fileRef = E234EEB321C7994100112FC3 /* UIImage+JKScaleVideoImage.m */; };
 		E23876A621C0D4E10090EC82 /* UITextView+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876A521C0D4E10090EC82 /* UITextView+JKExtension.m */; };
 		E23876AA21C0DD590090EC82 /* JKLimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = E23876A821C0DD590090EC82 /* JKLimitInput.m */; };
@@ -141,6 +143,10 @@
 		E20F22F221BF940D00F45F27 /* NSData+JKHash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKHash.m"; sourceTree = "<group>"; };
 		E20F22F621BF9B7400F45F27 /* UITextField+JKTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKTextField.h"; sourceTree = "<group>"; };
 		E20F22F721BF9B7400F45F27 /* UITextField+JKTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKTextField.m"; sourceTree = "<group>"; };
+		E230D3A221EEDD69006FD26C /* JKSmallLabels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKSmallLabels.m; sourceTree = "<group>"; };
+		E230D3A321EEDD69006FD26C /* JKSmallLabels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKSmallLabels.h; sourceTree = "<group>"; };
+		E230D3A521EEDDCF006FD26C /* JKSmallLabelViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JKSmallLabelViewController.h; sourceTree = "<group>"; };
+		E230D3A621EEDDCF006FD26C /* JKSmallLabelViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JKSmallLabelViewController.m; sourceTree = "<group>"; };
 		E234EEB221C7994100112FC3 /* UIImage+JKScaleVideoImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKScaleVideoImage.h"; sourceTree = "<group>"; };
 		E234EEB321C7994100112FC3 /* UIImage+JKScaleVideoImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKScaleVideoImage.m"; sourceTree = "<group>"; };
 		E23876A421C0D4E10090EC82 /* UITextView+JKExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITextView+JKExtension.h"; sourceTree = "<group>"; };
@@ -386,6 +392,15 @@
 			path = JKUIKit;
 			sourceTree = "<group>";
 		};
+		E230D3A121EEDD69006FD26C /* JKSmallLabels */ = {
+			isa = PBXGroup;
+			children = (
+				E230D3A321EEDD69006FD26C /* JKSmallLabels.h */,
+				E230D3A221EEDD69006FD26C /* JKSmallLabels.m */,
+			);
+			path = JKSmallLabels;
+			sourceTree = "<group>";
+		};
 		E23876A721C0DD590090EC82 /* JKLimitInput */ = {
 			isa = PBXGroup;
 			children = (
@@ -408,6 +423,7 @@
 		E263D07221B66A3600D5CE90 /* JKKit */ = {
 			isa = PBXGroup;
 			children = (
+				E230D3A121EEDD69006FD26C /* JKSmallLabels */,
 				E201FCA621D7D081000C4135 /* JKQRCode */,
 				E2E4AF4921D5EF160045F822 /* JKRSATool */,
 				E23876A721C0DD590090EC82 /* JKLimitInput */,
@@ -488,6 +504,8 @@
 				E2E66E7121DDDB21009751A6 /* JKBankNameViewController.m */,
 				E253AC1721DF562F00EBE328 /* JKBundleSourceViewController.h */,
 				E253AC1821DF562F00EBE328 /* JKBundleSourceViewController.m */,
+				E230D3A521EEDDCF006FD26C /* JKSmallLabelViewController.h */,
+				E230D3A621EEDDCF006FD26C /* JKSmallLabelViewController.m */,
 				E23876CE21C1152C0090EC82 /* JKResource */,
 				E26706782197DFFC00B41CA8 /* Main.storyboard */,
 				E267067B2197DFFC00B41CA8 /* Assets.xcassets */,
@@ -781,7 +799,9 @@
 				E2F073DE21C0005E00A4ADC7 /* UIDevice+JKHardware.m in Sources */,
 				E20F22F321BF940D00F45F27 /* NSData+JKHash.m in Sources */,
 				E27E279221BA58C500FF4594 /* UIImageView+JKImageView.m in Sources */,
+				E230D3A421EEDD69006FD26C /* JKSmallLabels.m in Sources */,
 				E20F22EA21BF900F00F45F27 /* NSString+JKHash.m in Sources */,
+				E230D3A721EEDDCF006FD26C /* JKSmallLabelViewController.m in Sources */,
 				E263D07121B6669300D5CE90 /* UIView+JKLayout.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,6 +19,8 @@
 #import "JKBankNameViewController.h"
 // BundleSource 资源文件的测试
 #import "JKBundleSourceViewController.h"
+// 可点击标签的添加
+#import "JKSmallLabelViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -33,9 +35,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    NSString *str = @"   hh   haha   wo  ";
+    
+    JKLog(@"打印==%@",[str jk_trimmingWhitespace]);
+
     self.title = @"JKOCProjectTool";
     self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
-    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密",@"二维码生成以及扫描的测试",@"根据银行卡号取银行的名字",@"Bundle资源文件的测试"]];
+    [self.dataArray addObjectsFromArray:@[@"最初的测试",@"RSA加密的使用",@"有关日期的使用",@"MD5加密",@"二维码生成以及扫描的测试",@"根据银行卡号取银行的名字",@"Bundle资源文件的测试",@"可点击标签的添加"]];
     
     [self.view addSubview:self.tableView];
 }
@@ -138,6 +144,10 @@
         
         JKBundleSourceViewController *jkBundleSourceViewController = [JKBundleSourceViewController new];
         [self.navigationController pushViewController:jkBundleSourceViewController animated:YES];
+    }else if ([cell_name isEqualToString:@"可点击标签的添加"]){
+        
+        JKSmallLabelViewController *jkSmallLabelViewController = [JKSmallLabelViewController new];
+        [self.navigationController pushViewController:jkSmallLabelViewController animated:YES];
     }
 
 }

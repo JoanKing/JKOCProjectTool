@@ -67,8 +67,27 @@
 #define JKSystemFont(FONTSIZE)    [UIFont systemFontOfSize:FONTSIZE]
 #define JKFont(NAME,FONTSIZE)     [UIFont fontWithName:(NAME) size:(FONTSIZE)]
 
+
+/**
+ 14.JKOCProjectTool.bundle 路径的查找
+
+ @param file 传入图片的名字
+ @return 返回一个UIImage图片的对象
+ */
 #define JKOCProjectToolBundlePath(file) [@"JKOCProjectTool.bundle" stringByAppendingPathComponent:file]
 #define JKOCProjectToolFrameworkBundlePath(file) [@"Frameworks/JKOCProjectTool.framework/JKOCProjectTool.bundle" stringByAppendingPathComponent:file]
 #define JKOCProjectToolBundleImageName(file)  [UIImage imageNamed:JKOCProjectToolBundlePath(file)] ? :[UIImage imageNamed:JKOCProjectToolFrameworkBundlePath(file)]
 
 
+/** 15、获取随机数小数(0-1之间) */
+#define JKARC4RANDOM_MAX      0x100000000double val = ((double)arc4random() / ARC4RANDOM_MAX);
+
+
+/**
+ 16、通过路径加载本地的图片
+
+ @param filename 图片的名字
+ @param ext 图片的类型
+ @return 返回一个UIImage实例对象
+ */
+#define JKLoadImage(filename,ext) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:ext]]
