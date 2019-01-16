@@ -48,6 +48,7 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
 - 0.2.14
 
 - 新增： 标签类 JKSmallLabels
+        - JKCategory/JKKit/JKSmallLabels
 
 - 0.2.12
 
