@@ -35,6 +35,7 @@ This library requires `iOS 7.0+` and `Xcode 8.0+`.
       6、JKLimitInput 输入字符的限制
       7、JKTopWindow 点击状态栏滑动界面置顶
       8、JKQRCode   二维码带logo以及普通二维码的生成以及相机扫描的使用
+      9、JKSmallLabels 可点击标签的添加
     
 #### 第二部分：JKCategory：分类的综述
     
