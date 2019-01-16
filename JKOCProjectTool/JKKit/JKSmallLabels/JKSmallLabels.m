@@ -7,7 +7,7 @@
 //
 
 #import "JKSmallLabels.h"
-
+#import "UIView+JKLayout.h"
 @interface JKSmallLabels ()
 
 @end
