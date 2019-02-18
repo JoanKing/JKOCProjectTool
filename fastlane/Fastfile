@@ -1,0 +1,15 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "pod远程提交"
+  lane :custom_lane do |options|
+  commit_message = options[:message]
+  # 1、提交代码到本地暂缓区
+  git_add(path: ".")
+  # 2、提交代码到本地仓库
+  git_commit(path: ".", message: "#{commit_message}")
+  # 3、提交代码到远程仓库
+  push_to_git_remote
+
+  end
+end
