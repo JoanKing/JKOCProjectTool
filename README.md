@@ -1,4 +1,4 @@
-# JKOCProjectTool
+# JKOCProjectTool更换名字到 https://github.com/JoanKing/IMBaseKit.git
 OC项目的一个工具包，里面是一些常用的组件以及分类Categorys
 
 ## Requirements
