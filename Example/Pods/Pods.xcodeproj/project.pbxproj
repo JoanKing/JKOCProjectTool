@@ -1,0 +1,1326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0140F0C7BAF1AFF6AD88ECD4238C88F3 /* JKGCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F47DD2C41FA44B8180973E37FCD1A6 /* JKGCDTimer.m */; };
+		038AC412D4CD907804FF64250DD1BE04 /* NSString+JKRegex.h in Headers */ = {isa = PBXBuildFile; fileRef = BEBF1E461A4A8E40921D131732EF69A8 /* NSString+JKRegex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		05A91BF43B23DAE085CDC02F57E12B2A /* JKScanningQRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F850C45F6E23BE50AF447A617F8F7B79 /* JKScanningQRViewController.m */; };
+		0618A6E98678247980C1020C43F772CF /* JKTextExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B0BACCE38AC8675E233B6D42164295 /* JKTextExtension.m */; };
+		098AAA21AAB76FE18A61368A48F20F1D /* Pods-JKOCProjectTool_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38704794B969E6A6E6DCF736E281D5D0 /* Pods-JKOCProjectTool_Example-dummy.m */; };
+		0CE32F9F7987806794B98BEAFDB82777 /* UINavigationController+JKNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = BCB278C61DE6A0F71A74DDE204F9D2D9 /* UINavigationController+JKNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0E0EE9E855B1E857AFE87DEE842E3D58 /* JKGCDTimer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A919583A76FC8E1A7ED4A960C302889 /* JKGCDTimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F76204BF56E8BE0DF76053FB6FD16D6 /* NSString+JKString.h in Headers */ = {isa = PBXBuildFile; fileRef = 23B51A56F16B6D68DCEA64F370A835E2 /* NSString+JKString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0FF46469D7740FA4C0994FCDA850530E /* UIScrollView+JKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = F47F7046E9013D35097384DB7A41B4B0 /* UIScrollView+JKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C5E628AEDD9B98E85F70C75FB47C50 /* Pods-JKOCProjectTool_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 05FCF31D7C117282B9315B3C2F04749C /* Pods-JKOCProjectTool_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11C5FE8ED8763CE556A3C66C797D17CD /* JKScanningQRViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6A64460B8B838D57DBFCE232BF0981 /* JKScanningQRViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		132F1D66287089AB34540D0441919AF0 /* NSData+JK_AES.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A622CDAB5D3A9D005DA3F2137CD1318 /* NSData+JK_AES.m */; };
+		184270CA09CACA737DF61D111627245F /* NSString+JKRemoveEmoji.h in Headers */ = {isa = PBXBuildFile; fileRef = 9456BE706EF3AEFFB0C0A30099D9EF2B /* NSString+JKRemoveEmoji.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19E4053998BF96A22EEBAD9C12EC02E1 /* NSString+JKHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6520DC11830E064F26160F334334C284 /* NSString+JKHash.m */; };
+		1A4073F7E4706E1FF07F48ECC0EF4A97 /* NSData+JKGzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D49F80E16EF6F0554B2C9E88243ECE /* NSData+JKGzip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1BDA2864446BE3142F16D17CEAEC9A72 /* NSString+JKPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C4519693D7A3BB7B0805A59B1F4765 /* NSString+JKPinyin.m */; };
+		1DE4B4BDA4388D283050704CD09CF346 /* CALayer+JKLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = D920C8CC01DD3C7E2A20176AD4BE3ACF /* CALayer+JKLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E3F7D3FDFE47C489C5AB2893676B7C9 /* UIFont+JKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C07198D293DDD75A3077CB3966072F1 /* UIFont+JKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F33D2D3327EBFB6F88B5B073C54897B /* NSData+JKEncrypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FBAD10DD28C8A20D6BD2EB91CC39AA9 /* NSData+JKEncrypt.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		21DFCDC322B130AB2E2A8DEA007772A2 /* NSData+JKData.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B29249B97D30EB5EA8110F746018395 /* NSData+JKData.m */; };
+		232C4FE629D3E9AF3EBA7D2FEC46D785 /* UIImage+JKImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 39ECEFC85EA0F3FA17C9B51A396C568D /* UIImage+JKImage.m */; };
+		2511737DE35E6D8EB81B2E7A2E04B2C7 /* NSString+JKContains.h in Headers */ = {isa = PBXBuildFile; fileRef = EF0763F6D9B3C1C7A4805BBAD3664BD5 /* NSString+JKContains.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		27D301E05093B65FBFFD0E721306F833 /* UITextView+JKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 248CEB29F709ACEE387E148E28E1DD66 /* UITextView+JKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CF10B0D7D395986E51D300BB9D5DAD9 /* JKOCProjectTool.h in Headers */ = {isa = PBXBuildFile; fileRef = AE101C1786667C0715086CECE828EF79 /* JKOCProjectTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3118CF61E608CF5F59A14F35E171124D /* NSData+JKEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C06529858AD926170AAEC49A743EE96A /* NSData+JKEncrypt.m */; };
+		3483FB3C8E745F528AC77926951D14D7 /* UIDevice+JKHardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C1FAD4EAF7D1695FC81348BDBC999D /* UIDevice+JKHardware.m */; };
+		3680C7DACE51D409038C980385513B32 /* JKSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = FA8989E7AEBB76040E1B4E3DD50D62FE /* JKSingle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3838D04A4BC877000DCB849BBB1C13A7 /* UIWebView+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 64A53F90459BAF798309FCA171B105A4 /* UIWebView+JKExtension.m */; };
+		39A24D7ED5CA957D1A860B5704BF0245 /* UIImage+JKColorImage.m in Sources */ = {isa = PBXBuildFile; fileRef = B27E09C006346DAE00087C234C8368AE /* UIImage+JKColorImage.m */; };
+		3B55C1B55615A5ED45897094AA80E4F4 /* UIImage+JKImage.h in Headers */ = {isa = PBXBuildFile; fileRef = CF132E853C80FBEF7BF6C343B32A0033 /* UIImage+JKImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F833521FC58FEADDE95DA1CE3B39670 /* NSData+JKHash.m in Sources */ = {isa = PBXBuildFile; fileRef = 6400B6B03096CA50011F5467F3C2B8DF /* NSData+JKHash.m */; };
+		4006332EDAD413E201BBF33CD80571F6 /* JKTopWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = BF11096C15962793028CB4E9C3FB9EC3 /* JKTopWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46A5BA062208FDD18419158707A7BD91 /* UINavigationController+JKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4878AD3C2C1A0D66D06210AB954534A /* UINavigationController+JKNavigationController.m */; };
+		47F15761D8EBCB0A89BB821FDFB4B001 /* UIImage+JKDirection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A9FD7B95EF7E55DE0D73DE7A344C7AF /* UIImage+JKDirection.m */; };
+		483238A4416A10CFCB9142A5CDA47020 /* UIDevice+JKHardware.h in Headers */ = {isa = PBXBuildFile; fileRef = DFD319B649F44C1975DC4A2EC4255593 /* UIDevice+JKHardware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		488D2BE1EF5C49558501C7B1F69F9A74 /* UIButton+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C83F4A7C4F967A9FBFCACF00078445F /* UIButton+JKExtension.m */; };
+		4D6D87911FD1A77F6C8705E32726B4CE /* NSString+JKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = A23E67BF8CE38DE55BF4F2EEF570E4EE /* NSString+JKBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E5F35DCBDF3A2F60940CC19FCDE5E63 /* Pods-JKOCProjectTool_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6BB025B9E143285476BAD541F079772B /* Pods-JKOCProjectTool_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FDCB344F983F9FD15DA7655DAE4E126 /* UIResponder+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 26FCA93826416F96896365BB9E330809 /* UIResponder+JKExtension.m */; };
+		511A83F6B557A4E9354B6F3A315D607A /* UIWebView+JKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 19A7AC550E4AA63E81B248C223D9A1EF /* UIWebView+JKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51C97965C20EED83F375BBCF24091B53 /* NSObject+JKRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = 23A84191723C27A309DED741DDA8DFFB /* NSObject+JKRuntime.m */; };
+		54155876EFCBBC22B02E26D72A5530DE /* JKDate.m in Sources */ = {isa = PBXBuildFile; fileRef = E711C1A2BC4155764F185F628AC77514 /* JKDate.m */; };
+		59D132108F38FB59DDB3EA1B11F8F204 /* UIColor+JKColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 6897BE442774CA4ADC40CF6B3D6E1AA8 /* UIColor+JKColor.m */; };
+		5AAE2EF84C58E81D31FF9DD60C3F2744 /* UIImageView+JKImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 37D9A3D13E5F4D3D2492C48AD57FB630 /* UIImageView+JKImageView.m */; };
+		5D9213120F9B68BBBCF94E353D7626E0 /* UIView+JKLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E51F9292BE180F05625B2EB610002B1 /* UIView+JKLayout.m */; };
+		613E5CFB6B67F145DEB4B8152B179534 /* NSData+JK_AES.h in Headers */ = {isa = PBXBuildFile; fileRef = 83586AEC7060D04193D925851521B32B /* NSData+JK_AES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62EBEDB482B81A6824ED288C69E87215 /* NSString+JK_MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 19BC94015C70C6C156EB550A2C2935C9 /* NSString+JK_MD5.m */; };
+		635EE21643DBDB4BD51FB2DC0D0C43A4 /* UIViewController+JKViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 219A30D66C5948A54E1A7718B34C04DF /* UIViewController+JKViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		655D5B474B8C77A20E4B1656B6C230DE /* NSString+JKXML.m in Sources */ = {isa = PBXBuildFile; fileRef = 9722B3E48B941708BD0ECA25611C4753 /* NSString+JKXML.m */; };
+		67ABF5E3876CD3B25C7A0F83EBD187F6 /* JKSmallLabels.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C646EDADA1E96763D7FE2EB708E8BD3 /* JKSmallLabels.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67D1E23033AB8F314E981168573E8D51 /* UIView+JKLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAD310B93D1209275436A25D451A7FB /* UIView+JKLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		698C2085388C9FB381D71FC7AF4F48B3 /* JKRSATool.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D3F3E97F7652CBDFB4FCA6F0CF2FAC /* JKRSATool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A80BE80BEE7A0061195F245C24A5F80 /* JKLimitInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 47541B094FB7FC2A9D22E25F62390E93 /* JKLimitInput.m */; };
+		702AA19CDF2D97E111856CE059941053 /* NSString+JKRemoveEmoji.m in Sources */ = {isa = PBXBuildFile; fileRef = D5D4F1AABB1364B8F5BF46F1FAB2ACA8 /* NSString+JKRemoveEmoji.m */; };
+		729F338939BA0838F3AA795AAC29271B /* JKScreenSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 740C0C6061A883A965088EE3329606D8 /* JKScreenSize.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		72C9BB8B72A7981AC6BA442A3F212099 /* JKSmallLabels.m in Sources */ = {isa = PBXBuildFile; fileRef = 82CFF9342973127E6582F4061B464325 /* JKSmallLabels.m */; };
+		74C2E3D0534DCD6BB06448306758EDF0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		78E04D2FDC0785579FCCC12E4F9444BD /* JKRSATool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5327E0F117CFF26A4D9EBF9FA76E0AFD /* JKRSATool.m */; };
+		7A212A33D9D4EA1619024BD34FC33DBE /* NSString+JKXML.h in Headers */ = {isa = PBXBuildFile; fileRef = A2840EB9F0BD08DA8FCA8FD55BEC41BC /* NSString+JKXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7CB5320A82E7D2906FA42129789C8544 /* JKLimitInput.h in Headers */ = {isa = PBXBuildFile; fileRef = A7AAB4ADE0EF722A3063B44634103A60 /* JKLimitInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7EA413238DAAF034BF30DF16FE846A81 /* NSString+JKRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = AF5491213A3A753A17F84BD1666E7383 /* NSString+JKRegex.m */; };
+		7F208FBF2B5F56747BABDB262EC9087D /* UIImage+JKColorImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 96F333FDC471B51768FAE4AD16E30F15 /* UIImage+JKColorImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		802C7C3A09053C4741B9A5260DA791E5 /* NSData+JKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = EF71E3E79FD8E6E29FC29E35DD56E893 /* NSData+JKBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		82F74AA39E8C2B2C8560178FC80F87C3 /* UIResponder+JKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 20B62C1D1E062AB8C57B6A5385907E54 /* UIResponder+JKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8596C614EC515A2C010FC284A1663AFF /* JKMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = FA9981988E77F5E649D27A8A27D5B979 /* JKMacro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86F11C970761D0C11A6EDEEE16C18C79 /* UIImageView+JKImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = C30A90D6D4063ACDE16F1739BA119EE6 /* UIImageView+JKImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		879466D25F978D6BA4AC37D7FF41193A /* NSString+JKString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1047DF93F1790D1BAEF3BCFD24A74D79 /* NSString+JKString.m */; };
+		8913F30846D03482EB67FD730823F08D /* NSData+JKData.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A1E345844EFFDA62460F59746A5F1F /* NSData+JKData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		894F6C9C1C4D4A7704E49DF29A2156CC /* NSDate+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 821C6FF638436BE643FF22BC66A68619 /* NSDate+JKExtension.m */; };
+		89BA015FF75C56EC9385C7471ADFC576 /* UILabel+JKLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = E41C404A93EC499EFBC79354061D594A /* UILabel+JKLabel.m */; };
+		8FB08800DC092BBBE98C8BEB3C69D9CF /* UIColor+JKColor.h in Headers */ = {isa = PBXBuildFile; fileRef = 2073407038EA1FCB689FF59B5A22C13C /* UIColor+JKColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9309840EAC4B5CD18AD2F1F835D84F1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		98B3A1844DC2F921D389B1D50B3C5D54 /* UIApplication+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 94546A40992C1DE50546E136DA0CFA1D /* UIApplication+JKExtension.m */; };
+		9ACB51DC358A1E492E6373AE9D31F121 /* UIApplication+JKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = EFB27F9AFC5DB7FF2A9D32D609D4FBD1 /* UIApplication+JKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DE835316881D4E61432C720386D0D0D /* Pods-JKOCProjectTool_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AD6024FA54D7547115A41858ECDD7EF0 /* Pods-JKOCProjectTool_Tests-dummy.m */; };
+		A04F3B990C9762737245785A6281BE18 /* NSString+JKHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C4B5C054E0A5397E65DAEB6DE3751B7 /* NSString+JKHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2E100556A1938C59938EB753105F0EB /* UIButton+JKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 374246947EBD81BA9598F30749A44E33 /* UIButton+JKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8A780E1822880791072F8ECF21F4657 /* JKOCProjectTool-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FB53BD359B1A6CBCCE18A20CF445439 /* JKOCProjectTool-dummy.m */; };
+		A95261B3D1F91B428DE4AA6F2C7528E5 /* JKQRCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 04002681F1A1935C11CBC9B50B560E15 /* JKQRCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9B099618DC173DDB3C82E35C3BA77E8 /* UIBarButtonItem+JKBarbuttonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = C227BB493D6C4CFB34A3E114CA22E5C4 /* UIBarButtonItem+JKBarbuttonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC0F4C01E725F8CD3C74FEF38A510BA9 /* UILabel+JKLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 48A76AC72C722F55F69BDF28CFBAB54A /* UILabel+JKLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD4F85D94A042DBB942704E203669FEE /* CALayer+JKLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CF4DFA36F8ACE3C78ABE09F65DA31BA /* CALayer+JKLayer.m */; };
+		AEE5D9BD3CF85777BD2D66A63D01B5AA /* UITextField+JKTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 803BA9D6AEA7A404154BAB93853E40EC /* UITextField+JKTextField.m */; };
+		AEEB21B6F96CA47002864464553D2319 /* UIImage+JKGIF.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C807D423FB3932F2BABA7C24914B365 /* UIImage+JKGIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B066FE3E524CBAFE0817B00EBC1F3821 /* JKSandboxPath.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B9B02241D6C0E755EB556CD6E8F902 /* JKSandboxPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B26A6110F0DA9EFBD071DC71C495461B /* UIImage+JKGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = B8894D2EF18E0651F98D9C490811574F /* UIImage+JKGIF.m */; };
+		B3DF10D6A5DD80816CAB17393E9933DE /* UITextField+JKTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = D95D149FD811222DA80DAF7105277892 /* UITextField+JKTextField.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B74C9EAE0CB45B1E451E33A674B1B07A /* UIBarButtonItem+JKBarbuttonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E4B2F648D9641652770ED7A3E01F23 /* UIBarButtonItem+JKBarbuttonItem.m */; };
+		BB50984E47A3EF7DC01DFD521F536548 /* NSData+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A7BC0DD454E0CED4703AED9C99C9B4B /* NSData+JKBase64.m */; };
+		BD077760A84CBD4AD8CAA44541F7DFEB /* UIWindow+JKHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 112BD3316E9D78BD7C6CE94900D6F2E0 /* UIWindow+JKHierarchy.m */; };
+		BEA2E5CD9E772106F31440123727CAF1 /* UIScrollView+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 691A3B763AA3816D4D397499D059C71E /* UIScrollView+JKExtension.m */; };
+		C0D773300C84D91C896F9563F4E9FB7C /* NSDate+JKFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 27D7244771745F3A65D05DEFA48D57BC /* NSDate+JKFormatter.m */; };
+		C1722680534C450F34DAC79137D850BB /* UIImage+JKScaleVideoImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 26131D08ECFF697A9B42070A0868EF47 /* UIImage+JKScaleVideoImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C5209297520297D3EB455E88E8651F0E /* NSString+JKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D11745BEE3B61A8A4D9FFD6F6ED2C71 /* NSString+JKBase64.m */; };
+		C52A2A8750B3D655C35B7E6DD6E3209B /* UIFont+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BED66A8272338930FE183BFB9BEE24C8 /* UIFont+JKExtension.m */; };
+		C6A054349DB984639AA5FACBCB172E10 /* JKQRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 38E8C58C61E6E0DEFA34D5FC45D247BD /* JKQRCode.m */; };
+		C6DB985E51BB15AD021E88CE2698341E /* JKTextExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = D9EC92D36BDF4F62CBF680DD47C4B76A /* JKTextExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7DC4E46C261EFD6971AB33715FD6E8A /* JKDate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A098EE65AFFB802C31807163544327B /* JKDate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C7F34206DB7A3715AD6305E7C9F2EDE4 /* NSObject+JKRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = 4986FBA718BB1A8FD7215BA3B783F3B0 /* NSObject+JKRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBEADDD0E51950CEB48C7BBC4E4ADBCA /* UIImage+JKScaleVideoImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 18443BB01A95803E6DFDC956441710C2 /* UIImage+JKScaleVideoImage.m */; };
+		CE8BEF58FCC9CB9B325E598FF413471F /* NSMutableArray+JKMutableArray.h in Headers */ = {isa = PBXBuildFile; fileRef = 251FF2C0444492E325C41DB560A6D856 /* NSMutableArray+JKMutableArray.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CF5EA35DC46C066FE0753DF980501724 /* NSString+JK_MD5.h in Headers */ = {isa = PBXBuildFile; fileRef = 96EA505FA7A5E2FD19D7EC8CE05A788C /* NSString+JK_MD5.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D0B4A8F821D7C826CEFDE8D0C3E4B9BE /* NSDate+JKExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A5CDFFC80DCF81F4ADA2806F7DEEB5E /* NSDate+JKExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5E0BE7B798AC4F241F7C1ACE24BF89B /* JKSandboxPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 6760337738A187E7AC7C56A45A35626B /* JKSandboxPath.m */; };
+		D781E1B1C2B307D61137E0F00B976607 /* UIImage+JKDirection.h in Headers */ = {isa = PBXBuildFile; fileRef = 67D0B645F9738990A4D8D529B8E8AD56 /* UIImage+JKDirection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D8DEC8DC5174FB7A94F3E7AF90DBAA59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		DAD91D1491FBC43E25F52096338665BF /* JKTopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CCD00BFFD2FD665F833BB8700028E905 /* JKTopWindow.m */; };
+		DF29CDDFD713E15A97C9C67E00FC596B /* NSData+JKGzip.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C94B80B3231FFFD6093C68B4901AAC /* NSData+JKGzip.m */; };
+		DF5C75403A961DA0D3DBFC275D1A7440 /* UIViewController+JKViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CF502C18EB26C2BBFE33D40CD0316AD /* UIViewController+JKViewController.m */; };
+		EBA59820CFCC6FEB5A46BACD02CFC643 /* NSData+JKHash.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D57E94A0CACBEFDAB87D146E5DC82D /* NSData+JKHash.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EE9F02F57E5E9E9B039B55D0F26EC7E4 /* NSDate+JKFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = 0837D2F170EB7348EDE6F223BFB123CC /* NSDate+JKFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EF83F0591CBBACB225DA826BC74216AD /* NSString+JKPinyin.h in Headers */ = {isa = PBXBuildFile; fileRef = 345BFA4C8F4A95D45505826011411057 /* NSString+JKPinyin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F08FE6FA1C22AA0E5832D40CEFBB0DF8 /* JKOCProjectTool.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 446A3FDA5BBCA8030BCBE4B9603E4AE5 /* JKOCProjectTool.bundle */; };
+		F0D502A78621AC28622E75510E3D6A91 /* UIWindow+JKHierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = F079BB860002B90FC03D696DD8F5461B /* UIWindow+JKHierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F850E7FE610BD7CFD6212A265C6DE6FA /* JKOCProjectTool-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE5E7BE47B8F42E829B5D1D3A75743F /* JKOCProjectTool-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA331FF53E6BF81F09137642726F0F33 /* UITextView+JKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BA2E01B66C4D1E331BEE01A880F7429 /* UITextView+JKExtension.m */; };
+		FBDB5ACC2CAE827C938A9219AB53DDC6 /* NSMutableArray+JKMutableArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 568EA61DF66584BB72CAEBCD63C1BE7E /* NSMutableArray+JKMutableArray.m */; };
+		FCF4E76EFE8B42B68542211F6234AAD9 /* NSString+JKContains.m in Sources */ = {isa = PBXBuildFile; fileRef = 96D168DB44CA06EAD123CA1EB683BDAB /* NSString+JKContains.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1989CF232B4C9E23BE3B80BF01079CC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 070E2132F1216AF1D02A91F164908E2D;
+			remoteInfo = JKOCProjectTool;
+		};
+		87F0CC33068B29FA85B765E76FB04A72 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E105BA69FE341A7F0686234B918BDE94;
+			remoteInfo = "Pods-JKOCProjectTool_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D4F2013E6BCA334DFCF737E7E4EE71 /* Pods-JKOCProjectTool_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKOCProjectTool_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		04002681F1A1935C11CBC9B50B560E15 /* JKQRCode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKQRCode.h; sourceTree = "<group>"; };
+		05FCF31D7C117282B9315B3C2F04749C /* Pods-JKOCProjectTool_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKOCProjectTool_Tests-umbrella.h"; sourceTree = "<group>"; };
+		07B457A9C969619AA9E3363FC8FED668 /* Pods-JKOCProjectTool_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKOCProjectTool_Example.release.xcconfig"; sourceTree = "<group>"; };
+		0837D2F170EB7348EDE6F223BFB123CC /* NSDate+JKFormatter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+JKFormatter.h"; sourceTree = "<group>"; };
+		0A7AA0D3F343B0394471F0F65BD88BCC /* JKOCProjectTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JKOCProjectTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A919583A76FC8E1A7ED4A960C302889 /* JKGCDTimer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKGCDTimer.h; sourceTree = "<group>"; };
+		0BA2E01B66C4D1E331BEE01A880F7429 /* UITextView+JKExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextView+JKExtension.m"; sourceTree = "<group>"; };
+		0CF4DFA36F8ACE3C78ABE09F65DA31BA /* CALayer+JKLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CALayer+JKLayer.m"; sourceTree = "<group>"; };
+		0FC739EDD1BAC2ABDF963B2FEBE73BFB /* Pods-JKOCProjectTool_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKOCProjectTool_Tests.modulemap"; sourceTree = "<group>"; };
+		1047DF93F1790D1BAEF3BCFD24A74D79 /* NSString+JKString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKString.m"; sourceTree = "<group>"; };
+		112BD3316E9D78BD7C6CE94900D6F2E0 /* UIWindow+JKHierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JKHierarchy.m"; sourceTree = "<group>"; };
+		1480279648CA318BEE9B912068D0A336 /* JKOCProjectTool-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JKOCProjectTool-Info.plist"; sourceTree = "<group>"; };
+		17D49F80E16EF6F0554B2C9E88243ECE /* NSData+JKGzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+JKGzip.h"; sourceTree = "<group>"; };
+		18443BB01A95803E6DFDC956441710C2 /* UIImage+JKScaleVideoImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKScaleVideoImage.m"; sourceTree = "<group>"; };
+		19A7AC550E4AA63E81B248C223D9A1EF /* UIWebView+JKExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIWebView+JKExtension.h"; sourceTree = "<group>"; };
+		19BC94015C70C6C156EB550A2C2935C9 /* NSString+JK_MD5.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+JK_MD5.m"; sourceTree = "<group>"; };
+		1A622CDAB5D3A9D005DA3F2137CD1318 /* NSData+JK_AES.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+JK_AES.m"; sourceTree = "<group>"; };
+		1C83F4A7C4F967A9FBFCACF00078445F /* UIButton+JKExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIButton+JKExtension.m"; sourceTree = "<group>"; };
+		1DE5E7BE47B8F42E829B5D1D3A75743F /* JKOCProjectTool-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKOCProjectTool-umbrella.h"; sourceTree = "<group>"; };
+		2073407038EA1FCB689FF59B5A22C13C /* UIColor+JKColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+JKColor.h"; sourceTree = "<group>"; };
+		20B62C1D1E062AB8C57B6A5385907E54 /* UIResponder+JKExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIResponder+JKExtension.h"; sourceTree = "<group>"; };
+		217C56931EF49836DE213C517C390836 /* JKOCProjectTool.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = JKOCProjectTool.podspec; sourceTree = "<group>"; tabWidth = 2; };
+		219A30D66C5948A54E1A7718B34C04DF /* UIViewController+JKViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIViewController+JKViewController.h"; sourceTree = "<group>"; };
+		23A84191723C27A309DED741DDA8DFFB /* NSObject+JKRuntime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSObject+JKRuntime.m"; sourceTree = "<group>"; };
+		23B51A56F16B6D68DCEA64F370A835E2 /* NSString+JKString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+JKString.h"; sourceTree = "<group>"; };
+		248CEB29F709ACEE387E148E28E1DD66 /* UITextView+JKExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextView+JKExtension.h"; sourceTree = "<group>"; };
+		251FF2C0444492E325C41DB560A6D856 /* NSMutableArray+JKMutableArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+JKMutableArray.h"; sourceTree = "<group>"; };
+		26131D08ECFF697A9B42070A0868EF47 /* UIImage+JKScaleVideoImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKScaleVideoImage.h"; sourceTree = "<group>"; };
+		26FCA93826416F96896365BB9E330809 /* UIResponder+JKExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+JKExtension.m"; sourceTree = "<group>"; };
+		27D7244771745F3A65D05DEFA48D57BC /* NSDate+JKFormatter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JKFormatter.m"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		328BFF3CB54C47146D0CC919BB06EA46 /* Pods-JKOCProjectTool_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKOCProjectTool_Example-Info.plist"; sourceTree = "<group>"; };
+		345BFA4C8F4A95D45505826011411057 /* NSString+JKPinyin.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+JKPinyin.h"; sourceTree = "<group>"; };
+		374246947EBD81BA9598F30749A44E33 /* UIButton+JKExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIButton+JKExtension.h"; sourceTree = "<group>"; };
+		37D9A3D13E5F4D3D2492C48AD57FB630 /* UIImageView+JKImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+JKImageView.m"; sourceTree = "<group>"; };
+		38704794B969E6A6E6DCF736E281D5D0 /* Pods-JKOCProjectTool_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKOCProjectTool_Example-dummy.m"; sourceTree = "<group>"; };
+		38C1FAD4EAF7D1695FC81348BDBC999D /* UIDevice+JKHardware.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+JKHardware.m"; sourceTree = "<group>"; };
+		38E8C58C61E6E0DEFA34D5FC45D247BD /* JKQRCode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKQRCode.m; sourceTree = "<group>"; };
+		39ECEFC85EA0F3FA17C9B51A396C568D /* UIImage+JKImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKImage.m"; sourceTree = "<group>"; };
+		3A9FD7B95EF7E55DE0D73DE7A344C7AF /* UIImage+JKDirection.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKDirection.m"; sourceTree = "<group>"; };
+		3B29249B97D30EB5EA8110F746018395 /* NSData+JKData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKData.m"; sourceTree = "<group>"; };
+		3FBAD10DD28C8A20D6BD2EB91CC39AA9 /* NSData+JKEncrypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+JKEncrypt.h"; sourceTree = "<group>"; };
+		446A3FDA5BBCA8030BCBE4B9603E4AE5 /* JKOCProjectTool.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = JKOCProjectTool.bundle; path = JKOCProjectTool/JKResource/JKOCProjectTool.bundle; sourceTree = "<group>"; };
+		47541B094FB7FC2A9D22E25F62390E93 /* JKLimitInput.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKLimitInput.m; sourceTree = "<group>"; };
+		48A76AC72C722F55F69BDF28CFBAB54A /* UILabel+JKLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UILabel+JKLabel.h"; sourceTree = "<group>"; };
+		4986FBA718BB1A8FD7215BA3B783F3B0 /* NSObject+JKRuntime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSObject+JKRuntime.h"; sourceTree = "<group>"; };
+		4A5CDFFC80DCF81F4ADA2806F7DEEB5E /* NSDate+JKExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSDate+JKExtension.h"; sourceTree = "<group>"; };
+		4C4B5C054E0A5397E65DAEB6DE3751B7 /* NSString+JKHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+JKHash.h"; sourceTree = "<group>"; };
+		4C807D423FB3932F2BABA7C24914B365 /* UIImage+JKGIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKGIF.h"; sourceTree = "<group>"; };
+		4D11745BEE3B61A8A4D9FFD6F6ED2C71 /* NSString+JKBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKBase64.m"; sourceTree = "<group>"; };
+		4D291C509317425D0D8384E3C05F1922 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		5327E0F117CFF26A4D9EBF9FA76E0AFD /* JKRSATool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKRSATool.m; sourceTree = "<group>"; };
+		568EA61DF66584BB72CAEBCD63C1BE7E /* NSMutableArray+JKMutableArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+JKMutableArray.m"; sourceTree = "<group>"; };
+		5A2D0D6D07DC4D74A5A0C7E84F8DF0C3 /* Pods-JKOCProjectTool_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKOCProjectTool_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B6A64460B8B838D57DBFCE232BF0981 /* JKScanningQRViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKScanningQRViewController.h; sourceTree = "<group>"; };
+		6400B6B03096CA50011F5467F3C2B8DF /* NSData+JKHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKHash.m"; sourceTree = "<group>"; };
+		64A53F90459BAF798309FCA171B105A4 /* UIWebView+JKExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+JKExtension.m"; sourceTree = "<group>"; };
+		6520DC11830E064F26160F334334C284 /* NSString+JKHash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKHash.m"; sourceTree = "<group>"; };
+		6760337738A187E7AC7C56A45A35626B /* JKSandboxPath.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKSandboxPath.m; sourceTree = "<group>"; };
+		67D0B645F9738990A4D8D529B8E8AD56 /* UIImage+JKDirection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKDirection.h"; sourceTree = "<group>"; };
+		6897BE442774CA4ADC40CF6B3D6E1AA8 /* UIColor+JKColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JKColor.m"; sourceTree = "<group>"; };
+		691A3B763AA3816D4D397499D059C71E /* UIScrollView+JKExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+JKExtension.m"; sourceTree = "<group>"; };
+		6A098EE65AFFB802C31807163544327B /* JKDate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKDate.h; sourceTree = "<group>"; };
+		6A909E636125F7CA6E0D61FBE321B40E /* JKOCProjectTool-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JKOCProjectTool-prefix.pch"; sourceTree = "<group>"; };
+		6AF03E38D97EC87235E454388A5776E3 /* JKOCProjectTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKOCProjectTool.debug.xcconfig; sourceTree = "<group>"; };
+		6BB025B9E143285476BAD541F079772B /* Pods-JKOCProjectTool_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-JKOCProjectTool_Example-umbrella.h"; sourceTree = "<group>"; };
+		6E51F9292BE180F05625B2EB610002B1 /* UIView+JKLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+JKLayout.m"; sourceTree = "<group>"; };
+		70D57E94A0CACBEFDAB87D146E5DC82D /* NSData+JKHash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+JKHash.h"; sourceTree = "<group>"; };
+		740C0C6061A883A965088EE3329606D8 /* JKScreenSize.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JKScreenSize.h; path = JKOCProjectTool/JKCategory/JKScreenSize.h; sourceTree = "<group>"; };
+		7602A2EB586D00B0E159F0AAE66856A7 /* Pods-JKOCProjectTool_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKOCProjectTool_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		7CF502C18EB26C2BBFE33D40CD0316AD /* UIViewController+JKViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+JKViewController.m"; sourceTree = "<group>"; };
+		7FB53BD359B1A6CBCCE18A20CF445439 /* JKOCProjectTool-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JKOCProjectTool-dummy.m"; sourceTree = "<group>"; };
+		803BA9D6AEA7A404154BAB93853E40EC /* UITextField+JKTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+JKTextField.m"; sourceTree = "<group>"; };
+		81851B1BAB0B0899CB3A8C098C2C696E /* Pods_JKOCProjectTool_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKOCProjectTool_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		821C6FF638436BE643FF22BC66A68619 /* NSDate+JKExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSDate+JKExtension.m"; sourceTree = "<group>"; };
+		82CFF9342973127E6582F4061B464325 /* JKSmallLabels.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKSmallLabels.m; sourceTree = "<group>"; };
+		83586AEC7060D04193D925851521B32B /* NSData+JK_AES.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+JK_AES.h"; sourceTree = "<group>"; };
+		89BE50BD60D5BAA4B7EA4E131334D1FE /* Pods_JKOCProjectTool_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKOCProjectTool_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C07198D293DDD75A3077CB3966072F1 /* UIFont+JKExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIFont+JKExtension.h"; sourceTree = "<group>"; };
+		8FAD310B93D1209275436A25D451A7FB /* UIView+JKLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+JKLayout.h"; sourceTree = "<group>"; };
+		92E4B2F648D9641652770ED7A3E01F23 /* UIBarButtonItem+JKBarbuttonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+JKBarbuttonItem.m"; sourceTree = "<group>"; };
+		94546A40992C1DE50546E136DA0CFA1D /* UIApplication+JKExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+JKExtension.m"; sourceTree = "<group>"; };
+		9456BE706EF3AEFFB0C0A30099D9EF2B /* NSString+JKRemoveEmoji.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+JKRemoveEmoji.h"; sourceTree = "<group>"; };
+		94ACE36231C66864A627AAC77413CA65 /* Pods-JKOCProjectTool_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKOCProjectTool_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		96D168DB44CA06EAD123CA1EB683BDAB /* NSString+JKContains.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKContains.m"; sourceTree = "<group>"; };
+		96EA505FA7A5E2FD19D7EC8CE05A788C /* NSString+JK_MD5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+JK_MD5.h"; sourceTree = "<group>"; };
+		96F333FDC471B51768FAE4AD16E30F15 /* UIImage+JKColorImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKColorImage.h"; sourceTree = "<group>"; };
+		9722B3E48B941708BD0ECA25611C4753 /* NSString+JKXML.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKXML.m"; sourceTree = "<group>"; };
+		99A1E345844EFFDA62460F59746A5F1F /* NSData+JKData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+JKData.h"; sourceTree = "<group>"; };
+		9A7BC0DD454E0CED4703AED9C99C9B4B /* NSData+JKBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKBase64.m"; sourceTree = "<group>"; };
+		9C646EDADA1E96763D7FE2EB708E8BD3 /* JKSmallLabels.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKSmallLabels.h; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A23E67BF8CE38DE55BF4F2EEF570E4EE /* NSString+JKBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+JKBase64.h"; sourceTree = "<group>"; };
+		A2840EB9F0BD08DA8FCA8FD55BEC41BC /* NSString+JKXML.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+JKXML.h"; sourceTree = "<group>"; };
+		A6C4519693D7A3BB7B0805A59B1F4765 /* NSString+JKPinyin.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKPinyin.m"; sourceTree = "<group>"; };
+		A7AAB4ADE0EF722A3063B44634103A60 /* JKLimitInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKLimitInput.h; sourceTree = "<group>"; };
+		ABE9C5BBA522561D5F65127380AD5209 /* Pods-JKOCProjectTool_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKOCProjectTool_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		AD6024FA54D7547115A41858ECDD7EF0 /* Pods-JKOCProjectTool_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JKOCProjectTool_Tests-dummy.m"; sourceTree = "<group>"; };
+		AE101C1786667C0715086CECE828EF79 /* JKOCProjectTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JKOCProjectTool.h; path = JKOCProjectTool/JKOCProjectTool.h; sourceTree = "<group>"; };
+		AF5491213A3A753A17F84BD1666E7383 /* NSString+JKRegex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKRegex.m"; sourceTree = "<group>"; };
+		B27E09C006346DAE00087C234C8368AE /* UIImage+JKColorImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKColorImage.m"; sourceTree = "<group>"; };
+		B31D849EC64714F4D78B12148577C24A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B5B9B02241D6C0E755EB556CD6E8F902 /* JKSandboxPath.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKSandboxPath.h; sourceTree = "<group>"; };
+		B6BE8BDFF200DD385A4A06671BCE008D /* Pods-JKOCProjectTool_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JKOCProjectTool_Example-frameworks.sh"; sourceTree = "<group>"; };
+		B8894D2EF18E0651F98D9C490811574F /* UIImage+JKGIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+JKGIF.m"; sourceTree = "<group>"; };
+		BCB278C61DE6A0F71A74DDE204F9D2D9 /* UINavigationController+JKNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+JKNavigationController.h"; sourceTree = "<group>"; };
+		BEBF1E461A4A8E40921D131732EF69A8 /* NSString+JKRegex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+JKRegex.h"; sourceTree = "<group>"; };
+		BED66A8272338930FE183BFB9BEE24C8 /* UIFont+JKExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIFont+JKExtension.m"; sourceTree = "<group>"; };
+		BF11096C15962793028CB4E9C3FB9EC3 /* JKTopWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKTopWindow.h; sourceTree = "<group>"; };
+		C06529858AD926170AAEC49A743EE96A /* NSData+JKEncrypt.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKEncrypt.m"; sourceTree = "<group>"; };
+		C227BB493D6C4CFB34A3E114CA22E5C4 /* UIBarButtonItem+JKBarbuttonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+JKBarbuttonItem.h"; sourceTree = "<group>"; };
+		C30A90D6D4063ACDE16F1739BA119EE6 /* UIImageView+JKImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImageView+JKImageView.h"; sourceTree = "<group>"; };
+		C3126604D05C1D39D7F97498D5EAEDE5 /* Pods-JKOCProjectTool_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JKOCProjectTool_Tests-Info.plist"; sourceTree = "<group>"; };
+		C4878AD3C2C1A0D66D06210AB954534A /* UINavigationController+JKNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+JKNavigationController.m"; sourceTree = "<group>"; };
+		CCD00BFFD2FD665F833BB8700028E905 /* JKTopWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKTopWindow.m; sourceTree = "<group>"; };
+		CF132E853C80FBEF7BF6C343B32A0033 /* UIImage+JKImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+JKImage.h"; sourceTree = "<group>"; };
+		D170191829C91B651BAA0EEAF1B2D66F /* Pods-JKOCProjectTool_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-JKOCProjectTool_Example.modulemap"; sourceTree = "<group>"; };
+		D1D3F3E97F7652CBDFB4FCA6F0CF2FAC /* JKRSATool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKRSATool.h; sourceTree = "<group>"; };
+		D59622FA38E16B4580CCC17047611C31 /* JKOCProjectTool.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JKOCProjectTool.modulemap; sourceTree = "<group>"; };
+		D5C94B80B3231FFFD6093C68B4901AAC /* NSData+JKGzip.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSData+JKGzip.m"; sourceTree = "<group>"; };
+		D5D4F1AABB1364B8F5BF46F1FAB2ACA8 /* NSString+JKRemoveEmoji.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+JKRemoveEmoji.m"; sourceTree = "<group>"; };
+		D920C8CC01DD3C7E2A20176AD4BE3ACF /* CALayer+JKLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CALayer+JKLayer.h"; sourceTree = "<group>"; };
+		D95D149FD811222DA80DAF7105277892 /* UITextField+JKTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+JKTextField.h"; sourceTree = "<group>"; };
+		D9EC92D36BDF4F62CBF680DD47C4B76A /* JKTextExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = JKTextExtension.h; sourceTree = "<group>"; };
+		DC35869D59D38D6B5075BEEF7815A5CC /* Pods-JKOCProjectTool_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JKOCProjectTool_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DFD319B649F44C1975DC4A2EC4255593 /* UIDevice+JKHardware.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIDevice+JKHardware.h"; sourceTree = "<group>"; };
+		E41C404A93EC499EFBC79354061D594A /* UILabel+JKLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UILabel+JKLabel.m"; sourceTree = "<group>"; };
+		E4CE8AF6D59E88C1D46C4D022ED1EC94 /* Pods-JKOCProjectTool_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JKOCProjectTool_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		E6B0BACCE38AC8675E233B6D42164295 /* JKTextExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKTextExtension.m; sourceTree = "<group>"; };
+		E711C1A2BC4155764F185F628AC77514 /* JKDate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKDate.m; sourceTree = "<group>"; };
+		ED78A493FA5D9491CEDFD3FA21DCD79C /* JKOCProjectTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JKOCProjectTool.release.xcconfig; sourceTree = "<group>"; };
+		EF0763F6D9B3C1C7A4805BBAD3664BD5 /* NSString+JKContains.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+JKContains.h"; sourceTree = "<group>"; };
+		EF71E3E79FD8E6E29FC29E35DD56E893 /* NSData+JKBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSData+JKBase64.h"; sourceTree = "<group>"; };
+		EFB27F9AFC5DB7FF2A9D32D609D4FBD1 /* UIApplication+JKExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIApplication+JKExtension.h"; sourceTree = "<group>"; };
+		F079BB860002B90FC03D696DD8F5461B /* UIWindow+JKHierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JKHierarchy.h"; sourceTree = "<group>"; };
+		F47F7046E9013D35097384DB7A41B4B0 /* UIScrollView+JKExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+JKExtension.h"; sourceTree = "<group>"; };
+		F6F47DD2C41FA44B8180973E37FCD1A6 /* JKGCDTimer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKGCDTimer.m; sourceTree = "<group>"; };
+		F850C45F6E23BE50AF447A617F8F7B79 /* JKScanningQRViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = JKScanningQRViewController.m; sourceTree = "<group>"; };
+		FA8989E7AEBB76040E1B4E3DD50D62FE /* JKSingle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JKSingle.h; path = JKOCProjectTool/JKCategory/JKSingle.h; sourceTree = "<group>"; };
+		FA9981988E77F5E649D27A8A27D5B979 /* JKMacro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JKMacro.h; path = JKOCProjectTool/JKCategory/JKMacro.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		433F2B03353E6C79A53610C8AA33EBEC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9309840EAC4B5CD18AD2F1F835D84F1F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		72F10A68FAE76C03DA88089E6C35CA3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74C2E3D0534DCD6BB06448306758EDF0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E79CBB2DDD3189A62111E1CD0ED2E05E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DEC8DC5174FB7A94F3E7AF90DBAA59 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		042F01E2618D39F7B6A2FBF5722454C0 /* JKQRCode */ = {
+			isa = PBXGroup;
+			children = (
+				04002681F1A1935C11CBC9B50B560E15 /* JKQRCode.h */,
+				38E8C58C61E6E0DEFA34D5FC45D247BD /* JKQRCode.m */,
+				5B6A64460B8B838D57DBFCE232BF0981 /* JKScanningQRViewController.h */,
+				F850C45F6E23BE50AF447A617F8F7B79 /* JKScanningQRViewController.m */,
+			);
+			name = JKQRCode;
+			path = JKOCProjectTool/JKKit/JKQRCode;
+			sourceTree = "<group>";
+		};
+		11058A8A77F98A39C7AF7B34520C7A21 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				446A3FDA5BBCA8030BCBE4B9603E4AE5 /* JKOCProjectTool.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		184220167BC0A167F18AF739D6047A94 /* JKOCProjectTool */ = {
+			isa = PBXGroup;
+			children = (
+				AE101C1786667C0715086CECE828EF79 /* JKOCProjectTool.h */,
+				D5799BCC4576AD70528460D9E4EAE95C /* JKCategory */,
+				7755DA8010B698514A657B4100361589 /* JKKit */,
+				B8150A171BBEE35E63FA5142FED8B1F6 /* Pod */,
+				11058A8A77F98A39C7AF7B34520C7A21 /* Resources */,
+				3FB1DEEE7E5DA6A05924F428D4075550 /* Support Files */,
+			);
+			name = JKOCProjectTool;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		3FB1DEEE7E5DA6A05924F428D4075550 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D59622FA38E16B4580CCC17047611C31 /* JKOCProjectTool.modulemap */,
+				7FB53BD359B1A6CBCCE18A20CF445439 /* JKOCProjectTool-dummy.m */,
+				1480279648CA318BEE9B912068D0A336 /* JKOCProjectTool-Info.plist */,
+				6A909E636125F7CA6E0D61FBE321B40E /* JKOCProjectTool-prefix.pch */,
+				1DE5E7BE47B8F42E829B5D1D3A75743F /* JKOCProjectTool-umbrella.h */,
+				6AF03E38D97EC87235E454388A5776E3 /* JKOCProjectTool.debug.xcconfig */,
+				ED78A493FA5D9491CEDFD3FA21DCD79C /* JKOCProjectTool.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/JKOCProjectTool";
+			sourceTree = "<group>";
+		};
+		4BBB3447A2EAC4BBA040B21124D8E3E4 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				184220167BC0A167F18AF739D6047A94 /* JKOCProjectTool */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		657EB53D8DCDF292592BEE6802620DBC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A7AA0D3F343B0394471F0F65BD88BCC /* JKOCProjectTool.framework */,
+				89BE50BD60D5BAA4B7EA4E131334D1FE /* Pods_JKOCProjectTool_Example.framework */,
+				81851B1BAB0B0899CB3A8C098C2C696E /* Pods_JKOCProjectTool_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6682131E12EA18D55FE8A875169C91E3 /* JKFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				83586AEC7060D04193D925851521B32B /* NSData+JK_AES.h */,
+				1A622CDAB5D3A9D005DA3F2137CD1318 /* NSData+JK_AES.m */,
+				EF71E3E79FD8E6E29FC29E35DD56E893 /* NSData+JKBase64.h */,
+				9A7BC0DD454E0CED4703AED9C99C9B4B /* NSData+JKBase64.m */,
+				99A1E345844EFFDA62460F59746A5F1F /* NSData+JKData.h */,
+				3B29249B97D30EB5EA8110F746018395 /* NSData+JKData.m */,
+				3FBAD10DD28C8A20D6BD2EB91CC39AA9 /* NSData+JKEncrypt.h */,
+				C06529858AD926170AAEC49A743EE96A /* NSData+JKEncrypt.m */,
+				17D49F80E16EF6F0554B2C9E88243ECE /* NSData+JKGzip.h */,
+				D5C94B80B3231FFFD6093C68B4901AAC /* NSData+JKGzip.m */,
+				70D57E94A0CACBEFDAB87D146E5DC82D /* NSData+JKHash.h */,
+				6400B6B03096CA50011F5467F3C2B8DF /* NSData+JKHash.m */,
+				4A5CDFFC80DCF81F4ADA2806F7DEEB5E /* NSDate+JKExtension.h */,
+				821C6FF638436BE643FF22BC66A68619 /* NSDate+JKExtension.m */,
+				0837D2F170EB7348EDE6F223BFB123CC /* NSDate+JKFormatter.h */,
+				27D7244771745F3A65D05DEFA48D57BC /* NSDate+JKFormatter.m */,
+				251FF2C0444492E325C41DB560A6D856 /* NSMutableArray+JKMutableArray.h */,
+				568EA61DF66584BB72CAEBCD63C1BE7E /* NSMutableArray+JKMutableArray.m */,
+				4986FBA718BB1A8FD7215BA3B783F3B0 /* NSObject+JKRuntime.h */,
+				23A84191723C27A309DED741DDA8DFFB /* NSObject+JKRuntime.m */,
+				96EA505FA7A5E2FD19D7EC8CE05A788C /* NSString+JK_MD5.h */,
+				19BC94015C70C6C156EB550A2C2935C9 /* NSString+JK_MD5.m */,
+				A23E67BF8CE38DE55BF4F2EEF570E4EE /* NSString+JKBase64.h */,
+				4D11745BEE3B61A8A4D9FFD6F6ED2C71 /* NSString+JKBase64.m */,
+				EF0763F6D9B3C1C7A4805BBAD3664BD5 /* NSString+JKContains.h */,
+				96D168DB44CA06EAD123CA1EB683BDAB /* NSString+JKContains.m */,
+				4C4B5C054E0A5397E65DAEB6DE3751B7 /* NSString+JKHash.h */,
+				6520DC11830E064F26160F334334C284 /* NSString+JKHash.m */,
+				345BFA4C8F4A95D45505826011411057 /* NSString+JKPinyin.h */,
+				A6C4519693D7A3BB7B0805A59B1F4765 /* NSString+JKPinyin.m */,
+				BEBF1E461A4A8E40921D131732EF69A8 /* NSString+JKRegex.h */,
+				AF5491213A3A753A17F84BD1666E7383 /* NSString+JKRegex.m */,
+				9456BE706EF3AEFFB0C0A30099D9EF2B /* NSString+JKRemoveEmoji.h */,
+				D5D4F1AABB1364B8F5BF46F1FAB2ACA8 /* NSString+JKRemoveEmoji.m */,
+				23B51A56F16B6D68DCEA64F370A835E2 /* NSString+JKString.h */,
+				1047DF93F1790D1BAEF3BCFD24A74D79 /* NSString+JKString.m */,
+				A2840EB9F0BD08DA8FCA8FD55BEC41BC /* NSString+JKXML.h */,
+				9722B3E48B941708BD0ECA25611C4753 /* NSString+JKXML.m */,
+				8C07198D293DDD75A3077CB3966072F1 /* UIFont+JKExtension.h */,
+				BED66A8272338930FE183BFB9BEE24C8 /* UIFont+JKExtension.m */,
+			);
+			name = JKFoundation;
+			path = JKOCProjectTool/JKCategory/JKFoundation;
+			sourceTree = "<group>";
+		};
+		7755DA8010B698514A657B4100361589 /* JKKit */ = {
+			isa = PBXGroup;
+			children = (
+				DC2B441A501C0C180330FD339AC8121A /* JKDate */,
+				7EAC64DB9B8538F2B98C228821DFCFAE /* JKGCDTimer */,
+				C10C1A0AE561732DB3CF44E5EC9F67FE /* JKLimitInput */,
+				042F01E2618D39F7B6A2FBF5722454C0 /* JKQRCode */,
+				EE17C11BF6B4DEA4983FA30E36485E35 /* JKRSATool */,
+				9EC7F5B7896CB9B178590E69F3362D2B /* JKSandboxPath */,
+				AB9E27411A48E463B4F6FC7507822E40 /* JKSmallLabels */,
+				A3A08DC870D747596595F96EEBE9353F /* JKTextExtension */,
+				A92ABB970B081A00032A84D8F6748CB8 /* JKTopWindow */,
+			);
+			name = JKKit;
+			sourceTree = "<group>";
+		};
+		7EAC64DB9B8538F2B98C228821DFCFAE /* JKGCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				0A919583A76FC8E1A7ED4A960C302889 /* JKGCDTimer.h */,
+				F6F47DD2C41FA44B8180973E37FCD1A6 /* JKGCDTimer.m */,
+			);
+			name = JKGCDTimer;
+			path = JKOCProjectTool/JKKit/JKGCDTimer;
+			sourceTree = "<group>";
+		};
+		9CB741A673A6519724AF5F584A03B933 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE154A4FECDAF8C42392EC3AF19B50CD /* Pods-JKOCProjectTool_Example */,
+				FA458C96214E1583826EB8ADE594933D /* Pods-JKOCProjectTool_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		9EC7F5B7896CB9B178590E69F3362D2B /* JKSandboxPath */ = {
+			isa = PBXGroup;
+			children = (
+				B5B9B02241D6C0E755EB556CD6E8F902 /* JKSandboxPath.h */,
+				6760337738A187E7AC7C56A45A35626B /* JKSandboxPath.m */,
+			);
+			name = JKSandboxPath;
+			path = JKOCProjectTool/JKKit/JKSandboxPath;
+			sourceTree = "<group>";
+		};
+		A3A08DC870D747596595F96EEBE9353F /* JKTextExtension */ = {
+			isa = PBXGroup;
+			children = (
+				D9EC92D36BDF4F62CBF680DD47C4B76A /* JKTextExtension.h */,
+				E6B0BACCE38AC8675E233B6D42164295 /* JKTextExtension.m */,
+			);
+			name = JKTextExtension;
+			path = JKOCProjectTool/JKKit/JKTextExtension;
+			sourceTree = "<group>";
+		};
+		A92ABB970B081A00032A84D8F6748CB8 /* JKTopWindow */ = {
+			isa = PBXGroup;
+			children = (
+				BF11096C15962793028CB4E9C3FB9EC3 /* JKTopWindow.h */,
+				CCD00BFFD2FD665F833BB8700028E905 /* JKTopWindow.m */,
+			);
+			name = JKTopWindow;
+			path = JKOCProjectTool/JKKit/JKTopWindow;
+			sourceTree = "<group>";
+		};
+		AB9E27411A48E463B4F6FC7507822E40 /* JKSmallLabels */ = {
+			isa = PBXGroup;
+			children = (
+				9C646EDADA1E96763D7FE2EB708E8BD3 /* JKSmallLabels.h */,
+				82CFF9342973127E6582F4061B464325 /* JKSmallLabels.m */,
+			);
+			name = JKSmallLabels;
+			path = JKOCProjectTool/JKKit/JKSmallLabels;
+			sourceTree = "<group>";
+		};
+		B8150A171BBEE35E63FA5142FED8B1F6 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				217C56931EF49836DE213C517C390836 /* JKOCProjectTool.podspec */,
+				4D291C509317425D0D8384E3C05F1922 /* LICENSE */,
+				B31D849EC64714F4D78B12148577C24A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		C10C1A0AE561732DB3CF44E5EC9F67FE /* JKLimitInput */ = {
+			isa = PBXGroup;
+			children = (
+				A7AAB4ADE0EF722A3063B44634103A60 /* JKLimitInput.h */,
+				47541B094FB7FC2A9D22E25F62390E93 /* JKLimitInput.m */,
+			);
+			name = JKLimitInput;
+			path = JKOCProjectTool/JKKit/JKLimitInput;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4BBB3447A2EAC4BBA040B21124D8E3E4 /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				657EB53D8DCDF292592BEE6802620DBC /* Products */,
+				9CB741A673A6519724AF5F584A03B933 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5799BCC4576AD70528460D9E4EAE95C /* JKCategory */ = {
+			isa = PBXGroup;
+			children = (
+				FA9981988E77F5E649D27A8A27D5B979 /* JKMacro.h */,
+				740C0C6061A883A965088EE3329606D8 /* JKScreenSize.h */,
+				FA8989E7AEBB76040E1B4E3DD50D62FE /* JKSingle.h */,
+				6682131E12EA18D55FE8A875169C91E3 /* JKFoundation */,
+				EF351F4E94A8E988248D3FEA012F6BC2 /* JKUIKit */,
+			);
+			name = JKCategory;
+			sourceTree = "<group>";
+		};
+		DC2B441A501C0C180330FD339AC8121A /* JKDate */ = {
+			isa = PBXGroup;
+			children = (
+				6A098EE65AFFB802C31807163544327B /* JKDate.h */,
+				E711C1A2BC4155764F185F628AC77514 /* JKDate.m */,
+			);
+			name = JKDate;
+			path = JKOCProjectTool/JKKit/JKDate;
+			sourceTree = "<group>";
+		};
+		DE154A4FECDAF8C42392EC3AF19B50CD /* Pods-JKOCProjectTool_Example */ = {
+			isa = PBXGroup;
+			children = (
+				D170191829C91B651BAA0EEAF1B2D66F /* Pods-JKOCProjectTool_Example.modulemap */,
+				01D4F2013E6BCA334DFCF737E7E4EE71 /* Pods-JKOCProjectTool_Example-acknowledgements.markdown */,
+				5A2D0D6D07DC4D74A5A0C7E84F8DF0C3 /* Pods-JKOCProjectTool_Example-acknowledgements.plist */,
+				38704794B969E6A6E6DCF736E281D5D0 /* Pods-JKOCProjectTool_Example-dummy.m */,
+				B6BE8BDFF200DD385A4A06671BCE008D /* Pods-JKOCProjectTool_Example-frameworks.sh */,
+				328BFF3CB54C47146D0CC919BB06EA46 /* Pods-JKOCProjectTool_Example-Info.plist */,
+				6BB025B9E143285476BAD541F079772B /* Pods-JKOCProjectTool_Example-umbrella.h */,
+				E4CE8AF6D59E88C1D46C4D022ED1EC94 /* Pods-JKOCProjectTool_Example.debug.xcconfig */,
+				07B457A9C969619AA9E3363FC8FED668 /* Pods-JKOCProjectTool_Example.release.xcconfig */,
+			);
+			name = "Pods-JKOCProjectTool_Example";
+			path = "Target Support Files/Pods-JKOCProjectTool_Example";
+			sourceTree = "<group>";
+		};
+		EE17C11BF6B4DEA4983FA30E36485E35 /* JKRSATool */ = {
+			isa = PBXGroup;
+			children = (
+				D1D3F3E97F7652CBDFB4FCA6F0CF2FAC /* JKRSATool.h */,
+				5327E0F117CFF26A4D9EBF9FA76E0AFD /* JKRSATool.m */,
+			);
+			name = JKRSATool;
+			path = JKOCProjectTool/JKKit/JKRSATool;
+			sourceTree = "<group>";
+		};
+		EF351F4E94A8E988248D3FEA012F6BC2 /* JKUIKit */ = {
+			isa = PBXGroup;
+			children = (
+				D920C8CC01DD3C7E2A20176AD4BE3ACF /* CALayer+JKLayer.h */,
+				0CF4DFA36F8ACE3C78ABE09F65DA31BA /* CALayer+JKLayer.m */,
+				EFB27F9AFC5DB7FF2A9D32D609D4FBD1 /* UIApplication+JKExtension.h */,
+				94546A40992C1DE50546E136DA0CFA1D /* UIApplication+JKExtension.m */,
+				C227BB493D6C4CFB34A3E114CA22E5C4 /* UIBarButtonItem+JKBarbuttonItem.h */,
+				92E4B2F648D9641652770ED7A3E01F23 /* UIBarButtonItem+JKBarbuttonItem.m */,
+				374246947EBD81BA9598F30749A44E33 /* UIButton+JKExtension.h */,
+				1C83F4A7C4F967A9FBFCACF00078445F /* UIButton+JKExtension.m */,
+				2073407038EA1FCB689FF59B5A22C13C /* UIColor+JKColor.h */,
+				6897BE442774CA4ADC40CF6B3D6E1AA8 /* UIColor+JKColor.m */,
+				DFD319B649F44C1975DC4A2EC4255593 /* UIDevice+JKHardware.h */,
+				38C1FAD4EAF7D1695FC81348BDBC999D /* UIDevice+JKHardware.m */,
+				96F333FDC471B51768FAE4AD16E30F15 /* UIImage+JKColorImage.h */,
+				B27E09C006346DAE00087C234C8368AE /* UIImage+JKColorImage.m */,
+				67D0B645F9738990A4D8D529B8E8AD56 /* UIImage+JKDirection.h */,
+				3A9FD7B95EF7E55DE0D73DE7A344C7AF /* UIImage+JKDirection.m */,
+				4C807D423FB3932F2BABA7C24914B365 /* UIImage+JKGIF.h */,
+				B8894D2EF18E0651F98D9C490811574F /* UIImage+JKGIF.m */,
+				CF132E853C80FBEF7BF6C343B32A0033 /* UIImage+JKImage.h */,
+				39ECEFC85EA0F3FA17C9B51A396C568D /* UIImage+JKImage.m */,
+				26131D08ECFF697A9B42070A0868EF47 /* UIImage+JKScaleVideoImage.h */,
+				18443BB01A95803E6DFDC956441710C2 /* UIImage+JKScaleVideoImage.m */,
+				C30A90D6D4063ACDE16F1739BA119EE6 /* UIImageView+JKImageView.h */,
+				37D9A3D13E5F4D3D2492C48AD57FB630 /* UIImageView+JKImageView.m */,
+				48A76AC72C722F55F69BDF28CFBAB54A /* UILabel+JKLabel.h */,
+				E41C404A93EC499EFBC79354061D594A /* UILabel+JKLabel.m */,
+				BCB278C61DE6A0F71A74DDE204F9D2D9 /* UINavigationController+JKNavigationController.h */,
+				C4878AD3C2C1A0D66D06210AB954534A /* UINavigationController+JKNavigationController.m */,
+				20B62C1D1E062AB8C57B6A5385907E54 /* UIResponder+JKExtension.h */,
+				26FCA93826416F96896365BB9E330809 /* UIResponder+JKExtension.m */,
+				F47F7046E9013D35097384DB7A41B4B0 /* UIScrollView+JKExtension.h */,
+				691A3B763AA3816D4D397499D059C71E /* UIScrollView+JKExtension.m */,
+				D95D149FD811222DA80DAF7105277892 /* UITextField+JKTextField.h */,
+				803BA9D6AEA7A404154BAB93853E40EC /* UITextField+JKTextField.m */,
+				248CEB29F709ACEE387E148E28E1DD66 /* UITextView+JKExtension.h */,
+				0BA2E01B66C4D1E331BEE01A880F7429 /* UITextView+JKExtension.m */,
+				8FAD310B93D1209275436A25D451A7FB /* UIView+JKLayout.h */,
+				6E51F9292BE180F05625B2EB610002B1 /* UIView+JKLayout.m */,
+				219A30D66C5948A54E1A7718B34C04DF /* UIViewController+JKViewController.h */,
+				7CF502C18EB26C2BBFE33D40CD0316AD /* UIViewController+JKViewController.m */,
+				19A7AC550E4AA63E81B248C223D9A1EF /* UIWebView+JKExtension.h */,
+				64A53F90459BAF798309FCA171B105A4 /* UIWebView+JKExtension.m */,
+				F079BB860002B90FC03D696DD8F5461B /* UIWindow+JKHierarchy.h */,
+				112BD3316E9D78BD7C6CE94900D6F2E0 /* UIWindow+JKHierarchy.m */,
+			);
+			name = JKUIKit;
+			path = JKOCProjectTool/JKCategory/JKUIKit;
+			sourceTree = "<group>";
+		};
+		FA458C96214E1583826EB8ADE594933D /* Pods-JKOCProjectTool_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				0FC739EDD1BAC2ABDF963B2FEBE73BFB /* Pods-JKOCProjectTool_Tests.modulemap */,
+				DC35869D59D38D6B5075BEEF7815A5CC /* Pods-JKOCProjectTool_Tests-acknowledgements.markdown */,
+				ABE9C5BBA522561D5F65127380AD5209 /* Pods-JKOCProjectTool_Tests-acknowledgements.plist */,
+				AD6024FA54D7547115A41858ECDD7EF0 /* Pods-JKOCProjectTool_Tests-dummy.m */,
+				C3126604D05C1D39D7F97498D5EAEDE5 /* Pods-JKOCProjectTool_Tests-Info.plist */,
+				05FCF31D7C117282B9315B3C2F04749C /* Pods-JKOCProjectTool_Tests-umbrella.h */,
+				94ACE36231C66864A627AAC77413CA65 /* Pods-JKOCProjectTool_Tests.debug.xcconfig */,
+				7602A2EB586D00B0E159F0AAE66856A7 /* Pods-JKOCProjectTool_Tests.release.xcconfig */,
+			);
+			name = "Pods-JKOCProjectTool_Tests";
+			path = "Target Support Files/Pods-JKOCProjectTool_Tests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2D848EC753AF180E9D65FCF3CE4DFDF2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C5E628AEDD9B98E85F70C75FB47C50 /* Pods-JKOCProjectTool_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		36BB07E450A21C5634C50A7B3D6B3D6E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DE4B4BDA4388D283050704CD09CF346 /* CALayer+JKLayer.h in Headers */,
+				C7DC4E46C261EFD6971AB33715FD6E8A /* JKDate.h in Headers */,
+				0E0EE9E855B1E857AFE87DEE842E3D58 /* JKGCDTimer.h in Headers */,
+				7CB5320A82E7D2906FA42129789C8544 /* JKLimitInput.h in Headers */,
+				8596C614EC515A2C010FC284A1663AFF /* JKMacro.h in Headers */,
+				F850E7FE610BD7CFD6212A265C6DE6FA /* JKOCProjectTool-umbrella.h in Headers */,
+				2CF10B0D7D395986E51D300BB9D5DAD9 /* JKOCProjectTool.h in Headers */,
+				A95261B3D1F91B428DE4AA6F2C7528E5 /* JKQRCode.h in Headers */,
+				698C2085388C9FB381D71FC7AF4F48B3 /* JKRSATool.h in Headers */,
+				B066FE3E524CBAFE0817B00EBC1F3821 /* JKSandboxPath.h in Headers */,
+				11C5FE8ED8763CE556A3C66C797D17CD /* JKScanningQRViewController.h in Headers */,
+				729F338939BA0838F3AA795AAC29271B /* JKScreenSize.h in Headers */,
+				3680C7DACE51D409038C980385513B32 /* JKSingle.h in Headers */,
+				67ABF5E3876CD3B25C7A0F83EBD187F6 /* JKSmallLabels.h in Headers */,
+				C6DB985E51BB15AD021E88CE2698341E /* JKTextExtension.h in Headers */,
+				4006332EDAD413E201BBF33CD80571F6 /* JKTopWindow.h in Headers */,
+				613E5CFB6B67F145DEB4B8152B179534 /* NSData+JK_AES.h in Headers */,
+				802C7C3A09053C4741B9A5260DA791E5 /* NSData+JKBase64.h in Headers */,
+				8913F30846D03482EB67FD730823F08D /* NSData+JKData.h in Headers */,
+				1F33D2D3327EBFB6F88B5B073C54897B /* NSData+JKEncrypt.h in Headers */,
+				1A4073F7E4706E1FF07F48ECC0EF4A97 /* NSData+JKGzip.h in Headers */,
+				EBA59820CFCC6FEB5A46BACD02CFC643 /* NSData+JKHash.h in Headers */,
+				D0B4A8F821D7C826CEFDE8D0C3E4B9BE /* NSDate+JKExtension.h in Headers */,
+				EE9F02F57E5E9E9B039B55D0F26EC7E4 /* NSDate+JKFormatter.h in Headers */,
+				CE8BEF58FCC9CB9B325E598FF413471F /* NSMutableArray+JKMutableArray.h in Headers */,
+				C7F34206DB7A3715AD6305E7C9F2EDE4 /* NSObject+JKRuntime.h in Headers */,
+				CF5EA35DC46C066FE0753DF980501724 /* NSString+JK_MD5.h in Headers */,
+				4D6D87911FD1A77F6C8705E32726B4CE /* NSString+JKBase64.h in Headers */,
+				2511737DE35E6D8EB81B2E7A2E04B2C7 /* NSString+JKContains.h in Headers */,
+				A04F3B990C9762737245785A6281BE18 /* NSString+JKHash.h in Headers */,
+				EF83F0591CBBACB225DA826BC74216AD /* NSString+JKPinyin.h in Headers */,
+				038AC412D4CD907804FF64250DD1BE04 /* NSString+JKRegex.h in Headers */,
+				184270CA09CACA737DF61D111627245F /* NSString+JKRemoveEmoji.h in Headers */,
+				0F76204BF56E8BE0DF76053FB6FD16D6 /* NSString+JKString.h in Headers */,
+				7A212A33D9D4EA1619024BD34FC33DBE /* NSString+JKXML.h in Headers */,
+				9ACB51DC358A1E492E6373AE9D31F121 /* UIApplication+JKExtension.h in Headers */,
+				A9B099618DC173DDB3C82E35C3BA77E8 /* UIBarButtonItem+JKBarbuttonItem.h in Headers */,
+				A2E100556A1938C59938EB753105F0EB /* UIButton+JKExtension.h in Headers */,
+				8FB08800DC092BBBE98C8BEB3C69D9CF /* UIColor+JKColor.h in Headers */,
+				483238A4416A10CFCB9142A5CDA47020 /* UIDevice+JKHardware.h in Headers */,
+				1E3F7D3FDFE47C489C5AB2893676B7C9 /* UIFont+JKExtension.h in Headers */,
+				7F208FBF2B5F56747BABDB262EC9087D /* UIImage+JKColorImage.h in Headers */,
+				D781E1B1C2B307D61137E0F00B976607 /* UIImage+JKDirection.h in Headers */,
+				AEEB21B6F96CA47002864464553D2319 /* UIImage+JKGIF.h in Headers */,
+				3B55C1B55615A5ED45897094AA80E4F4 /* UIImage+JKImage.h in Headers */,
+				C1722680534C450F34DAC79137D850BB /* UIImage+JKScaleVideoImage.h in Headers */,
+				86F11C970761D0C11A6EDEEE16C18C79 /* UIImageView+JKImageView.h in Headers */,
+				AC0F4C01E725F8CD3C74FEF38A510BA9 /* UILabel+JKLabel.h in Headers */,
+				0CE32F9F7987806794B98BEAFDB82777 /* UINavigationController+JKNavigationController.h in Headers */,
+				82F74AA39E8C2B2C8560178FC80F87C3 /* UIResponder+JKExtension.h in Headers */,
+				0FF46469D7740FA4C0994FCDA850530E /* UIScrollView+JKExtension.h in Headers */,
+				B3DF10D6A5DD80816CAB17393E9933DE /* UITextField+JKTextField.h in Headers */,
+				27D301E05093B65FBFFD0E721306F833 /* UITextView+JKExtension.h in Headers */,
+				67D1E23033AB8F314E981168573E8D51 /* UIView+JKLayout.h in Headers */,
+				635EE21643DBDB4BD51FB2DC0D0C43A4 /* UIViewController+JKViewController.h in Headers */,
+				511A83F6B557A4E9354B6F3A315D607A /* UIWebView+JKExtension.h in Headers */,
+				F0D502A78621AC28622E75510E3D6A91 /* UIWindow+JKHierarchy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAAC33189502BAF9E2B065B34D785B67 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E5F35DCBDF3A2F60940CC19FCDE5E63 /* Pods-JKOCProjectTool_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		070E2132F1216AF1D02A91F164908E2D /* JKOCProjectTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3AE9457DFCB704177DDBDB5E511C06C /* Build configuration list for PBXNativeTarget "JKOCProjectTool" */;
+			buildPhases = (
+				36BB07E450A21C5634C50A7B3D6B3D6E /* Headers */,
+				B50F321FA7D98AB9CB5A2D3D5654A8A2 /* Sources */,
+				72F10A68FAE76C03DA88089E6C35CA3E /* Frameworks */,
+				87AA861B752D233DDBC6B690159DC634 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JKOCProjectTool;
+			productName = JKOCProjectTool;
+			productReference = 0A7AA0D3F343B0394471F0F65BD88BCC /* JKOCProjectTool.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D6168F07B0367A7169337DA56A997A03 /* Pods-JKOCProjectTool_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AA466E58E9135B02AEFC502E15296D7 /* Build configuration list for PBXNativeTarget "Pods-JKOCProjectTool_Tests" */;
+			buildPhases = (
+				2D848EC753AF180E9D65FCF3CE4DFDF2 /* Headers */,
+				DCF68B99BC7DC7DE980C09EFFF8339BE /* Sources */,
+				E79CBB2DDD3189A62111E1CD0ED2E05E /* Frameworks */,
+				37BC39585C4A02D7CFD4D54ACF15BE4B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BB5A4530FC9E794EF8B9B171F09BF2D /* PBXTargetDependency */,
+			);
+			name = "Pods-JKOCProjectTool_Tests";
+			productName = "Pods-JKOCProjectTool_Tests";
+			productReference = 81851B1BAB0B0899CB3A8C098C2C696E /* Pods_JKOCProjectTool_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E105BA69FE341A7F0686234B918BDE94 /* Pods-JKOCProjectTool_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C48041A93493BA604BDD22785D95D7B /* Build configuration list for PBXNativeTarget "Pods-JKOCProjectTool_Example" */;
+			buildPhases = (
+				DAAC33189502BAF9E2B065B34D785B67 /* Headers */,
+				47C919999234A0B530DD35F53F40F9C0 /* Sources */,
+				433F2B03353E6C79A53610C8AA33EBEC /* Frameworks */,
+				8E0F7AA389A88E4E1C85E3C5F23693B2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FE521F772B38A53FEAC1EF70EB08A8A5 /* PBXTargetDependency */,
+			);
+			name = "Pods-JKOCProjectTool_Example";
+			productName = "Pods-JKOCProjectTool_Example";
+			productReference = 89BE50BD60D5BAA4B7EA4E131334D1FE /* Pods_JKOCProjectTool_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 657EB53D8DCDF292592BEE6802620DBC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				070E2132F1216AF1D02A91F164908E2D /* JKOCProjectTool */,
+				E105BA69FE341A7F0686234B918BDE94 /* Pods-JKOCProjectTool_Example */,
+				D6168F07B0367A7169337DA56A997A03 /* Pods-JKOCProjectTool_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		37BC39585C4A02D7CFD4D54ACF15BE4B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87AA861B752D233DDBC6B690159DC634 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F08FE6FA1C22AA0E5832D40CEFBB0DF8 /* JKOCProjectTool.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E0F7AA389A88E4E1C85E3C5F23693B2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47C919999234A0B530DD35F53F40F9C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				098AAA21AAB76FE18A61368A48F20F1D /* Pods-JKOCProjectTool_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B50F321FA7D98AB9CB5A2D3D5654A8A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4F85D94A042DBB942704E203669FEE /* CALayer+JKLayer.m in Sources */,
+				54155876EFCBBC22B02E26D72A5530DE /* JKDate.m in Sources */,
+				0140F0C7BAF1AFF6AD88ECD4238C88F3 /* JKGCDTimer.m in Sources */,
+				6A80BE80BEE7A0061195F245C24A5F80 /* JKLimitInput.m in Sources */,
+				A8A780E1822880791072F8ECF21F4657 /* JKOCProjectTool-dummy.m in Sources */,
+				C6A054349DB984639AA5FACBCB172E10 /* JKQRCode.m in Sources */,
+				78E04D2FDC0785579FCCC12E4F9444BD /* JKRSATool.m in Sources */,
+				D5E0BE7B798AC4F241F7C1ACE24BF89B /* JKSandboxPath.m in Sources */,
+				05A91BF43B23DAE085CDC02F57E12B2A /* JKScanningQRViewController.m in Sources */,
+				72C9BB8B72A7981AC6BA442A3F212099 /* JKSmallLabels.m in Sources */,
+				0618A6E98678247980C1020C43F772CF /* JKTextExtension.m in Sources */,
+				DAD91D1491FBC43E25F52096338665BF /* JKTopWindow.m in Sources */,
+				132F1D66287089AB34540D0441919AF0 /* NSData+JK_AES.m in Sources */,
+				BB50984E47A3EF7DC01DFD521F536548 /* NSData+JKBase64.m in Sources */,
+				21DFCDC322B130AB2E2A8DEA007772A2 /* NSData+JKData.m in Sources */,
+				3118CF61E608CF5F59A14F35E171124D /* NSData+JKEncrypt.m in Sources */,
+				DF29CDDFD713E15A97C9C67E00FC596B /* NSData+JKGzip.m in Sources */,
+				3F833521FC58FEADDE95DA1CE3B39670 /* NSData+JKHash.m in Sources */,
+				894F6C9C1C4D4A7704E49DF29A2156CC /* NSDate+JKExtension.m in Sources */,
+				C0D773300C84D91C896F9563F4E9FB7C /* NSDate+JKFormatter.m in Sources */,
+				FBDB5ACC2CAE827C938A9219AB53DDC6 /* NSMutableArray+JKMutableArray.m in Sources */,
+				51C97965C20EED83F375BBCF24091B53 /* NSObject+JKRuntime.m in Sources */,
+				62EBEDB482B81A6824ED288C69E87215 /* NSString+JK_MD5.m in Sources */,
+				C5209297520297D3EB455E88E8651F0E /* NSString+JKBase64.m in Sources */,
+				FCF4E76EFE8B42B68542211F6234AAD9 /* NSString+JKContains.m in Sources */,
+				19E4053998BF96A22EEBAD9C12EC02E1 /* NSString+JKHash.m in Sources */,
+				1BDA2864446BE3142F16D17CEAEC9A72 /* NSString+JKPinyin.m in Sources */,
+				7EA413238DAAF034BF30DF16FE846A81 /* NSString+JKRegex.m in Sources */,
+				702AA19CDF2D97E111856CE059941053 /* NSString+JKRemoveEmoji.m in Sources */,
+				879466D25F978D6BA4AC37D7FF41193A /* NSString+JKString.m in Sources */,
+				655D5B474B8C77A20E4B1656B6C230DE /* NSString+JKXML.m in Sources */,
+				98B3A1844DC2F921D389B1D50B3C5D54 /* UIApplication+JKExtension.m in Sources */,
+				B74C9EAE0CB45B1E451E33A674B1B07A /* UIBarButtonItem+JKBarbuttonItem.m in Sources */,
+				488D2BE1EF5C49558501C7B1F69F9A74 /* UIButton+JKExtension.m in Sources */,
+				59D132108F38FB59DDB3EA1B11F8F204 /* UIColor+JKColor.m in Sources */,
+				3483FB3C8E745F528AC77926951D14D7 /* UIDevice+JKHardware.m in Sources */,
+				C52A2A8750B3D655C35B7E6DD6E3209B /* UIFont+JKExtension.m in Sources */,
+				39A24D7ED5CA957D1A860B5704BF0245 /* UIImage+JKColorImage.m in Sources */,
+				47F15761D8EBCB0A89BB821FDFB4B001 /* UIImage+JKDirection.m in Sources */,
+				B26A6110F0DA9EFBD071DC71C495461B /* UIImage+JKGIF.m in Sources */,
+				232C4FE629D3E9AF3EBA7D2FEC46D785 /* UIImage+JKImage.m in Sources */,
+				CBEADDD0E51950CEB48C7BBC4E4ADBCA /* UIImage+JKScaleVideoImage.m in Sources */,
+				5AAE2EF84C58E81D31FF9DD60C3F2744 /* UIImageView+JKImageView.m in Sources */,
+				89BA015FF75C56EC9385C7471ADFC576 /* UILabel+JKLabel.m in Sources */,
+				46A5BA062208FDD18419158707A7BD91 /* UINavigationController+JKNavigationController.m in Sources */,
+				4FDCB344F983F9FD15DA7655DAE4E126 /* UIResponder+JKExtension.m in Sources */,
+				BEA2E5CD9E772106F31440123727CAF1 /* UIScrollView+JKExtension.m in Sources */,
+				AEE5D9BD3CF85777BD2D66A63D01B5AA /* UITextField+JKTextField.m in Sources */,
+				FA331FF53E6BF81F09137642726F0F33 /* UITextView+JKExtension.m in Sources */,
+				5D9213120F9B68BBBCF94E353D7626E0 /* UIView+JKLayout.m in Sources */,
+				DF5C75403A961DA0D3DBFC275D1A7440 /* UIViewController+JKViewController.m in Sources */,
+				3838D04A4BC877000DCB849BBB1C13A7 /* UIWebView+JKExtension.m in Sources */,
+				BD077760A84CBD4AD8CAA44541F7DFEB /* UIWindow+JKHierarchy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DCF68B99BC7DC7DE980C09EFFF8339BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DE835316881D4E61432C720386D0D0D /* Pods-JKOCProjectTool_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0BB5A4530FC9E794EF8B9B171F09BF2D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-JKOCProjectTool_Example";
+			target = E105BA69FE341A7F0686234B918BDE94 /* Pods-JKOCProjectTool_Example */;
+			targetProxy = 87F0CC33068B29FA85B765E76FB04A72 /* PBXContainerItemProxy */;
+		};
+		FE521F772B38A53FEAC1EF70EB08A8A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JKOCProjectTool;
+			target = 070E2132F1216AF1D02A91F164908E2D /* JKOCProjectTool */;
+			targetProxy = 1989CF232B4C9E23BE3B80BF01079CC9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2D72F9F570D455B7A9C18F6F6CA0E7F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94ACE36231C66864A627AAC77413CA65 /* Pods-JKOCProjectTool_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKOCProjectTool_Tests/Pods-JKOCProjectTool_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKOCProjectTool_Tests/Pods-JKOCProjectTool_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5D8008F64D6D7A878F33F46EEE5BF640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF03E38D97EC87235E454388A5776E3 /* JKOCProjectTool.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JKOCProjectTool/JKOCProjectTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKOCProjectTool/JKOCProjectTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKOCProjectTool/JKOCProjectTool.modulemap";
+				PRODUCT_MODULE_NAME = JKOCProjectTool;
+				PRODUCT_NAME = JKOCProjectTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A5EC1D9501A1C8C88DD7AD20C841AC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ED78A493FA5D9491CEDFD3FA21DCD79C /* JKOCProjectTool.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JKOCProjectTool/JKOCProjectTool-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JKOCProjectTool/JKOCProjectTool-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JKOCProjectTool/JKOCProjectTool.modulemap";
+				PRODUCT_MODULE_NAME = JKOCProjectTool;
+				PRODUCT_NAME = JKOCProjectTool;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		938242CEA8FD0613299C0D61F15BFF1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07B457A9C969619AA9E3363FC8FED668 /* Pods-JKOCProjectTool_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKOCProjectTool_Example/Pods-JKOCProjectTool_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKOCProjectTool_Example/Pods-JKOCProjectTool_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2E4A49ED76F99D7158C0098AC7619AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4CE8AF6D59E88C1D46C4D022ED1EC94 /* Pods-JKOCProjectTool_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKOCProjectTool_Example/Pods-JKOCProjectTool_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKOCProjectTool_Example/Pods-JKOCProjectTool_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FE6C3B8A13EA5FC2314AA3188C61AACB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7602A2EB586D00B0E159F0AAE66856A7 /* Pods-JKOCProjectTool_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-JKOCProjectTool_Tests/Pods-JKOCProjectTool_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-JKOCProjectTool_Tests/Pods-JKOCProjectTool_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AA466E58E9135B02AEFC502E15296D7 /* Build configuration list for PBXNativeTarget "Pods-JKOCProjectTool_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D72F9F570D455B7A9C18F6F6CA0E7F9 /* Debug */,
+				FE6C3B8A13EA5FC2314AA3188C61AACB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4C48041A93493BA604BDD22785D95D7B /* Build configuration list for PBXNativeTarget "Pods-JKOCProjectTool_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2E4A49ED76F99D7158C0098AC7619AE /* Debug */,
+				938242CEA8FD0613299C0D61F15BFF1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3AE9457DFCB704177DDBDB5E511C06C /* Build configuration list for PBXNativeTarget "JKOCProjectTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D8008F64D6D7A878F33F46EEE5BF640 /* Debug */,
+				6A5EC1D9501A1C8C88DD7AD20C841AC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

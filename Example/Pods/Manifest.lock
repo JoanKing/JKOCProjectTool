@@ -1,0 +1,21 @@
+PODS:
+  - JKOCProjectTool (0.2.14):
+    - JKOCProjectTool/JKCategory (= 0.2.14)
+    - JKOCProjectTool/JKKit (= 0.2.14)
+  - JKOCProjectTool/JKCategory (0.2.14)
+  - JKOCProjectTool/JKKit (0.2.14):
+    - JKOCProjectTool/JKCategory
+
+DEPENDENCIES:
+  - JKOCProjectTool (from `../`)
+
+EXTERNAL SOURCES:
+  JKOCProjectTool:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  JKOCProjectTool: d52a0d892aefe06f2d116ea81f5116de10b0d1b2
+
+PODFILE CHECKSUM: d391060f7a94b130806f4707be41ab12fa447a6c
+
+COCOAPODS: 1.9.3

@@ -577,5 +577,30 @@ static char JKActionHandlerLongPressBlockKey;
     [self.layer addSublayer:shapeLayer];
 }
 
+- (void)addShadowAndCornerSuperView:(UIView *)superView roundRectCorner:(UIRectCorner)corners withCornerRadius:(CGFloat)cornerRadius shadowRadius:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor withShadowOffset:(CGSize)offset withShadowOpacity:(float)opacity {
+    // 切圆角
+    UIBezierPath* rounded = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:corners cornerRadii:CGSizeMake(cornerRadius, cornerRadius)];
+    CAShapeLayer* shape = [[CAShapeLayer alloc] init];
+    [shape setPath:rounded.CGPath];
+    self.layer.mask = shape;
+    
+    // 阴影
+    CALayer *subLayer=[CALayer layer];
+    CGRect fixframe = self.frame;
+    subLayer.frame= fixframe;
+    subLayer.cornerRadius = shadowRadius;
+    subLayer.backgroundColor=[shadowColor colorWithAlphaComponent:0.8].CGColor;
+    subLayer.masksToBounds = NO;
+    // shadowColor阴影颜色
+    subLayer.shadowColor = [UIColor blackColor].CGColor;
+    // shadowOffset阴影偏移,x向右偏移3，y向下偏移2，默认(0, -3),这个跟shadowRadius配合使用
+    subLayer.shadowOffset = offset;
+    // 阴影透明度，默认0
+    subLayer.shadowOpacity = opacity;
+    // 阴影半径，默认3
+    subLayer.shadowRadius = shadowRadius;
+    [superView.layer insertSublayer:subLayer below: self.layer];
+}
+
 
 @end

@@ -133,7 +133,7 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
  @param type 图片的格式png或者jpg
  @param pitureSize 保存图片的尺寸
  */
--(void)jk_snapshotImageSizePath:(NSString *)path withPicturetype:(NSString *)type withSize:(CGSize)pitureSize;
+- (void)jk_snapshotImageSizePath:(NSString *)path withPicturetype:(NSString *)type withSize:(CGSize)pitureSize;
 
 #pragma mark 10、通过 CAShapeLayer 方式绘制虚线
 /**
@@ -144,8 +144,17 @@ typedef void (^LongPressActionBlock)(UILongPressGestureRecognizer *gestureRecogi
  @param lineColor 虚线的颜色
  @param isHorizonal 虚线的方向  YES 为水平方向， NO 为垂直方向
  */
--(void)jk_drawLineOfDashByCAShapeLayerLineWidth:(int)lineWidth withLineSpacing:(int)lineSpacing withLineColor:(UIColor *)lineColor withLineDirection:(BOOL)isHorizonal;
+- (void)jk_drawLineOfDashByCAShapeLayerLineWidth:(int)lineWidth withLineSpacing:(int)lineSpacing withLineColor:(UIColor *)lineColor withLineDirection:(BOOL)isHorizonal;
 
+/// 添加阴影和部分圆角
+/// @param superView 父视图
+/// @param corners 圆角
+/// @param cornerRadius 圆角大小
+/// @param shadowRadius 阴影的圆角大小
+/// @param shadowColor 阴影的颜色
+/// @param offset 阴影的偏移度：CGSizeMake(X[正的右偏移,负的左偏移], Y[正的下偏移,负的上偏移]);
+/// @param opacity 阴影的透明度
+- (void)addShadowAndCornerSuperView:(UIView *)superView roundRectCorner:(UIRectCorner)corners withCornerRadius:(CGFloat)cornerRadius shadowRadius:(CGFloat)shadowRadius shadowColor:(UIColor *)shadowColor withShadowOffset:(CGSize)offset withShadowOpacity:(float)opacity;
 
 
 @end
